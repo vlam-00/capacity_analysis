@@ -1,0 +1,1645 @@
+# File format is 'yaml'. Indentation is significant and should use only spaces or tabs not both. It is strongly
+# advised that spaces be used for indentation.
+rack_qualified_config_type: compute_h100_s12_s42_7010tx-48_pdu_down
+version: 1.0.0
+
+rack:
+  vendor: # options include Rack Solution or Mercury
+    - Mercury
+    - RackSolution
+  ims_models: [] # 50U Roll-In # options include 50U Open Frame or 50U Roll-In
+  model_aliases:
+    - 50U Open Frame
+  power_max: 32 # kilowatts for 3x H100 server training configuration which requires power capping  
+                # 20kW for 2x H100 server inferencing configuration which does not require power capping
+  weight_max: 3000 # weight in pounds
+  height: 50 # total U's
+  width: 19 # rails mounting width inches
+# Racking allowable configuration
+# Racking definition is based on industry standard 'U' locations with
+# Numbering starting at the bottom of the rack.
+# Allowed types: egress (for cabling), server, switch_mgmt, switch_data.
+# Other types are expected to be allowed in alternate rack qualified configs.
+racking:
+  - &server
+    position: u12 # sl39
+    type: server
+    required: false
+    class: # Allowed server classes in this location
+      prod:
+        - gx3d-h100-smc
+        - gx3d-h200-smc
+      dev:  # dev = prod + the classes below
+        - gx3-h100-smc-dev
+        - gx3d-h200-smc-dev
+  - <<: *server
+    position: u20 # sl31
+
+  - position: u21 # sl30
+    type: switch_tor
+    name: mtor1
+    required: True
+  - position: u24 # sl27
+    type: switch_tor
+    name: tor1
+    required: True
+  - position: u26 # sl25
+    type: switch_tor
+    name: tor2
+    required: True
+
+  - <<: *server
+    position: u34 # sl17
+  - <<: *server
+    position: u42 # sl09 this server position can only be used for SDN dev racks
+
+  - position: right_rear # when viewed from front of rack
+    type: pdu
+    name: pdu_1
+    egress: bottom
+    required: True
+  - position: left_rear # when viewed from front of rack
+    type: pdu
+    name: pdu_2
+    egress: bottom
+    required: True
+
+switch_tor:
+  - name: mtor1
+    vendor: Arista
+    ims_models:
+      - DCS-7010TX-48-R
+      - Arista DCS-7010TX-48-R
+      - Arista-DCS-7010TX-48-R
+    model_aliases:
+      - Arista-DCS-7010TX-48-R
+      - Arista-DCS-7010TX-48
+    class: null # Need to define switch classes in platform-inventory
+    ip_address: 192.168.0.104
+    aggregation:
+      type: null # options include mlag or null
+    ports:
+      - port: 9 # sl09
+        device:
+          type: server
+          location: u42
+          component: inband1
+          port: 1
+        cable:
+          part_number: 03GT461
+          type: CAT5e
+          description: MTOR1-9 TO SL09-ETH0
+          length: 1525mm
+      - port: 10 # sl09
+        device:
+          type: server
+          location: u42
+          component: bmc1
+          port: 1
+        cable:
+          part_number: 03GT462
+          type: CAT5e
+          description: MTOR1-10 TO SL09-IPMI
+          length: 1150mm
+      - port: 17 # sl17
+        device:
+          type: server
+          location: u34
+          component: inband1
+          port: 1
+        cable:
+          part_number: 03GT463
+          type: CAT5e
+          description: MTOR1-17 TO SL17-ETH0
+          length: 1225mm
+      - port: 18 # sl17
+        device:
+          type: server
+          location: u34
+          component: bmc1
+          port: 1
+        cable:
+          part_number: 03GT464
+          type: CAT5e
+          description: MTOR1-18 TO SL17-IPMI
+          length: 850mm
+      - port: 25 # sl31
+        device:
+          type: server
+          location: u20
+          component: inband1
+          port: 1
+        cable:
+          part_number: 03GT465
+          type: CAT5e
+          description: MTOR1-25 TO SL31-ETH0
+          length: 800mm
+      - port: 26 # sl31
+        device:
+          type: server
+          location: u20
+          component: bmc1
+          port: 1
+        cable:
+          part_number: 03GT466
+          type: CAT5e
+          description: MTOR1-26 TO SL31-IPMI
+          length: 1225mm
+      - port: 27 # sl25
+        device:
+          type: switch_tor
+          location: u26
+          component: tor2
+          port: mgmt
+        cable:
+          part_number: 86Y4095
+          type: CAT5e
+          description: MTOR1-27 TO TOR2 <···>
+          length: 675mm
+      - port: 28 # sl27
+        device:
+          type: switch_tor
+          location: u24
+          component: tor1
+          port: mgmt
+        cable:
+          part_number: 86Y4096
+          type: CAT5e
+          description: MTOR1-28 TO TOR1 <···>
+          length: 575mm
+      - port: 30 # sl30
+        device:
+          type: switch_tor
+          location: u21
+          component: mtor1
+          port: mgmt
+        cable:
+          part_number: 03GT087
+          type: CAT5e
+          description: MTOR1-30 TO MTOR1 <--->
+          length: 350mm
+      - port: 31 # pdu2
+        device:
+          type: pdu
+          location: left_rear
+          component: pdu2
+          port: mgmt
+        cable:
+          part_number: 86Y4398
+          type: CAT5e
+          description: MTOR1-31 TO PDU2-NET
+          length: 475mm
+      - port: 32 # pdu1
+        device:
+          type: pdu
+          location: right_rear
+          component: pdu1
+          port: mgmt
+        cable:
+          part_number: 86Y4399
+          type: CAT5e
+          description: MTOR1-32 TO PDU1-NET
+          length: 550mm
+      - port: 39 # sl39
+        device:
+          type: server
+          location: u12
+          component: inband1
+          port: 1
+        cable:
+          part_number: 03GT467
+          type: CAT5e
+          description: MTOR1-39 TO SL39-ETH0
+          length: 1050mm
+      - port: 40 # sl39
+        device:
+          type: server
+          location: u12
+          component: bmc1
+          port: 1
+        cable:
+          part_number: 03GT468
+          type: CAT5e
+          description: MTOR1-40 TO SL39-IPMI
+          length: 1475mm
+      - port: 49 # uplink
+        device:
+          type: agg
+          location: remote
+          component: magga
+          port: 
+      - port: 50 # uplink
+        device:
+          type: agg
+          location: remote
+          component: maggb
+          port: 
+      - port: mgmt # sl30
+        device:
+          type: switch_tor
+          location: u21
+          component: mtor1
+          port: 30
+        cable:
+          part_number: 03GT087
+          type: CAT5e
+          description: MTOR1-30_TO_MTOR1 <---> 
+          length: 350mm
+
+  - name: tor1
+    vendor: Arista
+    ims_models:
+      - DCS-7060DX5-64S-R
+      - Arista DCS-7060DX5-64S-R
+      - Arista-DCS-7060DX5-64S-R
+    model_aliases:
+      - DCS-7060DX5-64S-R
+      - Arista DCS-7060DX5-64S-R
+      - Arista-DCS-7060DX5-64S-R
+    class: null
+    ip_address: 192.168.0.116 # 3rd Octet set by rack index
+    aggregation:
+      type: ecmp # options?
+      partners:
+        - tor2
+    ports:
+      - port: 1 # sl09
+        device:
+          type: server
+          location: u42
+          component: data1
+          port: 1
+        ip_address:
+          - type: bgp
+            protocol: 4
+            required: True
+            value: 172.0.0.99
+        cable:
+          part_number: 03GT389
+          type: QSFP-200G DAC
+          description: TOR1-1 TO SL09-NIC1-1
+          length: 1250mm
+      - port: 2 # sl09
+        device:
+          type: server
+          location: u42
+          component: data2
+          port: 1
+        cable:
+          part_number: 03GT390
+          type: QSFP-200G DAC
+          description: TOR1-2 TO SL09-NIC2-1
+          length: 1250mm
+      - port: 3 # sl09
+        device:
+          type: server
+          location: u42
+          component: data3
+          port: 1
+        cable:
+          part_number: 03GT391
+          type: QSFP-200G DAC
+          description: TOR1-3 TO SL09-NIC3-1
+          length: 1350mm
+      - port: 4 # sl09
+        device:
+          type: server
+          location: u42
+          component: data4
+          port: 1
+        cable:
+          part_number: 03GT392
+          type: QSFP-200G DAC
+          description: TOR1-4 TO SL09-NIC4-1
+          length: 1350mm
+      - port: 5 # sl09
+        device:
+          type: server
+          location: u42
+          component: data5
+          port: 1
+        cable:
+          part_number: 03GT393
+          type: QSFP-200G DAC
+          description: TOR1-5 TO SL09-NIC5-1
+          length: 1400mm
+      - port: 6 # sl09
+        device:
+          type: server
+          location: u42
+          component: data6
+          port: 1
+        cable:
+          part_number: 03GT394
+          type: QSFP-200G DAC
+          description: TOR1-6 TO SL09-NIC6-1
+          length: 1400mm
+      - port: 7 # sl09
+        device:
+          type: server
+          location: u42
+          component: data7
+          port: 1
+        cable:
+          part_number: 03GT395
+          type: QSFP-200G DAC
+          description: TOR1-7 TO SL09-NIC7-1
+          length: 1500mm
+      - port: 8 # sl09
+        device:
+          type: server
+          location: u42
+          component: data8
+          port: 1
+        cable:
+          part_number: 03GT396
+          type: QSFP-200G DAC
+          description: TOR1-8 TO SL09-NIC8-1
+          length: 1500mm
+      - port: 9 # sl09
+        device:
+          type: server
+          location: u42
+          component: data9
+          port: 1
+        cable:
+          part_number: 03GT397
+          type: QSFP-200G DAC
+          description: TOR1-9 TO SL09-NIC9-1
+          length: 1500mm
+      - port: 11 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 12 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 13 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 14 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 15 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 16 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 17 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 18 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 19 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 20 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 21 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 22 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 23 # SL31
+        device:
+          type: server
+          location: u20
+          component: data1
+          port: 1
+        ip_address:
+          - type: bgp
+            protocol: 4
+            required: True
+            value: 172.0.0.95
+        cable:
+          part_number: 03GT398
+          type: QSFP-200G DAC
+          description: TOR1-23 TO SL31-NIC1-1
+          length: 1200mm
+      - port: 24 # SL31
+        device:
+          type: server
+          location: u20
+          component: data2
+          port: 1
+        cable:
+          part_number: 03GT399
+          type: QSFP-200G DAC
+          description: TOR1-24 TO SL31-NIC2-1
+          length: 1200mm
+      - port: 25 # SL31
+        device:
+          type: server
+          location: u20
+          component: data3
+          port: 1
+        cable:
+          part_number: 03GT400
+          type: QSFP-200G DAC
+          description: TOR1-25 TO SL31-NIC3-1
+          length: 1150mm
+      - port: 26 # SL31
+        device:
+          type: server
+          location: u20
+          component: data4
+          port: 1
+        cable:
+          part_number: 03GT401
+          type: QSFP-200G DAC
+          description: TOR1-26 TO SL31-NIC4-1
+          length: 1150mm
+      - port: 27 # SL31
+        device:
+          type: server
+          location: u20
+          component: data5
+          port: 1
+        cable:
+          part_number: 03GT402
+          type: QSFP-200G DAC
+          description: TOR1-27 TO SL31-NIC5-1
+          length: 1100mm
+      - port: 28 # SL31
+        device:
+          type: server
+          location: u20
+          component: data6
+          port: 1
+        cable:
+          part_number: 03GT403
+          type: QSFP-200G DAC
+          description: TOR1-28 TO SL31-NIC6-1
+          length: 1100mm
+      - port: 29 # SL31
+        device:
+          type: server
+          location: u20
+          component: data7
+          port: 1
+        cable:
+          part_number: 03GT404
+          type: QSFP-200G DAC
+          description: TOR1-29 TO SL31-NIC7-1
+          length: 1050mm
+      - port: 30 # SL31
+        device:
+          type: server
+          location: u20
+          component: data8
+          port: 1
+        cable:
+          part_number: 03GT405
+          type: QSFP-200G DAC
+          description: TOR1-30 TO SL31-NIC8-1
+          length: 1050mm
+      - port: 31 # SL31
+        device:
+          type: server
+          location: u20
+          component: data9
+          port: 1
+        cable:
+          part_number: 03GT406
+          type: QSFP-200G DAC
+          description: TOR1-31 TO SL31-NIC9-1
+          length: 1000mm
+      - port: 33 # SL17
+        device:
+          type: server
+          location: u34
+          component: data1
+          port: 1
+        ip_address:
+          - type: bgp
+            protocol: 4
+            required: True
+            value: 172.0.0.97
+        cable:
+          part_number: 03GT407
+          type: QSFP-200G DAC
+          description: TOR1-33 TO SL17-NIC1-1
+          length: 900mm
+      - port: 34 # SL17
+        device:
+          type: server
+          location: u34
+          component: data2
+          port: 1
+        cable:
+          part_number: 03GT408
+          type: QSFP-200G DAC
+          description: TOR1-34 TO SL17-NIC2-1
+          length: 900mm
+      - port: 35 # SL17
+        device:
+          type: server
+          location: u34
+          component: data3
+          port: 1
+        cable:
+          part_number: 03GT409
+          type: QSFP-200G DAC
+          description: TOR1-35 TO SL17-NIC3-1
+          length: 1000mm
+      - port: 36 # SL17
+        device:
+          type: server
+          location: u34
+          component: data4
+          port: 1
+        cable:
+          part_number: 03GT410
+          type: QSFP-200G DAC
+          description: TOR1-36 TO SL17-NIC4-1
+          length: 1000mm
+      - port: 37 # SL17
+        device:
+          type: server
+          location: u34
+          component: data5
+          port: 1
+        cable:
+          part_number: 03GT411
+          type: QSFP-200G DAC
+          description: TOR1-37 TO SL17-NIC5-1
+          length: 1050mm
+      - port: 38 # SL17
+        device:
+          type: server
+          location: u34
+          component: data6
+          port: 1
+        cable:
+          part_number: 03GT412
+          type: QSFP-200G DAC
+          description: TOR1-38 TO SL17-NIC6-1
+          length: 1050mm
+      - port: 39 # SL17
+        device:
+          type: server
+          location: u34
+          component: data7
+          port: 1
+        cable:
+          part_number: 03GT413
+          type: QSFP-200G DAC
+          description: TOR1-39 TO SL17-NIC7-1
+          length: 1150mm
+      - port: 40 # SL17
+        device:
+          type: server
+          location: u34
+          component: data8
+          port: 1
+        cable:
+          part_number: 03GT414
+          type: QSFP-200G DAC
+          description: TOR1-40 TO SL17-NIC8-1
+          length: 1150mm
+      - port: 41 # SL17
+        device:
+          type: server
+          location: u34
+          component: data9
+          port: 1
+        cable:
+          part_number: 03GT415
+          type: QSFP-200G DAC
+          description: TOR1-41 TO SL17-NIC9-1
+          length: 1150mm
+      - port: 55 # sl39
+        device:
+          type: server
+          location: u12
+          component: data1
+          port: 1
+        ip_address:
+          - type: bgp
+            protocol: 4
+            required: True
+            value: 172.0.0.93
+        cable:
+          part_number: 03GT416
+          type: QSFP-200G DAC
+          description: TOR1-55 TO SL39-NIC1-1
+          length: 1500mm
+      - port: 56 # sl39
+        device:
+          type: server
+          location: u12
+          component: data2
+          port: 1
+        cable:
+          part_number: 03GT417
+          type: QSFP-200G DAC
+          description: TOR1-56 TO SL39-NIC2-1
+          length: 1500mm
+      - port: 57 # sl39
+        device:
+          type: server
+          location: u12
+          component: data3
+          port: 1
+        cable:
+          part_number: 03GT418
+          type: QSFP-200G DAC
+          description: TOR1-57 TO SL39-NIC3-1
+          length: 1450mm
+      - port: 58 # sl39
+        device:
+          type: server
+          location: u12
+          component: data4
+          port: 1
+        cable:
+          part_number: 03GT419
+          type: QSFP-200G DAC
+          description: TOR1-58 TO SL39-NIC4-1
+          length: 1450mm
+      - port: 59 # sl39
+        device:
+          type: server
+          location: u12
+          component: data5
+          port: 1
+        cable:
+          part_number: 03GT420
+          type: QSFP-200G DAC
+          description: TOR1-59 TO SL39-NIC5-1
+          length: 1400mm
+      - port: 60 # sl39
+        device:
+          type: server
+          location: u12
+          component: data6
+          port: 1
+        cable:
+          part_number: 03GT421
+          type: QSFP-200G DAC
+          description: TOR1-60 TO SL39-NIC6-1
+          length: 1400mm
+      - port: 61 # sl39
+        device:
+          type: server
+          location: u12
+          component: data7
+          port: 1
+        cable:
+          part_number: 03GT422
+          type: QSFP-200G DAC
+          description: TOR1-61 TO SL39-NIC7-1
+          length: 1350mm
+      - port: 62 # sl39
+        device:
+          type: server
+          location: u12
+          component: data8
+          port: 1
+        cable:
+          part_number: 03GT423
+          type: QSFP-200G DAC
+          description: TOR1-62 TO SL39-NIC8-1
+          length: 1350mm
+      - port: 63 # sl39
+        device:
+          type: server
+          location: u12
+          component: data9
+          port: 1
+        cable:
+          part_number: 03GT424
+          type: QSFP-200G DAC
+          description: TOR1-63 TO SL39-NIC9-1
+          length: 1300mm
+      - port: mgmt # sl30
+        device:
+          type: switch_tor
+          location: u21
+          component: mtor1
+          port: 28
+        cable:
+          part_number: 86Y4096
+          type: Cat5e
+          description: MTOR1-28_TO_TOR1<---> 
+          length: 575mm
+  - name: tor2
+    vendor: Arista
+    ims_models:
+      - DCS-7060DX5-64S-R
+      - Arista DCS-7060DX5-64S-R
+      - Arista-DCS-7060DX5-64S-R
+    model_aliases:
+      - DCS-7060DX5-64S-R
+      - Arista DCS-7060DX5-64S-R
+      - Arista-DCS-7060DX5-64S-R
+    class: null
+    ip_address: 192.168.0.118 # 3rd Octet set by rack index
+    aggregation:
+      type: ecmp # options?
+      partners:
+        - tor1
+    ports:
+      - port: 1 # sl09
+        device:
+          type: server
+          location: u42
+          component: data1
+          port: 2
+        ip_address:
+          - type: bgp
+            protocol: 4
+            required: True
+            value: 172.0.0.227
+        cable:
+          part_number: 03GT425
+          type: QSFP-200G DAC
+          description: TOR2-1 TO SL09-NIC1-2
+          length: 1150mm
+      - port: 2 # sl09
+        device:
+          type: server
+          location: u42
+          component: data2
+          port: 2
+        cable:
+          part_number: 03GT426
+          type: QSFP-200G DAC
+          description: TOR2-2 TO SL09-NIC2-2
+          length: 1150mm
+      - port: 3 # sl09
+        device:
+          type: server
+          location: u42
+          component: data3
+          port: 2
+        cable:
+          part_number: 03GT427
+          type: QSFP-200G DAC
+          description: TOR2-3 TO SL09-NIC3-2
+          length: 1250mm
+      - port: 4 # sl09
+        device:
+          type: server
+          location: u42
+          component: data4
+          port: 2
+        cable:
+          part_number: 03GT428
+          type: QSFP-200G DAC
+          description: TOR2-4 TO SL09-NIC4-2
+          length: 1250mm
+      - port: 5 # sl09
+        device:
+          type: server
+          location: u42
+          component: data5
+          port: 2
+        cable:
+          part_number: 03GT429
+          type: QSFP-200G DAC
+          description: TOR2-5 TO SL09-NIC5-2
+          length: 1300mm
+      - port: 6 # sl09
+        device:
+          type: server
+          location: u42
+          component: data6
+          port: 2
+        cable:
+          part_number: 03GT430
+          type: QSFP-200G DAC
+          description: TOR2-6 TO SL09-NIC6-2
+          length: 1300mm
+      - port: 7 # sl09
+        device:
+          type: server
+          location: u42
+          component: data7
+          port: 2
+        cable:
+          part_number: 03GT431
+          type: QSFP-200G DAC
+          description: TOR2-7 TO SL09-NIC7-2
+          length: 1400mm
+      - port: 8 # sl09
+        device:
+          type: server
+          location: u42
+          component: data8
+          port: 2
+        cable:
+          part_number: 03GT432
+          type: QSFP-200G DAC
+          description: TOR2-8 TO SL09-NIC8-2
+          length: 1400mm
+      - port: 9 # sl09
+        device:
+          type: server
+          location: u42
+          component: data9
+          port: 2
+        cable:
+          part_number: 03GT433
+          type: QSFP-200G DAC
+          description: TOR2-9 TO SL09-NIC9-2
+          length: 1400mm
+      - port: 11 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 12 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 13 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 14 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 15 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 16 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 17 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 18 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 19 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 20 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 21 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 22 # 
+        device:
+          type: agg
+          location: remote
+          component: agg
+          port: null
+      - port: 23 # SL31
+        device:
+          type: server
+          location: u20
+          component: data1
+          port: 2
+        ip_address:
+          - type: bgp
+            protocol: 4
+            required: True
+            value: 172.0.0.223
+        cable:
+          part_number: 03GT434
+          type: QSFP-200G DAC
+          description: TOR2-23 TO SL31-NIC1-2
+          length: 1250mm
+      - port: 24 # SL31
+        device:
+          type: server
+          location: u20
+          component: data2
+          port: 2
+        cable:
+          part_number: 03GT435
+          type: QSFP-200G DAC
+          description: TOR2-24 TO SL31-NIC2-2
+          length: 1250mm
+      - port: 25 # SL31
+        device:
+          type: server
+          location: u20
+          component: data3
+          port: 2
+        cable:
+          part_number: 03GT436
+          type: QSFP-200G DAC
+          description: TOR2-25 TO SL31-NIC3-2
+          length: 1200mm
+      - port: 26 # SL31
+        device:
+          type: server
+          location: u20
+          component: data4
+          port: 2
+        cable:
+          part_number: 03GT437
+          type: QSFP-200G DAC
+          description: TOR2-26 TO SL31-NIC4-2
+          length: 1200mm
+      - port: 27 # SL31
+        device:
+          type: server
+          location: u20
+          component: data5
+          port: 2
+        cable:
+          part_number: 03GT438
+          type: QSFP-200G DAC
+          description: TOR2-27 TO SL31-NIC5-2
+          length: 1150mm
+      - port: 28 # SL31
+        device:
+          type: server
+          location: u20
+          component: data6
+          port: 2
+        cable:
+          part_number: 03GT439
+          type: QSFP-200G DAC
+          description: TOR2-28 TO SL31-NIC6-2
+          length: 1150mm
+      - port: 29 # SL31
+        device:
+          type: server
+          location: u20
+          component: data7
+          port: 2
+        cable:
+          part_number: 03GT440
+          type: QSFP-200G DAC
+          description: TOR2-29 TO SL31-NIC7-2
+          length: 1100mm
+      - port: 30 # SL31
+        device:
+          type: server
+          location: u20
+          component: data8
+          port: 2
+        cable:
+          part_number: 03GT441
+          type: QSFP-200G DAC
+          description: TOR2-30 TO SL31-NIC8-2
+          length: 1100mm
+      - port: 31 # SL31
+        device:
+          type: server
+          location: u20
+          component: data9
+          port: 2
+        cable:
+          part_number: 03GT442
+          type: QSFP-200G DAC
+          description: TOR2-31 TO SL31-NIC9-2
+          length: 1050mm
+      - port: 33 # SL17
+        device:
+          type: server
+          location: u34
+          component: data1
+          port: 2
+        ip_address:
+          - type: bgp
+            protocol: 4
+            required: True
+            value: 172.0.0.225
+        cable:
+          part_number: 03GT443
+          type: QSFP-200G DAC
+          description: TOR2-33 TO SL17-NIC1-2
+          length: 800mm
+      - port: 34 # SL17
+        device:
+          type: server
+          location: u34
+          component: data2
+          port: 2
+        cable:
+          part_number: 03GT444
+          type: QSFP-200G DAC
+          description: TOR2-34 TO SL17-NIC2-2
+          length: 800mm
+      - port: 35 # SL17
+        device:
+          type: server
+          location: u34
+          component: data3
+          port: 2
+        cable:
+          part_number: 03GT445
+          type: QSFP-200G DAC
+          description: TOR2-35 TO SL17-NIC3-2
+          length: 900mm
+      - port: 36 # SL17
+        device:
+          type: server
+          location: u34
+          component: data4
+          port: 2
+        cable:
+          part_number: 03GT446
+          type: QSFP-200G DAC
+          description: TOR2-36 TO SL17-NIC4-2
+          length: 900mm
+      - port: 37 # SL17
+        device:
+          type: server
+          location: u34
+          component: data5
+          port: 2
+        cable:
+          part_number: 03GT447
+          type: QSFP-200G DAC
+          description: TOR2-37 TO SL17-NIC5-2
+          length: 950mm
+      - port: 38 # SL17
+        device:
+          type: server
+          location: u34
+          component: data6
+          port: 2
+        cable:
+          part_number: 03GT448
+          type: QSFP-200G DAC
+          description: TOR2-38 TO SL17-NIC6-2
+          length: 950mm
+      - port: 39 # SL17
+        device:
+          type: server
+          location: u34
+          component: data7
+          port: 2
+        cable:
+          part_number: 03GT449
+          type: QSFP-200G DAC
+          description: TOR2-39 TO SL17-NIC7-2
+          length: 1050mm
+      - port: 40 # SL17
+        device:
+          type: server
+          location: u34
+          component: data8
+          port: 2
+        cable:
+          part_number: 03GT450
+          type: QSFP-200G DAC
+          description: TOR2-40 TO SL17-NIC8-2
+          length: 1050mm
+      - port: 41 # SL17
+        device:
+          type: server
+          location: u34
+          component: data9
+          port: 2
+        cable:
+          part_number: 03GT451
+          type: QSFP-200G DAC
+          description: TOR2-41 TO SL17-NIC9-2
+          length: 1050mm
+      - port: 55 # sl39
+        device:
+          type: server
+          location: u12
+          component: data1
+          port: 2
+        ip_address:
+          - type: bgp
+            protocol: 4
+            required: True
+            value: 172.0.0.221
+        cable:
+          part_number: 03GT452
+          type: QSFP-200G DAC
+          description: TOR2-55 TO SL39-NIC1-2
+          length: 1500mm
+      - port: 56 # sl39
+        device:
+          type: server
+          location: u12
+          component: data2
+          port: 2
+        cable:
+          part_number: 03GT453
+          type: QSFP-200G DAC
+          description: TOR2-56 TO SL39-NIC2-2
+          length: 1500mm
+      - port: 57 # sl39
+        device:
+          type: server
+          location: u12
+          component: data3
+          port: 2
+        cable:
+          part_number: 03GT454
+          type: QSFP-200G DAC
+          description: TOR2-57 TO SL39-NIC3-2
+          length: 1500mm
+      - port: 58 # sl39
+        device:
+          type: server
+          location: u12
+          component: data4
+          port: 2
+        cable:
+          part_number: 03GT455
+          type: QSFP-200G DAC
+          description: TOR2-58 TO SL39-NIC4-2
+          length: 1500mm
+      - port: 59 # sl39
+        device:
+          type: server
+          location: u12
+          component: data5
+          port: 2
+        cable:
+          part_number: 03GT456
+          type: QSFP-200G DAC
+          description: TOR2-59 TO SL39-NIC5-2
+          length: 1450mm
+      - port: 60 # sl39
+        device:
+          type: server
+          location: u12
+          component: data6
+          port: 2
+        cable:
+          part_number: 03GT457
+          type: QSFP-200G DAC
+          description: TOR2-60 TO SL39-NIC6-2
+          length: 1450mm
+      - port: 61 # sl39
+        device:
+          type: server
+          location: u12
+          component: data7
+          port: 2
+        cable:
+          part_number: 03GT458
+          type: QSFP-200G DAC
+          description: TOR2-61 TO SL39-NIC7-2
+          length: 1400mm
+      - port: 62 # sl39
+        device:
+          type: server
+          location: u12
+          component: data8
+          port: 2
+        cable:
+          part_number: 03GT459
+          type: QSFP-200G DAC
+          description: TOR2-62 TO SL39-NIC8-2
+          length: 1400mm
+      - port: 63 # sl39
+        device:
+          type: server
+          location: u12
+          component: data9
+          port: 2
+        cable:
+          part_number: 03GT460
+          type: QSFP-200G DAC
+          description: TOR2-63 TO SL39-NIC9-2
+          length: 1350mm
+      - port: mgmt # sl30
+        device:
+          type: switch_tor
+          location: u21
+          component: mtor1
+          port: 27
+        cable:
+          part_number: 86Y4095
+          type: Cat5e
+          description: MTOR1-27 TO TOR2 <--->
+          length: 675mm
+
+pdus:
+  - name: pdu_1 # right rear when viewed from front of rack
+    ims_models:
+      - C2W36TE-GPAE2M99/SA
+    model_aliases:
+      - C2W36TE-GPAE2M99/SA
+    egress: bottom # bottom or top
+    ip_address: 192.168.0.111
+    max_power: 20 # kilowatts
+    max_port_power: 2400 # watts
+    ports:
+      - port: 10 # sl17
+        psu:
+          location: u34
+          position: 5
+        cable:
+          part_number: 03GT546
+          type: C19-C20_Power
+          description: PDU1-D10/U36 TO SL17-PS6 (1m)
+          length: 1m
+      - port: 11 # sl17
+        psu:
+          location: u34
+          position: 4
+        cable:
+          part_number: 03GT549
+          type: C19-C20_Power
+          description: PDU1-D11/U35 TO SL17-PS5 (1m)
+          length: 1m
+      - port: 12 # sl25
+        psu:
+          location: u26
+          position: 1
+        cable:
+          part_number: 03GT582
+          type: C19-C20_Power
+          description: PDU1-D12/U34 TO TOR2-PS1 (2.5m)
+          length: 2.5m
+      - port: 13 # sl09
+        psu:
+          location: u42
+          position: 4
+        cable:
+          part_number: 03GT553
+          type: C19-C20_Power
+          description: PDU1-D13/U29 TO SL09-PS5 (1.5m)
+          length: 1.5m
+      - port: 14 # sl31
+        psu:
+          location: u20
+          position: 5
+        cable:
+          part_number: 03GT547
+          type: C19-C20_Power
+          description: PDU1-D14/U32 TO SL31-PS6 (1.5m)
+          length: 1.5m
+      - port: 15 # sl31
+        psu:
+          location: u20
+          position: 4
+        cable:
+          part_number: 03GT550
+          type: C19-C20_Power
+          description: PDU1-D15/U31 TO SL31-PS5 (1.5m)
+          length: 1.5m
+      - port: 16 # sl39
+        psu:
+          location: u12
+          position: 4
+        cable:
+          part_number: 03GT551
+          type: C19-C20_Power
+          description: PDU1-D16/U30 TO SL39-PS5 (2m)
+          length: 2m
+      - port: 17 # sl09
+        psu:
+          location: u42
+          position: 5
+        cable:
+          part_number: 03GT552
+          type: C19-C20_Power
+          description: PDU1-D17/U33 TO SL09-PS6 (1.2m)
+          length: 1.2m
+      - port: 18 # sl39
+        psu:
+          location: u12
+          position: 5
+        cable:
+          part_number: 03GT548
+          type: C19-C20_Power
+          description: PDU1-D18/U28 TO SL39-PS6 (1.5m)
+          length: 1.5m
+      - port: 20 # sl30
+        psu:
+          location: u21
+          position: 1
+        cable:
+          part_number: 03GT583
+          type: C13-C14_Power
+          description: PDU1-D20/U26 TO MTOR-PS1 (1.5m)
+          length: 1.5m
+      - port: 28 # sl17
+        psu:
+          location: u34
+          position: 1
+        cable:
+          part_number: 03GT554
+          type: C19-C20_Power
+          description: PDU1-D28/U18 TO SL17-PS2 (1.2m)
+          length: 1.2m
+      - port: 29 # sl09
+        psu:
+          location: u42
+          position: 1
+        cable:
+          part_number: 03GT560
+          type: C19-C20_Power
+          description: PDU1-D29/U17 TO SL09-PS2 (1.5m)
+          length: 1.5m
+      - port: 30 # sl17
+        psu:
+          location: u34
+          position: 0
+        cable:
+          part_number: 03GT557
+          type: C19-C20_Power
+          description: PDU1-D30/U16 TO SL17-PS1 (1.2m)
+          length: 1.2m
+      - port: 31 # sl31
+        psu:
+          location: u20
+          position: 1
+        cable:
+          part_number: 03GT555
+          type: C19-C20_Power
+          description: PDU1-D31/U15 TO SL31-PS2 (1.2m)
+          length: 1.2m
+      - port: 32 # sl31
+        psu:
+          location: u20
+          position: 0
+        cable:
+          part_number: 03GT558
+          type: C19-C20_Power
+          description: PDU1-D32/U14 TO SL31-PS1 (1m)
+          length: 1m
+      - port: 33 # sl09
+        psu:
+          location: u42
+          position: 0
+        cable:
+          part_number: 03GT561
+          type: C19-C20_Power
+          description: PDU1-D33/U13 TO SL09-PS1 (1.5m)
+          length: 1.5m
+      - port: 34 # sl27
+        psu:
+          location: u24
+          position: 1
+        cable:
+          part_number: 03GT584
+          type: C19-C20_Power
+          description: PDU1-D34/U12 TO TOR1-PS1 (2m)
+          length: 2m
+      - port: 35 # sl39
+        psu:
+          location: u12
+          position: 1
+        cable:
+          part_number: 03GT556
+          type: C19-C20_Power
+          description: PDU1-D35/U11 TO SL39-PS2 (1.5m)
+          length: 1.5m
+      - port: 36 # sl39
+        psu:
+          location: u12
+          position: 0
+        cable:
+          part_number: 03GT559
+          type: C19-C20_Power
+          description: PDU1-D36/U10 TO SL39-PS1 (1m)
+          length: 1m
+
+  - name: pdu_2 # left rear when viewed from front of rack
+    ims_models:
+      - C2W36TE-GPAE2M99/SA
+    model_aliases:
+      - C2W36TE-GPAE2M99/SA
+    egress: bottom # bottom or top
+    ip_address: 192.168.0.112
+    max_power: 20 # kilowatts
+    max_port_power: 2400 # watts
+    ports:
+      - port: 10 # sl17
+        psu:
+          location: u34
+          position: 7
+        cable:
+          part_number: 03GT562
+          type: C19-C20_Power
+          description: PDU2-D10/U36 TO SL17-PS8 (1m)
+          length: 1m
+      - port: 11 # sl17
+        psu:
+          location: u34
+          position: 6
+        cable:
+          part_number: 03GT565
+          type: C19-C20_Power
+          description: PDU2-D11/U35 TO SL17-PS7 (1m)
+          length: 1m
+      - port: 12 # sl25
+        psu:
+          location: u26
+          position: 2
+        cable:
+          part_number: 03GT585
+          type: C19-C20_Power
+          description: PDU2-D12/U34 TO TOR2-PS2 (3m)
+          length: 3m
+      - port: 13 # sl09
+        psu:
+          location: u42
+          position: 6
+        cable:
+          part_number: 03GT569
+          type: C19-C20_Power
+          description: PDU2-D13/U29 TO SL09-PS7 (1.5m)
+          length: 1.5m
+      - port: 14 # sl31
+        psu:
+          location: u20
+          position: 7
+        cable:
+          part_number: 03GT563
+          type: C19-C20_Power
+          description: PDU2-D14/U32 TO SL31-PS8 (1.5m)
+          length: 1.5m
+      - port: 15 # sl31
+        psu:
+          location: u20
+          position: 6
+        cable:
+          part_number: 03GT566
+          type: C19-C20_Power
+          description: PDU2-D15/U31 TO SL31-PS7 (1.5m)
+          length: 1.5m
+      - port: 16 # sl39
+        psu:
+          location: u12
+          position: 6
+        cable:
+          part_number: 03GT567
+          type: C19-C20_Power
+          description: PDU2-D16/U30 TO SL39-PS7 (1.5m)
+          length: 1.5m
+      - port: 17 # sl09
+        psu:
+          location: u42
+          position: 7
+        cable:
+          part_number: 03GT568
+          type: C19-C20_Power
+          description: PDU2-D17/U33 TO SL09-PS8 (1.2m)
+          length: 1.2m
+      - port: 18 # sl39
+        psu:
+          location: u12
+          position: 7
+        cable:
+          part_number: 03GT564
+          type: C19-C20_Power
+          description: PDU2-D18/U28 TO SL39-PS8 (1.5m)
+          length: 1.5m
+      - port: 20 # sl30
+        psu:
+          location: u21
+          position: 2
+        cable:
+          part_number: 03GT586
+          type: C13-C14_Power
+          description: PDU2-D20/U26 TO MTOR-PS2 (1.5m)
+          length: 1.5m
+      - port: 28 # sl17
+        psu:
+          location: u34
+          position: 3
+        cable:
+          part_number: 03GT570
+          type: C19-C20_Power
+          description: PDU2-D28/U18 TO SL17-PS4 (1.2m)
+          length: 1.2m
+      - port: 29 # sl09
+        psu:
+          location: u42
+          position: 3
+        cable:
+          part_number: 03GT576
+          type: C19-C20_Power
+          description: PDU2-D29/U17 TO SL09-PS4 (1.5m)
+          length: 1.5m
+      - port: 30 # sl17
+        psu:
+          location: u34
+          position: 2
+        cable:
+          part_number: 03GT573
+          type: C19-C20_Power
+          description: PDU2-D30/U16 TO SL17-PS3 (1.2m)
+          length: 1.2m
+      - port: 31 # sl31
+        psu:
+          location: u20
+          position: 3
+        cable:
+          part_number: 03GT571
+          type: C19-C20_Power
+          description: PDU2-D31/U15 TO SL31-PS4 (1.2m)
+          length: 1.2m
+      - port: 32 # sl31
+        psu:
+          location: u20
+          position: 2
+        cable:
+          part_number: 03GT574
+          type: C19-C20_Power
+          description: PDU2-D32/U14 TO SL31-PS3 (1m)
+          length: 1m
+      - port: 33 # sl09
+        psu:
+          location: u42
+          position: 2
+        cable:
+          part_number: 03GT577
+          type: C19-C20_Power
+          description: PDU2-D33/U13 TO SL09-PS3 (1.5m)
+          length: 1.5m
+      - port: 34 # sl27
+        psu:
+          location: u24
+          position: 2
+        cable:
+          part_number: 03GT587
+          type: C19-C20_Power
+          description: PDU2-D34/U12 TO TOR1-PS2 (2.5m)
+          length: 2.5m
+      - port: 35 # sl39
+        psu:
+          location: u12
+          position: 3
+        cable:
+          part_number: 03GT572
+          type: C19-C20_Power
+          description: PDU2-D35/U11 TO SL39-PS4 (1.5m)
+          length: 1.5m
+      - port: 36 # sl39
+        psu:
+          location: u12
+          position: 2
+        cable:
+          part_number: 03GT575
+          type: C19-C20_Power
+          description: PDU2-D36/U10 TO SL39-PS3 (1m)
+          length: 1m
