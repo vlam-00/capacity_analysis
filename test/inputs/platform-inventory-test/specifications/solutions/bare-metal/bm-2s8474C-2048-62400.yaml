@@ -1,0 +1,143 @@
+name: bm-2s8474C-2048-62400
+version: 1.0.0.1
+versions:
+  dev: 1.0.0.3
+  integration: 1.0.0.1
+  staging: 1.0.0.1
+  production: 1.0.0.1
+type: bare-metal
+production_ready: True
+auto_updatable: False
+server_configurations:
+  - id: SR650
+    deployment:
+      baseline: "3.50-2.25"
+      evaluation: "6.20-3.50"
+      dev: "6.20-3.50"
+      integration: "3.50-2.25"
+      staging: "3.50-2.25"
+      production: "3.50-2.25"
+    processor_configurations:
+      - processor: Xeon-Sapphire-Rapids 8474C-PLATINUM
+        physical_cores: 48
+    max_power: 1043
+    memory_configurations:
+      - quantity: 32
+        capacity: 64
+        type: DDR5
+        speed: 4800
+    nvme_configurations:
+      - nvme_config:
+          - id: "7450-480"
+            quantity: 2
+            firmware:
+              baseline: "E2MU204"
+              evaluation: "E2MU204"
+              dev: "E2MU204"
+              integration: "E2MU204"
+              staging: "E2MU204"
+              production: "E2MU204"
+            slots:
+              - hw_addr: "0000:c8:00.0"
+                name: nvme1
+              - hw_addr: "0000:c9:00.0"
+                name: nvme2
+          - id: "7450-7.6"
+            quantity: 8
+            firmware:
+              baseline: "E2MI201"
+              evaluation: "E2MI201"
+              dev: "E2MI201"
+              integration: "E2MI201"
+              staging: "E2MI201"
+              production: "E2MI201"
+            slots:
+              - hw_addr: "0000:ca:00.0"
+                name: nvme3
+              - hw_addr: "0000:cb:00.0"
+                name: nvme4
+              - hw_addr: "0000:cc:00.0"
+                name: nvme5
+              - hw_addr: "0000:cd:00.0"
+                name: nvme6
+              - hw_addr: "0000:ce:00.0"
+                name: nvme7
+              - hw_addr: "0000:cf:00.0"
+                name: nvme8
+              - hw_addr: "0000:d0:00.0"
+                name: nvme9
+              - hw_addr: "0000:d1:00.0"
+                name: nvme10
+    nic_configurations:
+      - nic_config:
+          - id: "elba"
+            quantity: 1
+            firmware:
+              baseline: "151G40-112723"
+              evaluation: "151G40-112723"
+              dev: "151G40-112723"
+              integration: "151G40-112723"
+              staging: "151G40-112723"
+              production: "151G40-112723"
+            slots:
+              - hw_addr: "0000:17:00.0"
+                name: data1
+                required_ports: [0, 1, 2]
+          - id: "4XC7A08277"
+            quantity: 1
+            slots:
+              - hw_addr: "0000:16:00.0"
+                name: inband1
+                required_ports: [1]
+    bmc_configurations:
+      - bmc_config:
+          - id: "bmc1"
+            type: "dedicated"
+            description: "The XCC Mgmt Dedicated Port"
+            device: "onboard"
+            port: 1
+    tpm_configurations:
+      - tpm_config:
+        - id: NPCT75x
+          firmware:
+            baseline: "lenovo-base"
+            evaluation: "lenovo-base"
+            dev: "lenovo-base"
+            integration: "lenovo-base"
+            staging: "lenovo-base"
+            production: "lenovo-base"
+    boot_order:
+      - mgmt_network
+    boot_configuration:
+      baseline:
+        runtime: "full-boot-no-secure-vmd"
+        sanitize: "full-boot-no-secure-vmd"
+      evaluation:
+        runtime: "full-boot-no-secure-vmd"
+        sanitize: "full-boot-no-secure-vmd"
+      dev:
+        runtime: "full-boot-no-secure-vmd"
+        sanitize: "full-boot-no-secure-vmd"
+      integration:
+        runtime: "full-boot-no-secure-vmd"
+        sanitize: "full-boot-no-secure-vmd"
+      staging:
+        runtime: "full-boot-no-secure-vmd"
+        sanitize: "full-boot-no-secure-vmd"
+      production:
+        runtime: "full-boot-no-secure-vmd"
+        sanitize: "full-boot-no-secure-vmd"
+zone_config:
+  - section: compute_node
+    preferred: true
+    role: vpc_bare_metal
+    deployments:
+      - ng_vpc_mzone
+    workload: vpc_bare_metal
+    nic_mode: all
+    node_config:
+      arch: amd64
+      compute: true
+      edge: false
+      smartnic: "pensando"
+      baremetal: true
