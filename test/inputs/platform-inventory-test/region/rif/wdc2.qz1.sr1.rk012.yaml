@@ -1,0 +1,1079 @@
+global:
+    fzone: wdc2
+    qzone: qz1
+    room: sr1
+    rackid: rk012
+pdu_nodes:
+    - hostname: wdc2-qz1-sr1-rk012-pdu-1
+      host_ip: 192.168.198.111
+      mac: ffffffffffff
+      manufacturer: Server Tech
+      model: STV-4523G/SB
+      serialnumber: wdc2.sr01.rk12.slg
+    - hostname: wdc2-qz1-sr1-rk012-pdu-2
+      host_ip: 192.168.198.112
+      mac: ffffffffffff
+      manufacturer: Server Tech
+      model: STV-4523G/SB
+      serialnumber: wdc2.sr01.rk12.slh
+
+points:
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 65920
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.198.4
+      fp_host: 10.22.70.217
+      fp2_ip: 172.27.146.5
+      host_ip: 192.168.198.5
+      bmc_mac: 3CECEF34BD32
+      da4_mac: 7CC2551256A4
+      fp_mac: 1070FD30ABE0,1070FD30ABD0
+      uuid: 00000000-0000-0000-0000-3cecef34bd32
+      u_position: 2
+      servername_u_position: 2
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAJ22C11010
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 0
+      pcap_min: 0
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: wdc2-qz1-sr1-rk012-s02
+      solid_state_device:
+      - psid: PTLH8AYH750AK1LY7D4VQQG1NE40F6BJ
+        serialnumber: S6ETNA0T602186
+      - psid: 6MU5ZS4WY9E0NB7CQTCCX4LK7HUU1X2X
+        serialnumber: S6ETNA0T602203
+      - psid: X7FC1LWE1LR8Q4A0M9G3M9R5P3UW550J
+        serialnumber: S6ETNA0T602329
+      - psid: PK045GXV6VU31HGX5BS32H02Z6XTY0J7
+        serialnumber: S6ETNA0T603182
+      - psid: 00F3R3ZX0CKJ675VLDCW6D442XC8LF7N
+        serialnumber: S6ETNA0T603183
+      - psid: QKS5978FC49BSJZAB01H5BVTPYJF3KMS
+        serialnumber: S6ETNA0T603184
+      - psid: RU2N634XL840K039F5ZJYBWA3VR0SXUF
+        serialnumber: S6ETNA0T603292
+      - psid: JHWNU5UAJHPG8TMYDWDF9800JWPY5MB2
+        serialnumber: S6ETNA0T603323
+      - psid: EZKZ9CY8NCAJ5L2KF1YKGBQJPRK1SJVN
+        serialnumber: S6ETNE0T500073
+      - psid: CTLP0PGY8EX10TZ6713RERKDK3CSK426
+        serialnumber: S6ETNE0T500088
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 65920
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.198.24
+      fp_host: 10.22.70.218
+      fp2_ip: 172.27.146.25
+      host_ip: 192.168.198.25
+      bmc_mac: 3CECEF34BD38
+      da4_mac: 7CC2551256AC
+      fp_mac: 1070FD30DDA8,1070FD30CF20
+      uuid: 00000000-0000-0000-0000-3cecef34bd38
+      u_position: 12
+      servername_u_position: 12
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61070
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 0
+      pcap_min: 0
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: wdc2-qz1-sr1-rk012-s12
+      solid_state_device:
+      - psid: RA8E312Z5PK17QD95ETP4ZDVTU5DT1QB
+        serialnumber: S6ETNA0T602212
+      - psid: MU08W6UWESGZC630M7QBL665KDPWJ87G
+        serialnumber: S6ETNA0T602305
+      - psid: 5VWRRGUCBA82V62SA0MW2PYAX17RQRV2
+        serialnumber: S6ETNA0T603294
+      - psid: EAJ2RLEQYTEHNMXGS2BUY0SCR23RV1NE
+        serialnumber: S6ETNA0T603295
+      - psid: AMZVPV2AFUHCFLSA3ZF91YX6PGH17HC6
+        serialnumber: S6ETNA0T603297
+      - psid: 9ARHN61FR5BWVJCR19HVQXLH5CG2QA7A
+        serialnumber: S6ETNA0T603299
+      - psid: F1RKFN1TB34RFBUQE5AWD3TN2PW24K54
+        serialnumber: S6ETNA0T603301
+      - psid: QAYFTQNFRD256UCUHA6UUZC8RVGZWB45
+        serialnumber: S6ETNA0T603328
+      - psid: DGCUFZ5H5JE6W4742BYLPQHCQW1EGJBR
+        serialnumber: S6ETNA0T603330
+      - psid: JEW4YZPP9KV7455RHYP13QX3MH0VQWEL
+        serialnumber: S6ETNE0T500076
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 65920
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.198.28
+      fp_host: 10.22.70.219
+      fp2_ip: 172.27.146.29
+      host_ip: 192.168.198.29
+      bmc_mac: 3CECEF34BA21
+      da4_mac: 7CC2551182A6
+      fp_mac: 1070FD30C010,1070FD30C6B8
+      uuid: 00000000-0000-0000-0000-3cecef34ba21
+      u_position: 14
+      servername_u_position: 14
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61043
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 0
+      pcap_min: 0
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: wdc2-qz1-sr1-rk012-s14
+      solid_state_device:
+      - psid: CJVZSSN5B955N4RE9NSD0E30BS6E6CXC
+        serialnumber: S6ETNA0T602201
+      - psid: 8EEVL8VML37S4X04531RML4W28H0F5BG
+        serialnumber: S6ETNA0T602211
+      - psid: VABRLFDB90TF6K73AQBP0Y27RC3G79R0
+        serialnumber: S6ETNA0T602331
+      - psid: X3TC99VWFBS445E4WF712Z4GZU5URSTL
+        serialnumber: S6ETNA0T602359
+      - psid: C80BPG14WPC3727BPXQLBS7L78G410LG
+        serialnumber: S6ETNA0T603315
+      - psid: CEA18K2YW2XBN7YDMQA30KXH8U90A1AX
+        serialnumber: S6ETNA0T603319
+      - psid: QUA0541T1AD8WYU2CBUQ4901K5MVY1AK
+        serialnumber: S6ETNA0T603321
+      - psid: 8W7HB85Z5W66PBECZWLS8FYGVG5D7QN6
+        serialnumber: S6ETNA0T603325
+      - psid: 7GUBJGAK7ZVMF60XYTA6PRJLZ6DCKME8
+        serialnumber: S6ETNE0T500067
+      - psid: WE81UFN9Y8EMPSSBA0PT2829694NY2E7
+        serialnumber: S6ETNE0T500108
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 65920
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.198.32
+      fp_host: 10.22.70.220
+      fp2_ip: 172.27.146.33
+      host_ip: 192.168.198.33
+      bmc_mac: 3CECEF34B4B0
+      da4_mac: 7CC255117E52
+      fp_mac: 1070FD30B128,1070FD30D610
+      uuid: 00000000-0000-0000-0000-3cecef34b4b0
+      u_position: 16
+      servername_u_position: 16
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61049
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 0
+      pcap_min: 0
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: wdc2-qz1-sr1-rk012-s16
+      solid_state_device:
+      - psid: 7NDHQGKBU62MVRJLTSDC0D8PWNF90UF2
+        serialnumber: S6ETNA0T602332
+      - psid: LVNP2XWJ22B4WNASQTC0K00Z8YNZE9KF
+        serialnumber: S6ETNA0T602391
+      - psid: 5SJWF61F8KVB09W3ZBRWVEG9FKVKUXE8
+        serialnumber: S6ETNA0T602413
+      - psid: EYZ1641J4FFESH4SQLZMD51P4V89XF6S
+        serialnumber: S6ETNA0T603276
+      - psid: JVLX6YBEQEHC4YNR01DYKREXNMN8UL7P
+        serialnumber: S6ETNA0T603290
+      - psid: 2KH39FASF2HN113J91PJMLJDDYFWZ11P
+        serialnumber: S6ETNA0T603291
+      - psid: M0CCYJ1LAFFK8806KFKBPF8L2NWWJHPE
+        serialnumber: S6ETNA0T603300
+      - psid: QGKV2CMC2J28W8BMX6E1H86XG1ZGMLG0
+        serialnumber: S6ETNA0T603302
+      - psid: KK56P10MTJJ4J1U3KENPHMHSUGUKTSTH
+        serialnumber: S6ETNA0T603303
+      - psid: 2L1H57VBMB2JHL0MB8FQ5LG33WY5GRU6
+        serialnumber: S6ETNE0T500075
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 65920
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.198.36
+      fp_host: 10.22.70.221
+      fp2_ip: 172.27.146.37
+      host_ip: 192.168.198.37
+      bmc_mac: 3CECEF34BA25
+      da4_mac: 7CC255125698
+      fp_mac: 1070FD30BC88,1070FD30CB10
+      uuid: 00000000-0000-0000-0000-3cecef34ba25
+      u_position: 18
+      servername_u_position: 18
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61384
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 0
+      pcap_min: 0
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: wdc2-qz1-sr1-rk012-s18
+      solid_state_device:
+      - psid: Q4WTZ6F2CWFZS0XNWZQJTT6DRL54DXKT
+        serialnumber: S6ETNA0T602692
+      - psid: 81EX50HG56E9VS4YKS60V38RL8EV83JH
+        serialnumber: S6ETNA0T602730
+      - psid: RE0JU5X7377N11B9WFVLZKADYP89VL3M
+        serialnumber: S6ETNA0T602732
+      - psid: 5WZT08KN8Q81CF9Y594LK2A314DT604L
+        serialnumber: S6ETNA0T602733
+      - psid: QNXM1V79EUZRV25SV18F414FJXQVY40K
+        serialnumber: S6ETNE0T500077
+      - psid: GYBVJTP6FM6A22QGE27GF04RFJT3BEQP
+        serialnumber: S6ETNE0T500079
+      - psid: T9Q7MDQHK0KDV6YFKXD4QCK22E8R4XNP
+        serialnumber: S6ETNE0T500081
+      - psid: 4W4S6VAEZCXFYQ6LR0761827MH1055Z0
+        serialnumber: S6ETNE0T500083
+      - psid: ZZFXQP4BNVJYBZVSCRHF82GDM8KGBTE1
+        serialnumber: S6ETNE0T500084
+      - psid: FYD0XMZZM03VAPUU3S96AKD8C70H9ABE
+        serialnumber: S6ETNE0T500092
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 65920
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.198.40
+      fp_host: 10.22.70.222
+      fp2_ip: 172.27.146.41
+      host_ip: 192.168.198.41
+      bmc_mac: 3CECEF34BA28
+      da4_mac: 7CC255125478
+      fp_mac: 1070FD30AC50,1070FD30CB58
+      uuid: 00000000-0000-0000-0000-3cecef34ba28
+      u_position: 20
+      servername_u_position: 20
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61383
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 0
+      pcap_min: 0
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: wdc2-qz1-sr1-rk012-s20
+      solid_state_device:
+      - psid: ATUCBGUJGP5Z2GFVTUQMDQ57M7K3N2P0
+        serialnumber: S6ETNA0T602250
+      - psid: D75W7WP879DELSD8EXVCLERAC08D6PMM
+        serialnumber: S6ETNA0T602351
+      - psid: HL8TGJT8E08LE32MZKTZVPAGVLASYXDU
+        serialnumber: S6ETNA0T602420
+      - psid: WLTQ2NTB7LXGX7H9SC17ZYXMBRTGUSXY
+        serialnumber: S6ETNA0T602679
+      - psid: AA0D5YE6FXL60VBUK9HLVJ9K67SBAZ7C
+        serialnumber: S6ETNA0T602684
+      - psid: V3ZUJUSNDS45GSX0H1DGE83LQSCK5WUZ
+        serialnumber: S6ETNA0T602694
+      - psid: FT1B2C98QET31WYD05SAYGDNC7KL55XJ
+        serialnumber: S6ETNA0T602697
+      - psid: YCKMUMX6FDVGH09DR6XAVS11VA9X3X01
+        serialnumber: S6ETNE0T500098
+      - psid: GT9BN73DLKMBPUCTX6X8ER9755J3QT9Y
+        serialnumber: S6ETNE0T500102
+      - psid: 6FXUVAWJCBAJ54EK5RBG3XZWRXNDZ9JZ
+        serialnumber: S6ETNE0T500103
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 65920
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.198.56
+      fp_host: 10.22.70.223
+      fp2_ip: 172.27.146.57
+      host_ip: 192.168.198.57
+      bmc_mac: 3CECEF34BC47
+      da4_mac: 7CC255125570
+      fp_mac: 1070FD3A200E,1070FD3A231E
+      uuid: 00000000-0000-0000-0000-3cecef34bc47
+      u_position: 28
+      servername_u_position: 28
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C60919
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 0
+      pcap_min: 0
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: wdc2-qz1-sr1-rk012-s28
+      solid_state_device:
+      - psid: 6RUTEXNHKLMU7TU35CJJ8C4VX5PGE8X6
+        serialnumber: S6ETNA0T603257
+      - psid: D7UYNB3BCVGJJ5XBQQNK8ECFGTXE6VZQ
+        serialnumber: S6ETNA0T603287
+      - psid: 9AYF2W5A5MZ12S8RB3TK0K0DBRCYSV5N
+        serialnumber: S6ETNA0T603288
+      - psid: F5G67U28A1Z8AKPER8WD0AQLYTWWPG4H
+        serialnumber: S6ETNA0T603289
+      - psid: CT2A4P5BYU39YEJW5VUAUWUKGPDNA63H
+        serialnumber: S6ETNA0T603296
+      - psid: CC224X1JQ48BUZE5T5K85J0A4J56CSC3
+        serialnumber: S6ETNA0T603304
+      - psid: 19A218C0R8HR6GKZG9W54DDH2DRC5CDB
+        serialnumber: S6ETNA0T603305
+      - psid: 2QQTXX6CRA1KVYJZGSZ0WWJ2Z5UT1EZ1
+        serialnumber: S6ETNA0T603309
+      - psid: ZD7QBPXZRDB0QZEVSEEKE3DL6JS446QZ
+        serialnumber: S6ETNE0T500074
+      - psid: WNVDGD7PRW220QJU4XM2KY8KKZW8HFJX
+        serialnumber: S6ETNE0T500087
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 65920
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.198.60
+      fp_host: 10.22.70.224
+      fp2_ip: 172.27.146.61
+      host_ip: 192.168.198.61
+      bmc_mac: 3CECEF34BD3A
+      da4_mac: 7CC255117E5A
+      fp_mac: 1070FD30CB40,1070FD30B600
+      uuid: 00000000-0000-0000-0000-3cecef34bd3a
+      u_position: 30
+      servername_u_position: 30
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61072
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 0
+      pcap_min: 0
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: wdc2-qz1-sr1-rk012-s30
+      solid_state_device:
+      - psid: 10B3LLHCM43KUPU2UQRUAN6AEUY5XC8X
+        serialnumber: S6ETNA0T602161
+      - psid: SEZNUZMVX8GUFEM1BZ7GMH7DYY7LZ0DE
+        serialnumber: S6ETNA0T602389
+      - psid: NQP2WD59ZSMSVK854P4V4VDLYYS38ZD6
+        serialnumber: S6ETNA0T602718
+      - psid: QHBEBNANTHQZE2NED9LX32A15TWM96UK
+        serialnumber: S6ETNA0T602720
+      - psid: 21HTKZJPQ67PKGMDTQK639KKRP7AE0K9
+        serialnumber: S6ETNA0T602722
+      - psid: F0HPHBVVMYEVQKWJFL8KQHUF6N2TA20J
+        serialnumber: S6ETNA0T602725
+      - psid: N0WZ1ZAAX1CRYMLS2RZQWF4Z37595GV1
+        serialnumber: S6ETNE0T500040
+      - psid: 42XS8Y863NA8N3WAN26UJU24RLZ17T3A
+        serialnumber: S6ETNE0T500100
+      - psid: QGYLFZZR952WFMEJTYMRPMC73NYNZUW3
+        serialnumber: S6ETNE0T500101
+      - psid: YTU8N5VJVSHF0SSW72G8LTM4AMPW69X6
+        serialnumber: S6ETNE0T500107
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 65920
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.198.64
+      fp_host: 10.22.70.225
+      fp2_ip: 172.27.146.65
+      host_ip: 192.168.198.65
+      bmc_mac: 3CECEF34BD2B
+      da4_mac: 7CC255118126
+      fp_mac: 1070FD30B0E0,1070FD356C6A
+      uuid: 00000000-0000-0000-0000-3cecef34bd2b
+      u_position: 32
+      servername_u_position: 32
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61278
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 0
+      pcap_min: 0
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: wdc2-qz1-sr1-rk012-s32
+      solid_state_device:
+      - psid: 1FCFYXKDHBC5D5NYTMPZQBVP3AF0GX84
+        serialnumber: S6ETNA0T602368
+      - psid: BJQ5HRDYF9JPZZEL0F6K47C2UKCXL3YP
+        serialnumber: S6ETNA0T602369
+      - psid: FAJB8XCBN6K5FUTHX8KHFNB5NYBYYUXY
+        serialnumber: S6ETNA0T602394
+      - psid: BS82Q6K9T7U72RQVR0Z8KKTP89ADNHBT
+        serialnumber: S6ETNA0T602414
+      - psid: USEZ69VN353MADQCCLDUHLN78FCGQEH3
+        serialnumber: S6ETNA0T602419
+      - psid: QEXDDQ53J8XELQ0FX5JYED36KWCWQUEX
+        serialnumber: S6ETNA0T602421
+      - psid: 676FKL8PHEB1Q09HAYWH7K0MGFBV3SMJ
+        serialnumber: S6ETNA0T603188
+      - psid: PA4KYLCR9A7P8MBK5Y3X7JR4BHERQRK2
+        serialnumber: S6ETNA0T603192
+      - psid: RYH47H89X1240JBCX2RAS35JD5XJ97CW
+        serialnumber: S6ETNA0T603193
+      - psid: PQX11CDWT1A4MK0NPYDNAVBVDFUB3B69
+        serialnumber: S6ETNA0T603231
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 65920
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.198.68
+      fp_host: 10.22.70.226
+      fp2_ip: 172.27.146.69
+      host_ip: 192.168.198.69
+      bmc_mac: 3CECEF34BCE9
+      da4_mac: 7CC255117E72
+      fp_mac: 1070FD3A201E,1070FD356E8A
+      uuid: 00000000-0000-0000-0000-3cecef34bce9
+      u_position: 34
+      servername_u_position: 34
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61054
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 0
+      pcap_min: 0
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: wdc2-qz1-sr1-rk012-s34
+      solid_state_device:
+      - psid: 9HXAMT2TTUK806UFWQA5Z642GPJPJE6K
+        serialnumber: S6ETNA0T602320
+      - psid: J9PX51JGGKRQBCHLNAYHLZMYF32C471F
+        serialnumber: S6ETNA0T602342
+      - psid: JB71N9HRK5MGC5K4WA618UYWA8ARHZMV
+        serialnumber: S6ETNA0T602407
+      - psid: WN126M7NWLJQ7RBZ08M4R68PQUERP5UJ
+        serialnumber: S6ETNA0T602411
+      - psid: GS5Z83LB4ABNHQ83S1MV3TY2RZ3R470D
+        serialnumber: S6ETNA0T602418
+      - psid: JATP3GFJL086HAKMJXCMA5BH7CBWGZ2A
+        serialnumber: S6ETNA0T603306
+      - psid: 8E4Z9VE2ZJFGQYD7QQWQXP6MH52FA0BG
+        serialnumber: S6ETNA0T603307
+      - psid: BQTPWZVV0Q4AUSRATDKUCKFM3KD51J3H
+        serialnumber: S6ETNA0T603310
+      - psid: EYU7N8L0AQ524HNTJXDW12X65D7F1VPB
+        serialnumber: S6ETNA0T603311
+      - psid: 98C63BBLRYLQJSLTUHEQN3XU3KNXY2DE
+        serialnumber: S6ETNA0T603312
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 65920
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.198.72
+      fp_host: 10.22.70.227
+      fp2_ip: 172.27.146.73
+      host_ip: 192.168.198.73
+      bmc_mac: 3CECEF34BA32
+      da4_mac: 7CC255118122
+      fp_mac: 1070FD30CB08,1070FD30D700
+      uuid: 00000000-0000-0000-0000-3cecef34ba32
+      u_position: 36
+      servername_u_position: 36
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61277
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 0
+      pcap_min: 0
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: wdc2-qz1-sr1-rk012-s36
+      solid_state_device:
+      - psid: Q0P3KKANT9S1USY74L2HV5Q0DEZQ4S83
+        serialnumber: S6ETNA0T602260
+      - psid: G7SXC9SCVPS2UFLLLM9EFRWSVAKBNP86
+        serialnumber: S6ETNA0T602287
+      - psid: DCK5TV0CHBK1A8ELX238QJGGX38KZFL5
+        serialnumber: S6ETNA0T602303
+      - psid: WFEH4A69R6AQNJK2E63FNA2C0TV8CM5T
+        serialnumber: S6ETNA0T602307
+      - psid: G4Z81Y23WPN64JQDUM1U8PEL46NSR4NL
+        serialnumber: S6ETNA0T602392
+      - psid: T81EAFKZXTFTZPJB99H3LZCR9L37JWT2
+        serialnumber: S6ETNA0T602393
+      - psid: HK50DY1RK4JSH5KKGGN4Y42TKLWX5C92
+        serialnumber: S6ETNA0T603191
+      - psid: GNKUN2RKZ5SC6GKWZ5S61B5SPX6KEQY5
+        serialnumber: S6ETNA0T602740
+      - psid: Z5KBBP6J7KE05454PSAA8U0EE9949P4G
+        serialnumber: S6ETNA0T602748
+      - psid: FRD4TD47FQU5XDBAQ5AJMZ8NK3B8466L
+        serialnumber: S6ETNA0T602754
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 65920
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.198.76
+      fp_host: 10.22.70.228
+      fp2_ip: 172.27.146.77
+      host_ip: 192.168.198.77
+      bmc_mac: 3CECEF34BAC1
+      da4_mac: 7CC2551256A0
+      fp_mac: 1070FD356C7A,1070FD3A2316
+      uuid: 00000000-0000-0000-0000-3cecef34bac1
+      u_position: 38
+      servername_u_position: 38
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61060
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 0
+      pcap_min: 0
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: wdc2-qz1-sr1-rk012-s38
+      solid_state_device:
+      - psid: 3TL2TGUCNGB44JNJYVLGRELJNZAB5AD7
+        serialnumber: S6ETNA0T602759
+      - psid: TA3HWW0CAZGNEVJPFQFML1F5KQ0PS6LG
+        serialnumber: S6ETNA0T602763
+      - psid: U84MWE6XC0NXA2SCYZGY2STU5L7Z9NPN
+        serialnumber: S6ETNA0T602765
+      - psid: FQZP4G47J8J7YNKHQUPZV5CJV4FC1823
+        serialnumber: S6ETNA0T602766
+      - psid: SCBSAY0W3C0NCJGDAWZ5D6XLG9S5WEF2
+        serialnumber: S6ETNA0T602822
+      - psid: JWRNHMRAKAVMKLJZ88E6XC9VNX65KRFK
+        serialnumber: S6ETNE0T500080
+      - psid: FT9HD6B0ZCT9AJF9E93EPJFFR7MGWSM8
+        serialnumber: S6ETNE0T500085
+      - psid: AG1QZGGDFS3Y5ZRZGRMYA60SC6U88PRP
+        serialnumber: S6ETNE0T500086
+      - psid: ZAXP3A97T17ZCNDUU0NQE3AUHCGX1HAD
+        serialnumber: S6ETNE0T500089
+      - psid: 1EF9NJMHW9HA7D5KHD0Q5YLNG8Q7F51A
+        serialnumber: S6ETNE0T500096
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 65920
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.198.80
+      fp_host: 10.22.70.229
+      fp2_ip: 172.27.146.81
+      host_ip: 192.168.198.81
+      bmc_mac: 3CECEF34B6F7
+      da4_mac: 7CC255118502
+      fp_mac: 1070FD300310,1070FD30D6F8
+      uuid: 00000000-0000-0000-0000-3cecef34b6f7
+      u_position: 40
+      servername_u_position: 40
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61390
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 0
+      pcap_min: 0
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: wdc2-qz1-sr1-rk012-s40
+      solid_state_device:
+      - psid: U8CT1B44QJ86NUK7P05SRHE5YLNE2M7R
+        serialnumber: S6ETNA0T602360
+      - psid: LSBL08TQKJS7GXZ585M1ELB3579NYWTW
+        serialnumber: S6ETNA0T602410
+      - psid: EWJXL3EVNPCWJ78ZQM2G8ARC133LTEX9
+        serialnumber: S6ETNA0T602415
+      - psid: S639EHPJC91EAKYWT5G8UE4JB0PPDUJ4
+        serialnumber: S6ETNA0T602691
+      - psid: 5SGCK8SUJV2C7KC5YNZFPQEH2X7EPGZQ
+        serialnumber: S6ETNA0T602698
+      - psid: 3Y666KFHRXBJ8B6SBHGHE4N5JW13X7FX
+        serialnumber: S6ETNA0T602703
+      - psid: 6NXQWXDF0DX78M1HHYEVJ0VDM2HS57YB
+        serialnumber: S6ETNA0T602710
+      - psid: CB53UV6GY3RPXP0JQR7JFQQEHVQH2ARE
+        serialnumber: S6ETNE0T500050
+      - psid: 9B51Q0QBP7MECCKDDS0U0ACK0H58U8DR
+        serialnumber: S6ETNE0T500082
+      - psid: PR3NQHUPXGLJW9PRVNX725VHCNC5RV51
+        serialnumber: S6ETNE0T500106
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 65920
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.198.84
+      fp_host: 10.22.70.230
+      fp2_ip: 172.27.146.85
+      host_ip: 192.168.198.85
+      bmc_mac: 3CECEF34BABF
+      da4_mac: 7CC255125448
+      fp_mac: 1070FD3A22EE,1070FD3A22C6
+      uuid: 00000000-0000-0000-0000-3cecef34babf
+      u_position: 42
+      servername_u_position: 42
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61059
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 0
+      pcap_min: 0
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: wdc2-qz1-sr1-rk012-s42
+      solid_state_device:
+      - psid: NPRWWSXVE7XWDVGR17S3K1X7JC5ZJ79W
+        serialnumber: S6ETNA0T602343
+      - psid: P506CVHGD90Q3EQXA6PDXT0JWLZN511D
+        serialnumber: S6ETNA0T602344
+      - psid: R0URJ3T5CM385VRUM0KTZLZWR5HFAWL4
+        serialnumber: S6ETNA0T602346
+      - psid: P1WCX17NF709JSFMQP16LGY8S0TC31J6
+        serialnumber: S6ETNA0T602760
+      - psid: K1TS4APNBWRCGCG2VTBGLKBPMT78RP28
+        serialnumber: S6ETNA0T602767
+      - psid: XNYW8BXHW2ARAYXH5YDZ5XZJVZT80HBY
+        serialnumber: S6ETNA0T602768
+      - psid: QS2M1JT4DFZU7898Y2CBMD8B92F9ZWM9
+        serialnumber: S6ETNA0T602769
+      - psid: YVGJKDQU8PQ026HDV10P2UQSYEQRQR45
+        serialnumber: S6ETNA0T603308
+      - psid: X3Y8TEPFS9WUV33S32LFM9VGNJJ0AR3C
+        serialnumber: S6ETNA0T603313
+      - psid: 8QYAQXTGGE337KYYBMWU4BT80XKNE9J1
+        serialnumber: S6ETNA0T603314
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 65920
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.198.88
+      fp_host: 10.22.70.231
+      fp2_ip: 172.27.146.89
+      host_ip: 192.168.198.89
+      bmc_mac: 3CECEF34BCEB
+      da4_mac: 7CC2551184DE
+      fp_mac: 1070FD356C82,1070FD3A1FF6
+      uuid: 00000000-0000-0000-0000-3cecef34bceb
+      u_position: 44
+      servername_u_position: 44
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61047
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 0
+      pcap_min: 0
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: wdc2-qz1-sr1-rk012-s44
+      solid_state_device:
+      - psid: 67W329HWXJCJJ1BVXJ0P1VNDSUK3D167
+        serialnumber: S6ETNA0T602153
+      - psid: LPBEECJ7NX6FCJZXQQ7F0QUD1AVK4WQS
+        serialnumber: S6ETNA0T602771
+      - psid: VUMCXYT14P9G7MPPYKYVW6GD6V1XCE07
+        serialnumber: S6ETNA0T602809
+      - psid: CA1XXJP86FG1K1A3RBLDBNJKMJNF917W
+        serialnumber: S6ETNA0T602813
+      - psid: VNTDXFNNX8QZ9YWVEWVYPJGJ19GDR4S2
+        serialnumber: S6ETNA0T602818
+      - psid: V5T6N1HLJZWAT41TPL56BD58TNBL02LY
+        serialnumber: S6ETNA0T602820
+      - psid: D9Y3FMM9E9LW41KTVXSXZVE0CVWUQKT2
+        serialnumber: S6ETNE0T500019
+      - psid: 0X5DGWX03N6X7X1MGDS6TX5ZD3FPW9C8
+        serialnumber: S6ETNE0T500047
+      - psid: LN29SF0GXD10X648KCCBH5HKH0AN0EV7
+        serialnumber: S6ETNE0T500091
+      - psid: 65244HLXP24442DBW1BFF0T2QP47QKXC
+        serialnumber: S6ETNE0T500095
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 65920
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.198.92
+      fp_host: 10.22.70.232
+      fp2_ip: 172.27.146.93
+      host_ip: 192.168.198.93
+      bmc_mac: 3CECEF34BA34
+      da4_mac: 7CC2551184C6
+      fp_mac: 1070FD30BC08,1070FD300F40
+      uuid: 00000000-0000-0000-0000-3cecef34ba34
+      u_position: 46
+      servername_u_position: 46
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61389
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 0
+      pcap_min: 0
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: wdc2-qz1-sr1-rk012-s46
+      solid_state_device:
+      - psid: DXCUH76FKD6WHUSK49R17XVDV09ZZZEZ
+        serialnumber: S6ETNA0T602314
+      - psid: U4ZMVLP3LNPPS5QUF8Y5UU2B2J2XBSTF
+        serialnumber: S6ETNA0T602417
+      - psid: VSL23ZMLVPLRUJSEJVL85SBC377NLCSE
+        serialnumber: S6ETNA0T602656
+      - psid: VV13BV1X288FRPFGEWN3XEGLQJJ2CB3Q
+        serialnumber: S6ETNA0T602672
+      - psid: 3NRFTENCA5D0PCU1QBCQVE7195FD57ZP
+        serialnumber: S6ETNA0T602676
+      - psid: B505BG2XSJRF3FC4L9HJ73S0L97A2Q9V
+        serialnumber: S6ETNA0T602819
+      - psid: GW8JDDUVEUN0SJFYK42NGJ2Q8DBT17LM
+        serialnumber: S6ETNE0T500090
+      - psid: GNJWXPSJGR9GF31UTZWHNQ8NKH55XKUK
+        serialnumber: S6ETNE0T500105
+      - psid: FBH93JW8QGU3QQ9XSQJDXCFU18USRVSZ
+        serialnumber: S6ETNE0T500109
+      - psid: M0CMHNFEVGEWUMYBYPQP9266X3B547BA
+        serialnumber: S6ETNE0T500110
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 192
+      storage_capacity_gb: 1920
+      isa: "CPU count=2, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.198.94
+      fp_host: 10.22.70.233
+      fp2_ip: 172.27.146.95
+      host_ip: 192.168.198.95
+      bmc_mac: 3CECEFEF3FDC
+      da4_mac: 3CECEF5F8FF8
+      fp_mac: B8CEF6A65228
+      uuid: 00000000-0000-0000-0000-3cecefef3fdc
+      u_position: 47
+      servername_u_position: 47
+      sub_u_position: 1
+      min_u_position: 3
+      height: 1
+      servermodel: SuperMicro SMCH10
+      serialnumber: C119UAK46P70632
+      motherboard: X11DPU+_R1.10
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 0
+      pcap_min: 0
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: wdc2-qz1-sr1-rk012-s47
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 192
+      storage_capacity_gb: 1920
+      isa: "CPU count=2, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.198.96
+      fp_host: 10.22.70.234
+      fp2_ip: 172.27.146.97
+      host_ip: 192.168.198.97
+      bmc_mac: 3CECEFEF609E
+      da4_mac: 3CECEF5F8FE6
+      fp_mac: 08C0EBEE151E
+      uuid: 00000000-0000-0000-0000-3cecefef609e
+      u_position: 48
+      servername_u_position: 48
+      sub_u_position: 1
+      min_u_position: 3
+      height: 1
+      servermodel: SuperMicro SMCH10
+      serialnumber: C119UAK46P70309
+      motherboard: X11DPU+_R1.10
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 0
+      pcap_min: 0
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: wdc2-qz1-sr1-rk012-s48
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 192
+      storage_capacity_gb: 1920
+      isa: "CPU count=2, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.198.98
+      fp_host: 10.22.70.235
+      fp2_ip: 172.27.146.99
+      host_ip: 192.168.198.99
+      bmc_mac: 3CECEFEE4AA8
+      da4_mac: 3CECEF60C6B6
+      fp_mac: B8CEF6D291FA
+      uuid: 00000000-0000-0000-0000-3cecefee4aa8
+      u_position: 49
+      servername_u_position: 49
+      sub_u_position: 1
+      min_u_position: 3
+      height: 1
+      servermodel: SuperMicro SMCH10
+      serialnumber: C119UAK46P70306
+      motherboard: X11DPU+_R1.10
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 0
+      pcap_min: 0
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: wdc2-qz1-sr1-rk012-s49
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 192
+      storage_capacity_gb: 1920
+      isa: "CPU count=2, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.198.100
+      fp_host: 10.22.70.236
+      fp2_ip: 172.27.146.101
+      host_ip: 192.168.198.101
+      bmc_mac: 3CECEFEF602B
+      da4_mac: 3CECEF5F9016
+      fp_mac: 1070FD30DDC8
+      uuid: 00000000-0000-0000-0000-3cecefef602b
+      u_position: 50
+      servername_u_position: 50
+      sub_u_position: 1
+      min_u_position: 3
+      height: 1
+      servermodel: SuperMicro SMCH10
+      serialnumber: C119UAK46P70316
+      motherboard: X11DPU+_R1.10
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 0
+      pcap_min: 0
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: wdc2-qz1-sr1-rk012-s50
+
+
+bmc_nodes:
+    - hostname: wdc2-qz1-sr1-rk012-s02-bmc
+      host_ip: 192.168.198.4
+      mac: 3CECEF34BD32
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAJ22C11010
+    - hostname: wdc2-qz1-sr1-rk012-s12-bmc
+      host_ip: 192.168.198.24
+      mac: 3CECEF34BD38
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61070
+    - hostname: wdc2-qz1-sr1-rk012-s14-bmc
+      host_ip: 192.168.198.28
+      mac: 3CECEF34BA21
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61043
+    - hostname: wdc2-qz1-sr1-rk012-s16-bmc
+      host_ip: 192.168.198.32
+      mac: 3CECEF34B4B0
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61049
+    - hostname: wdc2-qz1-sr1-rk012-s18-bmc
+      host_ip: 192.168.198.36
+      mac: 3CECEF34BA25
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61384
+    - hostname: wdc2-qz1-sr1-rk012-s20-bmc
+      host_ip: 192.168.198.40
+      mac: 3CECEF34BA28
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61383
+    - hostname: wdc2-qz1-sr1-rk012-s28-bmc
+      host_ip: 192.168.198.56
+      mac: 3CECEF34BC47
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C60919
+    - hostname: wdc2-qz1-sr1-rk012-s30-bmc
+      host_ip: 192.168.198.60
+      mac: 3CECEF34BD3A
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61072
+    - hostname: wdc2-qz1-sr1-rk012-s32-bmc
+      host_ip: 192.168.198.64
+      mac: 3CECEF34BD2B
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61278
+    - hostname: wdc2-qz1-sr1-rk012-s34-bmc
+      host_ip: 192.168.198.68
+      mac: 3CECEF34BCE9
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61054
+    - hostname: wdc2-qz1-sr1-rk012-s36-bmc
+      host_ip: 192.168.198.72
+      mac: 3CECEF34BA32
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61277
+    - hostname: wdc2-qz1-sr1-rk012-s38-bmc
+      host_ip: 192.168.198.76
+      mac: 3CECEF34BAC1
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61060
+    - hostname: wdc2-qz1-sr1-rk012-s40-bmc
+      host_ip: 192.168.198.80
+      mac: 3CECEF34B6F7
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61390
+    - hostname: wdc2-qz1-sr1-rk012-s42-bmc
+      host_ip: 192.168.198.84
+      mac: 3CECEF34BABF
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61059
+    - hostname: wdc2-qz1-sr1-rk012-s44-bmc
+      host_ip: 192.168.198.88
+      mac: 3CECEF34BCEB
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61047
+    - hostname: wdc2-qz1-sr1-rk012-s46-bmc
+      host_ip: 192.168.198.92
+      mac: 3CECEF34BA34
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL16C61389
+    - hostname: wdc2-qz1-sr1-rk012-s47-bmc
+      host_ip: 192.168.198.94
+      mac: 3CECEFEF3FDC
+      manufacturer: SuperMicro
+      model: SMCH10
+      serialnumber: C119UAK46P70632
+    - hostname: wdc2-qz1-sr1-rk012-s48-bmc
+      host_ip: 192.168.198.96
+      mac: 3CECEFEF609E
+      manufacturer: SuperMicro
+      model: SMCH10
+      serialnumber: C119UAK46P70309
+    - hostname: wdc2-qz1-sr1-rk012-s49-bmc
+      host_ip: 192.168.198.98
+      mac: 3CECEFEE4AA8
+      manufacturer: SuperMicro
+      model: SMCH10
+      serialnumber: C119UAK46P70306
+    - hostname: wdc2-qz1-sr1-rk012-s50-bmc
+      host_ip: 192.168.198.100
+      mac: 3CECEFEF602B
+      manufacturer: SuperMicro
+      model: SMCH10
+      serialnumber: C119UAK46P70316
+

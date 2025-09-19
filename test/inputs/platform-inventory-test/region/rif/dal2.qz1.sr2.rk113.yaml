@@ -1,0 +1,709 @@
+global:
+    fzone: dal2
+    qzone: qz1
+    room: sr2
+    rackid: rk113
+pdu_nodes:
+    - hostname: dal2-qz1-sr2-rk113-pdu-1
+      host_ip: 192.168.113.111
+      mac: ffffffffffff
+      manufacturer: Server Tech
+      model: STV-4523G/SB-revD
+      serialnumber: dal2.sr02.rk113.slg
+      inventory_hwid: 3474626
+    - hostname: dal2-qz1-sr2-rk113-pdu-2
+      host_ip: 192.168.113.112
+      mac: ffffffffffff
+      manufacturer: Server Tech
+      model: STV-4523G/SB-revD
+      serialnumber: dal2.sr02.rk113.slh
+      inventory_hwid: 3474628
+
+points:
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 53120
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.113.132
+      fp_host: 10.249.9.225
+      fp2_ip: 172.31.190.5
+      host_ip: 192.168.113.133
+      bmc_mac: 3CECEF2FFE7E
+      da4_mac: 3CECEFF1C734
+      fp_mac: 1070FD30C6B0,1070FD30E108
+      uuid: 00000000-0000-0000-0000-3cecef2ffe7e
+      u_position: 1
+      servername_u_position: 2
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAK35C20479
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 1200
+      pcap_min: 480
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: dal2-qz1-sr2-rk113-s02
+      inventory_tag: SL01LRFT
+      inventory_hwid: 3320452
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 53120
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.113.136
+      fp_host: 10.249.9.226
+      fp2_ip: 172.31.190.9
+      host_ip: 192.168.113.137
+      bmc_mac: 3CECEF2FFF88
+      da4_mac: 3CECEF696B1E
+      fp_mac: E8EBD333905E,E8EBD33394FA
+      uuid: 00000000-0000-0000-0000-3cecef2fff88
+      u_position: 3
+      servername_u_position: 4
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAK35C20420
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 1200
+      pcap_min: 480
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: dal2-qz1-sr2-rk113-s04
+      inventory_tag: SL01LRGI
+      inventory_hwid: 3320286
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 53120
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.113.140
+      fp_host: 10.249.9.227
+      fp2_ip: 172.31.190.13
+      host_ip: 192.168.113.141
+      bmc_mac: 3CECEF336D9B
+      da4_mac: 3CECEFF1B9D0
+      fp_mac: E8EBD3339322,E8EBD333931E
+      uuid: 00000000-0000-0000-0000-3cecef336d9b
+      u_position: 5
+      servername_u_position: 6
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAK40C20152
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 1200
+      pcap_min: 480
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: dal2-qz1-sr2-rk113-s06
+      inventory_tag: SL01LRD3
+      inventory_hwid: 3341918
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 53120
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.113.144
+      fp_host: 10.249.9.228
+      fp2_ip: 172.31.190.17
+      host_ip: 192.168.113.145
+      bmc_mac: 3CECEF3675BC
+      da4_mac: 7CC2554981DC
+      fp_mac: B83FD28C5B7C,B83FD28C6D44
+      uuid: 00000000-0000-0000-0000-3cecef3675bc
+      u_position: 7
+      servername_u_position: 8
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAM06C81095
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 1200
+      pcap_min: 480
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: dal2-qz1-sr2-rk113-s08
+      inventory_tag: SL01MXEZ
+      inventory_hwid: 3477524
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 53120
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.113.148
+      fp_host: 10.249.9.229
+      fp2_ip: 172.31.190.21
+      host_ip: 192.168.113.149
+      bmc_mac: 3CECEF3B8869
+      da4_mac: 3CECEF696CEE
+      fp_mac: E8EBD3339A02,E8EBD3338F72
+      uuid: 00000000-0000-0000-0000-3cecef3b8869
+      u_position: 9
+      servername_u_position: 10
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAK35C20430
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 1200
+      pcap_min: 480
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: dal2-qz1-sr2-rk113-s10
+      inventory_tag: SL01LRGC
+      inventory_hwid: 3320298
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 53120
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.113.152
+      fp_host: 10.249.9.230
+      fp2_ip: 172.31.190.25
+      host_ip: 192.168.113.153
+      bmc_mac: 3CECEF2E6B75
+      da4_mac: 3CECEF696CEA
+      fp_mac: E8EBD3339006,E8EBD3339586
+      uuid: 00000000-0000-0000-0000-3cecef2e6b75
+      u_position: 11
+      servername_u_position: 12
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAK35C20427
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 1200
+      pcap_min: 480
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: dal2-qz1-sr2-rk113-s12
+      inventory_tag: SL01LR86
+      inventory_hwid: 3320274
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 63360
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.113.156
+      fp_host: 10.249.9.231
+      fp2_ip: 172.31.190.29
+      host_ip: 192.168.113.157
+      bmc_mac: 3CECEF2E103E
+      da4_mac: 3CECEF69766A
+      fp_mac: 1070FDDF8E12,1070FDDF8C0A
+      uuid: 00000000-0000-0000-0000-3cecef2e103e
+      u_position: 13
+      servername_u_position: 14
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAJ22C11657
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 1200
+      pcap_min: 480
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: dal2-qz1-sr2-rk113-s14
+      inventory_tag: SL01LQU2
+      inventory_hwid: 3274932
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 63360
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.113.160
+      fp_host: 10.249.9.232
+      fp2_ip: 172.31.190.33
+      host_ip: 192.168.113.161
+      bmc_mac: 3CECEF2E0F6F
+      da4_mac: 3CECEF69733E
+      fp_mac: B8CEF672BF58,B8CEF65961C0
+      uuid: 00000000-0000-0000-0000-3cecef2e0f6f
+      u_position: 15
+      servername_u_position: 16
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAJ22C11668
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 1200
+      pcap_min: 480
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: dal2-qz1-sr2-rk113-s16
+      inventory_tag: SL01LQTN
+      inventory_hwid: 3274578
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 53120
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.113.164
+      fp_host: 10.249.9.233
+      fp2_ip: 172.31.190.37
+      host_ip: 192.168.113.165
+      bmc_mac: 3CECEF2E0C09
+      da4_mac: 3CECEF697302
+      fp_mac: 1070FD30E8D0,1070FD30EBC8
+      uuid: 00000000-0000-0000-0000-3cecef2e0c09
+      u_position: 17
+      servername_u_position: 18
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAJ22C11468
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 1200
+      pcap_min: 480
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: dal2-qz1-sr2-rk113-s18
+      inventory_tag: SL01LQUP
+      inventory_hwid: 3274846
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 53120
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.113.168
+      fp_host: 10.249.9.234
+      fp2_ip: 172.31.190.41
+      host_ip: 192.168.113.169
+      bmc_mac: 3CECEF3300F0
+      da4_mac: 3CECEFF11A1C
+      fp_mac: E8EBD33393B2,1070FDDF89FA
+      uuid: 00000000-0000-0000-0000-3cecef3300f0
+      u_position: 19
+      servername_u_position: 20
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAK35C20250
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 1200
+      pcap_min: 480
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: dal2-qz1-sr2-rk113-s20
+      inventory_tag: SL01LRF6
+      inventory_hwid: 3320498
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 53120
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.113.188
+      fp_host: 10.249.9.235
+      fp2_ip: 172.31.190.61
+      host_ip: 192.168.113.189
+      bmc_mac: 3CECEF3BC56A
+      da4_mac: 3CECEF4C1454
+      fp_mac: E8EBD333968A,E8EBD3339AB6
+      uuid: 00000000-0000-0000-0000-3cecef3bc56a
+      u_position: 29
+      servername_u_position: 30
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAJ22C10852
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 1200
+      pcap_min: 480
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: dal2-qz1-sr2-rk113-s30
+      inventory_tag: SL01K6FN
+      inventory_hwid: 3210022
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 53120
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.113.192
+      fp_host: 10.249.9.236
+      fp2_ip: 172.31.190.65
+      host_ip: 192.168.113.193
+      bmc_mac: 3CECEF336C14
+      da4_mac: 3CECEFF1B8C4
+      fp_mac: E8EBD3338F02,E8EBD33391B2
+      uuid: 00000000-0000-0000-0000-3cecef336c14
+      u_position: 31
+      servername_u_position: 32
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAK40C20163
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 1200
+      pcap_min: 480
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: dal2-qz1-sr2-rk113-s32
+      inventory_tag: SL01LRDB
+      inventory_hwid: 3341902
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 53120
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.113.196
+      fp_host: 10.249.9.237
+      fp2_ip: 172.31.190.69
+      host_ip: 192.168.113.197
+      bmc_mac: 3CECEF33017B
+      da4_mac: 3CECEFF11A58
+      fp_mac: E8EBD3339A72,E8EBD3339A7A
+      uuid: 00000000-0000-0000-0000-3cecef33017b
+      u_position: 33
+      servername_u_position: 34
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAK35C20443
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 1200
+      pcap_min: 480
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: dal2-qz1-sr2-rk113-s34
+      inventory_tag: SL01LRF4
+      inventory_hwid: 3320502
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 53120
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.113.200
+      fp_host: 10.249.9.238
+      fp2_ip: 172.31.190.73
+      host_ip: 192.168.113.201
+      bmc_mac: 3CECEF2E0757
+      da4_mac: 3CECEF6972F6
+      fp_mac: E8EBD3338E3A,1070FDDF8D0A
+      uuid: 00000000-0000-0000-0000-3cecef2e0757
+      u_position: 35
+      servername_u_position: 36
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAJ22C11485
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 1200
+      pcap_min: 480
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: dal2-qz1-sr2-rk113-s36
+      inventory_tag: SL01LQTQ
+      inventory_hwid: 3274572
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 53120
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.113.204
+      fp_host: 10.249.9.239
+      fp2_ip: 172.31.190.77
+      host_ip: 192.168.113.205
+      bmc_mac: 3CECEF2E0F82
+      da4_mac: 3CECEF697306
+      fp_mac: E8EBD3338EB2,B8CEF672BF00
+      uuid: 00000000-0000-0000-0000-3cecef2e0f82
+      u_position: 37
+      servername_u_position: 38
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAJ22C11672
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 1200
+      pcap_min: 480
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: dal2-qz1-sr2-rk113-s38
+      inventory_tag: SL01LQU8
+      inventory_hwid: 3274964
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 53120
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.113.208
+      fp_host: 10.249.9.240
+      fp2_ip: 172.31.190.81
+      host_ip: 192.168.113.209
+      bmc_mac: 3CECEF366E63
+      da4_mac: 7CC255494C42
+      fp_mac: B83FD2B8494C,B83FD2B848CC
+      uuid: 00000000-0000-0000-0000-3cecef366e63
+      u_position: 39
+      servername_u_position: 40
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL38C70196
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 1200
+      pcap_min: 480
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: dal2-qz1-sr2-rk113-s40
+      inventory_tag: SL01M3EG
+      inventory_hwid: 3474570
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 53120
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.113.212
+      fp_host: 10.249.9.241
+      fp2_ip: 172.31.190.85
+      host_ip: 192.168.113.213
+      bmc_mac: 3CECEF336CEA
+      da4_mac: 3CECEFF1BFF4
+      fp_mac: E8EBD33377E6,E8EBD3339382
+      uuid: 00000000-0000-0000-0000-3cecef336cea
+      u_position: 41
+      servername_u_position: 42
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAK35C20377
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 1200
+      pcap_min: 480
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: dal2-qz1-sr2-rk113-s42
+      inventory_tag: SL01LREB
+      inventory_hwid: 3343344
+
+    - type: server
+      node_type: storage
+      mem_config_gb: 768
+      storage_capacity_gb: 53120
+      isa: "CPU count=4, CPU type=Xeon-Cascade-Lake 8260-PLATINUM-24Cores/48T 2.4G"
+      bmc_host: 192.168.113.216
+      fp_host: 10.249.9.242
+      fp2_ip: 172.31.190.89
+      host_ip: 192.168.113.217
+      bmc_mac: 3CECEF3300EC
+      da4_mac: 3CECEF696CC6
+      fp_mac: E8EBD33399D6,E8EBD3338FC2
+      uuid: 00000000-0000-0000-0000-3cecef3300ec
+      u_position: 43
+      servername_u_position: 44
+      sub_u_position: 1
+      min_u_position: 3
+      height: 2
+      servermodel: SuperMicro SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAK35C20426
+      motherboard: X11QPH+_R1.20
+      gpu_ident: ""
+      edge: false
+      edge_ip: 1.1.1.1
+      pcap_max: 1200
+      pcap_min: 480
+      pcap_max_encl: 0
+      pcap_min_encl: 0
+      hostname: dal2-qz1-sr2-rk113-s44
+      inventory_tag: SL01LRGA
+      inventory_hwid: 3320302
+
+
+bmc_nodes:
+    - hostname: dal2-qz1-sr2-rk113-s02-bmc
+      host_ip: 192.168.113.132
+      mac: 3CECEF2FFE7E
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAK35C20479
+    - hostname: dal2-qz1-sr2-rk113-s04-bmc
+      host_ip: 192.168.113.136
+      mac: 3CECEF2FFF88
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAK35C20420
+    - hostname: dal2-qz1-sr2-rk113-s06-bmc
+      host_ip: 192.168.113.140
+      mac: 3CECEF336D9B
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAK40C20152
+    - hostname: dal2-qz1-sr2-rk113-s08-bmc
+      host_ip: 192.168.113.144
+      mac: 3CECEF3675BC
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAM06C81095
+    - hostname: dal2-qz1-sr2-rk113-s10-bmc
+      host_ip: 192.168.113.148
+      mac: 3CECEF3B8869
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAK35C20430
+    - hostname: dal2-qz1-sr2-rk113-s12-bmc
+      host_ip: 192.168.113.152
+      mac: 3CECEF2E6B75
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAK35C20427
+    - hostname: dal2-qz1-sr2-rk113-s14-bmc
+      host_ip: 192.168.113.156
+      mac: 3CECEF2E103E
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAJ22C11657
+    - hostname: dal2-qz1-sr2-rk113-s16-bmc
+      host_ip: 192.168.113.160
+      mac: 3CECEF2E0F6F
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAJ22C11668
+    - hostname: dal2-qz1-sr2-rk113-s18-bmc
+      host_ip: 192.168.113.164
+      mac: 3CECEF2E0C09
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAJ22C11468
+    - hostname: dal2-qz1-sr2-rk113-s20-bmc
+      host_ip: 192.168.113.168
+      mac: 3CECEF3300F0
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAK35C20250
+    - hostname: dal2-qz1-sr2-rk113-s30-bmc
+      host_ip: 192.168.113.188
+      mac: 3CECEF3BC56A
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAJ22C10852
+    - hostname: dal2-qz1-sr2-rk113-s32-bmc
+      host_ip: 192.168.113.192
+      mac: 3CECEF336C14
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAK40C20163
+    - hostname: dal2-qz1-sr2-rk113-s34-bmc
+      host_ip: 192.168.113.196
+      mac: 3CECEF33017B
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAK35C20443
+    - hostname: dal2-qz1-sr2-rk113-s36-bmc
+      host_ip: 192.168.113.200
+      mac: 3CECEF2E0757
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAJ22C11485
+    - hostname: dal2-qz1-sr2-rk113-s38-bmc
+      host_ip: 192.168.113.204
+      mac: 3CECEF2E0F82
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAJ22C11672
+    - hostname: dal2-qz1-sr2-rk113-s40-bmc
+      host_ip: 192.168.113.208
+      mac: 3CECEF366E63
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAL38C70196
+    - hostname: dal2-qz1-sr2-rk113-s42-bmc
+      host_ip: 192.168.113.212
+      mac: 3CECEF336CEA
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAK35C20377
+    - hostname: dal2-qz1-sr2-rk113-s44-bmc
+      host_ip: 192.168.113.216
+      mac: 3CECEF3300EC
+      manufacturer: SuperMicro
+      model: SMCH24 SYS-2049U-TR4
+      serialnumber: C218UAK35C20426
+
