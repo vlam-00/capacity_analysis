@@ -1,0 +1,164 @@
+name: mx3d
+version: 1.0.0.1
+versions:
+  dev: 1.0.0.3
+  integration: 1.0.0.2
+  staging: 1.0.0.1
+  production: 1.0.0.1
+type: vsi-host
+production_ready: True
+server_configurations:
+  - id: SR650
+    deployment:
+      baseline: "3.50-2.25"
+      evaluation: "6.20-3.50"
+      dev: "6.20-3.50"
+      integration: "3.50-2.25"
+      staging: "3.50-2.25"
+      production: "3.50-2.25"
+    processor_configurations:
+      - processor: Xeon-Sapphire-Rapids 8474C-PLATINUM
+        physical_cores: 48
+      - processor: Xeon-Sapphire-Rapids 8474C-PLATINUM QSfD
+        physical_cores: 48
+    max_power: 1474
+    memory_configurations:
+      - quantity: 32
+        capacity: 64
+        type: DDR5
+        speed: 4800
+    nic_configurations:
+      - nic_config:
+          - id: "cx-6"
+            quantity: 2
+            firmware:
+              baseline: "22.31.1014"
+              evaluation: "22.43.2026"
+              dev: "22.43.2026"
+              integration: "22.43.2026"
+              staging: "22.32.2004"
+              production: "22.32.2004"
+            slots:
+              - hw_addr: "0000:17:00.0"
+                name: data1
+                required_ports: [1, 2]
+              - hw_addr: "0000:45:00.0"
+                name: data2
+                required_ports: [1, 2]
+          - id: "4XC7A08277"
+            quantity: 1
+            slots:
+              - hw_addr: "0000:16:00.0"
+                name: inband1
+                required_ports: [1]
+    bmc_configurations:
+      - bmc_config:
+          - id: "bmc1"
+            type: "dedicated"
+            description: "The XCC Mgmt Dedicated Port"
+            device: "onboard"
+            port: 1
+    tpm_configurations:
+      - tpm_config:
+        - id: NPCT75x
+          firmware:
+            baseline: "lenovo-base"
+            evaluation: "lenovo-base"
+            dev: "lenovo-base"
+            integration: "lenovo-base"
+            staging: "lenovo-base"
+            production: "lenovo-base"
+    nvme_configurations:
+      - nvme_config: # Stop gap dev solution
+          - id: "PM1735-6.4"
+            quantity: 2
+            firmware:
+              baseline: "SN45"
+              evaluation: "SN4C"
+              dev: "SN4B"
+              integration: "SN4B"
+              staging: "SN4B"
+              production: "SN4B"
+            slots:
+              - hw_addr: "0000:c8:00.0"
+                name: nvme1
+              - hw_addr: "0000:c9:00.0"
+                name: nvme2
+      - nvme_config: # Stop gap dev solution
+          - id: "PM1735-3.2"
+            quantity: 2
+            firmware:
+              baseline: "SN45"
+              evaluation: "SN4C"
+              dev: "SN4B"
+              integration: "SN4B"
+              staging: "SN4B"
+              production: "SN4B"
+            slots:
+              - hw_addr: "0000:c8:00.0"
+                name: nvme1
+              - hw_addr: "0000:c9:00.0"
+                name: nvme2
+      - nvme_config:
+          - id: 7450-3.2
+            quantity: 2
+            firmware:
+              baseline: "E2MU204"
+              evaluation: "E2MU204"
+              dev: "E2MU204"
+              integration: "E2MU204"
+              staging: "E2MU204"
+              production: "E2MU204"
+            slots:
+              - hw_addr: "0000:c8:00.0"
+                name: nvme1
+              - hw_addr: "0000:c9:00.0"
+                name: nvme2
+    boot_order:
+      - mgmt_network
+    boot_configuration:
+      baseline:
+        runtime: "full-boot-secure"
+        sanitize: "full-boot-secure"
+      evaluation:
+        runtime: "full-boot-secure"
+        sanitize: "full-boot-secure"
+      dev:
+        runtime: "full-boot-secure"
+        sanitize: "full-boot-secure"
+      integration:
+        runtime: "full-boot-secure"
+        sanitize: "full-boot-secure"
+      staging:
+        runtime: "full-boot-secure"
+        sanitize: "full-boot-secure"
+      production:
+        runtime: "full-boot-secure"
+        sanitize: "full-boot-secure"
+sellable_configuration:
+  type: virtualization
+  expected_sellable_vcpus: 176
+  ga_state: GA
+  memory_overhead:
+    ram_disk: 30
+    control_plane: 5
+    hypervisor: 124
+  bandwidth:
+    multiplier: 2
+    base: 200000
+zone_config:
+  - section: compute_node
+    preferred: True
+    role: vpc_compute
+    deployments:
+      - ng_vpc_mzone
+      - ng_vpc_zonelet
+      - infra_auto
+    workload: vpc_hypervisor
+    nic_mode: all
+    node_config:
+      arch: amd64
+      compute: true
+      localdisk: true
+      edge: false
+      profileClass: mx3d

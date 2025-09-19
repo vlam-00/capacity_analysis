@@ -1,0 +1,249 @@
+name: gx3d-h200-smc
+version: 1.0.0.0
+versions:
+  dev: 1.0.0.1
+  integration: 1.0.0.1
+  staging: 1.0.0.0
+  production: 1.0.0.0
+type: vsi-host
+production_ready: True
+server_configurations:
+  - id: smc-h100-sxm5
+    vendor: SuperMicro
+    models:
+      - SuperMicro SYS-821GE-TNHR
+    sockets: 2
+    deployment:
+      baseline: "01.01.06-2.1" # No prior levels to use here
+      evaluation: "10.00.06-2.1"
+      dev: "10.00.06-2.1"
+      integration: "10.00.04-2.1"
+      staging: "10.00.04-2.1"
+      production: "10.00.04-2.1"
+    processor_configurations:
+      - processor: Xeon-Sapphire-Rapids 8474C-PLATINUM
+        physical_cores: 48
+    max_power: 10999
+    memory_configurations:
+      - quantity: 32
+        capacity: 64
+        type: DDR5
+        speed: 4400
+    nic_configurations:
+      - nic_config:
+          - id: "cx-7"
+            quantity: 9
+            firmware:
+              baseline: "28.39.3004"
+              evaluation: "28.43.2026"
+              dev: "28.43.2026"
+              integration: "28.43.2026"
+              staging: "28.39.3004"
+              production: "28.39.3004"
+            slots:
+              - hw_addr: "0000:da:00.0"
+                required_ports: [1, 2] 
+                name: data1
+              - hw_addr: "0000:bb:00.0"
+                required_ports: [1, 2] 
+                name: data2
+                cluster_nic: True
+              - hw_addr: "0000:aa:00.0"
+                required_ports: [1, 2]
+                name: data3
+                cluster_nic: True
+              - hw_addr: "0000:9b:00.0"
+                required_ports: [1, 2]
+                name: data4
+                cluster_nic: True
+              - hw_addr: "0000:5c:00.0"
+                required_ports: [1, 2]
+                name: data5
+                cluster_nic: True
+              - hw_addr: "0000:3b:00.0"
+                name: data6
+                required_ports: [1, 2]
+                cluster_nic: True
+              - hw_addr: "0000:29:00.0"
+                name: data7
+                required_ports: [1, 2]
+                cluster_nic: True
+              - hw_addr: "0000:19:00.0"
+                name: data8
+                cluster_nic: True
+                required_ports: [1, 2]
+              - hw_addr: "0000:53:00.0"
+                name: data9
+                required_ports: [1, 2]
+                cluster_nic: True
+          - id: "AOC-STGS-I2T"
+            quantity: 1
+            slots:
+              - hw_addr: "0000:56:00.0"
+                name: inband1
+                required_ports: [1]
+    bmc_configurations:
+      - bmc_config:
+          - id: "bmc1"
+            type: "dedicated"
+            description: "The Dedicated IPMI server port"
+            device: "onboard"
+            port: 1
+    tpm_configurations:
+      - tpm_config:
+        - id: SLB9672
+          firmware:
+            baseline: "16.13.17733.0"
+            evaluation: "16.13.17733.0"
+            dev: "16.13.17733.0"
+            integration: "16.13.17733.0"
+            staging: "16.13.17733.0"
+            production: "16.13.17733.0"
+    nvme_configurations:
+      - nvme_config:
+        - id: 7450-7.6
+          quantity: 8
+          firmware:
+            baseline: "E2MI201"
+            evaluation: "E2MI201"
+            dev: "E2MI201"
+            integration: "E2MI201"
+            staging: "E2MI201"
+            production: "E2MI201"
+          slots: # There are 8 drives
+            - hw_addr: "0000:1a:00.0"
+              name: nvme1
+            - hw_addr: "0000:2b:00.0"
+              name: nvme2
+            - hw_addr: "0000:3c:00.0"
+              name: nvme3
+            - hw_addr: "0000:5e:00.0"
+              name: nvme4
+            - hw_addr: "0000:9c:00.0"
+              name: nvme5
+            - hw_addr: "0000:ac:00.0"
+              name: nvme6
+            - hw_addr: "0000:bc:00.0"
+              name: nvme7
+            - hw_addr: "0000:dc:00.0"
+              name: nvme8
+    gpu_configurations:
+      - gpu_config:
+          - id: h200-sxm5-141gb
+            quantity: 8
+            firmware:
+              baseline: "1.5.0"
+              evaluation: "1.5.0"
+              dev: "1.5.0"
+              integration: "1.5.0"
+              staging: "1.5.0"
+              production: "1.5.0"
+            slots:
+              - hw_addr: "0000:18:00.0" 
+                name: gpu1
+              - hw_addr: "0000:2a:00.0"
+                name: gpu2
+              - hw_addr: "0000:3a:00.0"
+                name: gpu3
+              - hw_addr: "0000:5d:00.0"
+                name: gpu4
+              - hw_addr: "0000:9a:00.0"
+                name: gpu5
+              - hw_addr: "0000:ab:00.0"
+                name: gpu6
+              - hw_addr: "0000:ba:00.0"
+                name: gpu7
+              - hw_addr: "0000:db:00.0"
+                name: gpu8
+    pcie_switch_configurations:
+      - pcie_switch_config:
+          - id: smc-aoc-sxm5-io
+            quantity: 4
+            firmware:
+              baseline: "04.15.00.00"
+              evaluation: "04.15.00.00"
+              dev: "04.15.00.00"
+              integration: "04.15.00.00"
+              staging: "04.15.00.00"
+              production: "04.15.00.00"
+    pcie_retimer_configurations:
+      - pcie_retimer_config:
+          - id: smc-aoc-sxm5-retimer
+            quantity: 7
+            firmware:
+              baseline: "2.7.21"
+              evaluation: "2.7.21"
+              dev: "2.7.21"
+              integration: "2.7.21"
+              staging: "2.7.21"
+              production: "2.7.21"
+          - id: smc-aoc-sxm5-retimer5
+            quantity: 1
+            firmware:
+              baseline: "2.7.69"
+              evaluation: "2.7.69"
+              dev: "2.7.69"
+              integration: "2.7.69"
+              staging: "2.7.69"
+              production: "2.7.69"
+    pcie_switchboard_configurations:
+      - pcie_switchboard_config:
+          - id: smc-aoc-sxm5-switchboard
+            quantity: 1
+            firmware:
+              baseline: "15"
+              evaluation: "15"
+              dev: "15"
+              integration: "15"
+              staging: "15"
+              production: "15"
+    boot_order:
+      - mgmt_network
+    boot_configuration:
+      baseline:
+        runtime: "full-boot-no-secure-keys-rdma"
+        sanitize: "full-boot-no-secure-keys-rdma"
+      evaluation:
+        runtime: "full-boot-no-secure-keys-rdma"
+        sanitize: "full-boot-no-secure-keys-rdma"
+      dev:
+        runtime: "full-boot-no-secure-keys-rdma"
+        sanitize: "full-boot-no-secure-keys-rdma"
+      integration:
+        runtime: "full-boot-no-secure-keys-rdma"
+        sanitize: "full-boot-no-secure-keys-rdma"
+      staging:
+        runtime: "full-boot-no-secure-keys-rdma"
+        sanitize: "full-boot-no-secure-keys-rdma"
+      production:
+        runtime: "full-boot-no-secure-keys-rdma"
+        sanitize: "full-boot-no-secure-keys-rdma"
+sellable_configuration:
+  type: virtualization
+  expected_sellable_vcpus: 80
+  ga_state: dev
+  memory_overhead:
+    ram_disk: 30
+    control_plane: 5
+    hypervisor: 301
+  bandwidth:
+    multiplier: 1
+    base: 400000
+zone_config:
+  - section: compute_node
+    preferred: True
+    workload: vpc_hypervisor
+    role: vpc_compute
+    deployments:
+      - ng_vpc_mzone
+      - ng_vpc_zonelet
+      - infra_auto
+    nic_mode: all
+    node_config:
+      arch: amd64
+      compute: true
+      edge: false
+      gpu: true
+      localdisk: true
+      profileClass: gx3d-h200
+      hwClass: gx3d-h200-smc
