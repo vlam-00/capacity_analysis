@@ -1,0 +1,6 @@
+{
+    "rackClass": "compute_h100_s12_s42_7010tx-48_pdu_down",
+    "servers": {
+        "gx3d-h200-smc": 3
+    }
+}

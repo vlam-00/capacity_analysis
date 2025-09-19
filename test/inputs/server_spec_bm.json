@@ -1,0 +1,7 @@
+{
+    "rackClass": "compute_ng3_1u_2u_mix_bm_s01_s50_7010tx-48_pdu_down",
+    "servers": {
+        "bm-2s8474C-2048-62400": 13,
+        "bm-2s6426Y-512-31680": 17
+    }
+}

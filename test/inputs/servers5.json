@@ -1,0 +1,2949 @@
+{
+    "first": {
+        "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes?limit=100"
+    },
+    "next": {
+        "href": "file://local/test/inputs/servers6.json?start=mad1-qz1-sr1-rk055-s10"
+    },
+    "limit": 100,
+    "total_count": 638,
+    "nodes": [
+        {
+            "id": "mad2-qz1-sr1-rk045-s48",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-2:a/be0c3efdd2de499a84d12bfa97363087::node:mad2-qz1-sr1-rk045-s48",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad2-qz1-sr1-rk045-s48",
+            "name": "mad2-qz1-sr1-rk045-s48",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-12-13T06:12:57Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD04"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad2-qz1-sr1-rk045-s50",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-2:a/be0c3efdd2de499a84d12bfa97363087::node:mad2-qz1-sr1-rk045-s50",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad2-qz1-sr1-rk045-s50",
+            "name": "mad2-qz1-sr1-rk045-s50",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-08-19T18:37:44Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "master"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD04"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad2-qz1-sr2-rk098-s02",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-2:a/be0c3efdd2de499a84d12bfa97363087::node:mad2-qz1-sr2-rk098-s02",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad2-qz1-sr2-rk098-s02",
+            "name": "mad2-qz1-sr2-rk098-s02",
+            "cpu_architecture": "s390x",
+            "cpu_family": "ibmz",
+            "created_at": "2024-10-16T11:34:33Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD04"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad2-qz1-sr2-rk098-s09",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-2:a/be0c3efdd2de499a84d12bfa97363087::node:mad2-qz1-sr2-rk098-s09",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad2-qz1-sr2-rk098-s09",
+            "name": "mad2-qz1-sr2-rk098-s09",
+            "cpu_architecture": "s390x",
+            "cpu_family": "ibmz",
+            "created_at": "2024-05-09T17:52:34Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bz2f",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-08-27T19:26:35Z",
+                "policy": "no_schedule_vm",
+                "reason": "reserve",
+                "context": "CHG8046942"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD04"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad2-qz1-sr2-rk098-s10",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-2:a/be0c3efdd2de499a84d12bfa97363087::node:mad2-qz1-sr2-rk098-s10",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad2-qz1-sr2-rk098-s10",
+            "name": "mad2-qz1-sr2-rk098-s10",
+            "cpu_architecture": "s390x",
+            "cpu_family": "ibmz",
+            "created_at": "2024-08-29T09:13:25Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-10-21T07:35:32Z",
+                "policy": "no_schedule_vm",
+                "reason": "triage",
+                "context": "INC7943698"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD04"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad2-qz1-sr2-rk098-s11",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-2:a/be0c3efdd2de499a84d12bfa97363087::node:mad2-qz1-sr2-rk098-s11",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad2-qz1-sr2-rk098-s11",
+            "name": "mad2-qz1-sr2-rk098-s11",
+            "cpu_architecture": "s390x",
+            "cpu_family": "ibmz",
+            "created_at": "2024-08-26T12:07:58Z",
+            "instances": [
+                {
+                    "id": "02x7_0a10c021-caa5-4bb6-be4e-4998d50c0935",
+                    "name": "mad-r2-ci1",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD04"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad2-qz1-sr2-rk098-s17",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-2:a/be0c3efdd2de499a84d12bfa97363087::node:mad2-qz1-sr2-rk098-s17",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad2-qz1-sr2-rk098-s17",
+            "name": "mad2-qz1-sr2-rk098-s17",
+            "cpu_architecture": "s390x",
+            "cpu_family": "ibmz",
+            "created_at": "2024-05-09T17:52:34Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bz2f",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-08-30T18:00:29Z",
+                "policy": "no_schedule_vm",
+                "reason": "reserve",
+                "context": "CHG8046942"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD04"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad2-qz1-sr2-rk098-s18",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-2:a/be0c3efdd2de499a84d12bfa97363087::node:mad2-qz1-sr2-rk098-s18",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad2-qz1-sr2-rk098-s18",
+            "name": "mad2-qz1-sr2-rk098-s18",
+            "cpu_architecture": "s390x",
+            "cpu_family": "ibmz",
+            "created_at": "2024-08-26T12:07:59Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD04"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad2-qz1-sr2-rk098-s19",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-2:a/be0c3efdd2de499a84d12bfa97363087::node:mad2-qz1-sr2-rk098-s19",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad2-qz1-sr2-rk098-s19",
+            "name": "mad2-qz1-sr2-rk098-s19",
+            "cpu_architecture": "s390x",
+            "cpu_family": "ibmz",
+            "created_at": "2024-08-29T09:13:24Z",
+            "instances": [
+                {
+                    "id": "02x7_1601ab46-9237-4f0a-bbbd-095d125d3527",
+                    "name": "bigboi",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02x7_2cf532e5-08ae-425c-bf36-62a8ce84138a",
+                    "name": "vsi-wazi-test",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02x7_b237ffe8-759d-430b-9984-a263527dfbe1",
+                    "name": "ibm-zos-2-5-wazi-madrid-2",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02x7_cf8e9b09-fccc-4850-a138-d83800122496",
+                    "name": "v2xokpl-if18v6x154f-sldpui74jenlbxx-mh",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02x7_ead4f88e-6dbe-4658-ae69-8d37342437c5",
+                    "name": "zvsi-test",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD04"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk002-s02",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk002-s02",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk002-s02",
+            "name": "mad3-qz1-sr1-rk002-s02",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-04-04T16:39:28Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "mx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker",
+                    "localdisk"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-09-02T05:07:44Z",
+                "policy": "no_schedule_vm",
+                "reason": "reserve",
+                "context": "CHG7751575"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk002-s04",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk002-s04",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk002-s04",
+            "name": "mad3-qz1-sr1-rk002-s04",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:25Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "mx3d",
+            "roles": {
+                "node_roles": [
+                    "localdisk",
+                    "worker",
+                    "compute"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-08-30T18:32:09Z",
+                "policy": "no_schedule_vm",
+                "reason": "reserve",
+                "context": "CHG8349397"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk002-s14",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk002-s14",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk002-s14",
+            "name": "mad3-qz1-sr1-rk002-s14",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:28Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "localdisk",
+                    "worker"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-09-02T05:07:42Z",
+                "policy": "no_schedule_vm",
+                "reason": "reserve",
+                "context": "CHG8349397"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk002-s20",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk002-s20",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk002-s20",
+            "name": "mad3-qz1-sr1-rk002-s20",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-04-04T16:39:28Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "mx3d",
+            "roles": {
+                "node_roles": [
+                    "localdisk",
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk002-s28",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk002-s28",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk002-s28",
+            "name": "mad3-qz1-sr1-rk002-s28",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-04-04T16:39:29Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker",
+                    "localdisk"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-09-02T05:07:44Z",
+                "policy": "no_schedule_vm",
+                "reason": "reserve",
+                "context": "CHG7751575"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk002-s32",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk002-s32",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk002-s32",
+            "name": "mad3-qz1-sr1-rk002-s32",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:25Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "mx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "localdisk",
+                    "compute"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-08-30T18:32:08Z",
+                "policy": "no_schedule_vm",
+                "reason": "reserve",
+                "context": "CHG8349397"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk002-s34",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk002-s34",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk002-s34",
+            "name": "mad3-qz1-sr1-rk002-s34",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:26Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute",
+                    "localdisk"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-09-02T05:07:44Z",
+                "policy": "no_schedule_vm",
+                "reason": "reserve",
+                "context": "CHG8349397"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk002-s36",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk002-s36",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk002-s36",
+            "name": "mad3-qz1-sr1-rk002-s36",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-04-04T16:39:27Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "localdisk",
+                    "worker"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-10-14T21:04:56Z",
+                "applied_by": "aqn@ibm.com",
+                "policy": "no_schedule_vm",
+                "reason": "reserve",
+                "context": "foo"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk002-s38",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk002-s38",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk002-s38",
+            "name": "mad3-qz1-sr1-rk002-s38",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-04-04T16:39:28Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk002-s40",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk002-s40",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk002-s40",
+            "name": "mad3-qz1-sr1-rk002-s40",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-04-04T16:39:26Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "localdisk",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk002-s42",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk002-s42",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk002-s42",
+            "name": "mad3-qz1-sr1-rk002-s42",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-04-04T16:39:27Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "localdisk",
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk002-s44",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk002-s44",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk002-s44",
+            "name": "mad3-qz1-sr1-rk002-s44",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-04-04T16:39:29Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk002-s46",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk002-s46",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk002-s46",
+            "name": "mad3-qz1-sr1-rk002-s46",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:29Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "localdisk",
+                    "worker",
+                    "compute"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-09-02T05:07:44Z",
+                "policy": "no_schedule_vm",
+                "reason": "reserve",
+                "context": "CHG8349397"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk002-s48",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk002-s48",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk002-s48",
+            "name": "mad3-qz1-sr1-rk002-s48",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:23Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "localdisk",
+                    "compute"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-09-02T05:07:44Z",
+                "policy": "no_schedule_vm",
+                "reason": "reserve",
+                "context": "CHG8349397"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk002-s50",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk002-s50",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk002-s50",
+            "name": "mad3-qz1-sr1-rk002-s50",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-04-04T16:39:26Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk003-s02",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk003-s02",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk003-s02",
+            "name": "mad3-qz1-sr1-rk003-s02",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:26Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "mx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute",
+                    "localdisk"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-09-02T05:07:44Z",
+                "policy": "no_schedule_vm",
+                "reason": "reserve",
+                "context": "CHG8349397"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk003-s04",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk003-s04",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk003-s04",
+            "name": "mad3-qz1-sr1-rk003-s04",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:24Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "mx3d",
+            "roles": {
+                "node_roles": [
+                    "localdisk",
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk003-s12",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk003-s12",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk003-s12",
+            "name": "mad3-qz1-sr1-rk003-s12",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:28Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "localdisk",
+                    "worker"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-09-02T05:07:43Z",
+                "policy": "no_schedule_vm",
+                "reason": "reserve",
+                "context": "CHG8349397"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk003-s14",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk003-s14",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk003-s14",
+            "name": "mad3-qz1-sr1-rk003-s14",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:29Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker",
+                    "localdisk"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-09-02T05:07:44Z",
+                "policy": "no_schedule_vm",
+                "reason": "reserve",
+                "context": "CHG8349397"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk003-s18",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk003-s18",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk003-s18",
+            "name": "mad3-qz1-sr1-rk003-s18",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:28Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "mx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk003-s20",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk003-s20",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk003-s20",
+            "name": "mad3-qz1-sr1-rk003-s20",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:25Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "mx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "localdisk",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk003-s32",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk003-s32",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk003-s32",
+            "name": "mad3-qz1-sr1-rk003-s32",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:26Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "mx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk003-s34",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk003-s34",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk003-s34",
+            "name": "mad3-qz1-sr1-rk003-s34",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:24Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk003-s36",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk003-s36",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk003-s36",
+            "name": "mad3-qz1-sr1-rk003-s36",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:27Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk003-s38",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk003-s38",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk003-s38",
+            "name": "mad3-qz1-sr1-rk003-s38",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:24Z",
+            "instances": [
+                {
+                    "id": "02y7_44dd5c0c-3cde-4d0d-8f47-c26d3a8e1be1",
+                    "name": "rias-insta-base-gen3-x1pyouyi-upd",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "localdisk",
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk003-s40",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk003-s40",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk003-s40",
+            "name": "mad3-qz1-sr1-rk003-s40",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:24Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk003-s42",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk003-s42",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk003-s42",
+            "name": "mad3-qz1-sr1-rk003-s42",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:27Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk003-s44",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk003-s44",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk003-s44",
+            "name": "mad3-qz1-sr1-rk003-s44",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:28Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk003-s46",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk003-s46",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk003-s46",
+            "name": "mad3-qz1-sr1-rk003-s46",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:24Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk003-s48",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk003-s48",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk003-s48",
+            "name": "mad3-qz1-sr1-rk003-s48",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:29Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "localdisk",
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk003-s50",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk003-s50",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk003-s50",
+            "name": "mad3-qz1-sr1-rk003-s50",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:24Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk004-s02",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk004-s02",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk004-s02",
+            "name": "mad3-qz1-sr1-rk004-s02",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:26Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "mx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk004-s04",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk004-s04",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk004-s04",
+            "name": "mad3-qz1-sr1-rk004-s04",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:29Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "mx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk004-s12",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk004-s12",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk004-s12",
+            "name": "mad3-qz1-sr1-rk004-s12",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:29Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk004-s14",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk004-s14",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk004-s14",
+            "name": "mad3-qz1-sr1-rk004-s14",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:23Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "localdisk",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk004-s18",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk004-s18",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk004-s18",
+            "name": "mad3-qz1-sr1-rk004-s18",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:25Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "mx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "localdisk",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk004-s20",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk004-s20",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk004-s20",
+            "name": "mad3-qz1-sr1-rk004-s20",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:23Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "mx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "localdisk",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk004-s32",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk004-s32",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk004-s32",
+            "name": "mad3-qz1-sr1-rk004-s32",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:25Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "mx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "localdisk",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk004-s34",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk004-s34",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk004-s34",
+            "name": "mad3-qz1-sr1-rk004-s34",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:29Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "localdisk",
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk004-s36",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk004-s36",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk004-s36",
+            "name": "mad3-qz1-sr1-rk004-s36",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:25Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "localdisk",
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk004-s38",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk004-s38",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk004-s38",
+            "name": "mad3-qz1-sr1-rk004-s38",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:26Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "localdisk",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk004-s40",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk004-s40",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk004-s40",
+            "name": "mad3-qz1-sr1-rk004-s40",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:26Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk004-s42",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk004-s42",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk004-s42",
+            "name": "mad3-qz1-sr1-rk004-s42",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:25Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "localdisk",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk004-s46",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk004-s46",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk004-s46",
+            "name": "mad3-qz1-sr1-rk004-s46",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:26Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk004-s48",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk004-s48",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk004-s48",
+            "name": "mad3-qz1-sr1-rk004-s48",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:28Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "localdisk",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk004-s50",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk004-s50",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk004-s50",
+            "name": "mad3-qz1-sr1-rk004-s50",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:27Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "localdisk",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk005-s02",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk005-s02",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk005-s02",
+            "name": "mad3-qz1-sr1-rk005-s02",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:26Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "mx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk005-s04",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk005-s04",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk005-s04",
+            "name": "mad3-qz1-sr1-rk005-s04",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:27Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "mx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk005-s12",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk005-s12",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk005-s12",
+            "name": "mad3-qz1-sr1-rk005-s12",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:28Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "localdisk",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk005-s14",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk005-s14",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk005-s14",
+            "name": "mad3-qz1-sr1-rk005-s14",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:28Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk005-s18",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk005-s18",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk005-s18",
+            "name": "mad3-qz1-sr1-rk005-s18",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:24Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "mx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk005-s20",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk005-s20",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk005-s20",
+            "name": "mad3-qz1-sr1-rk005-s20",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:23Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "mx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk005-s32",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk005-s32",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk005-s32",
+            "name": "mad3-qz1-sr1-rk005-s32",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:24Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "mx3d",
+            "roles": {
+                "node_roles": [
+                    "localdisk",
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk005-s34",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk005-s34",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk005-s34",
+            "name": "mad3-qz1-sr1-rk005-s34",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:26Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "localdisk",
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk005-s36",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk005-s36",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk005-s36",
+            "name": "mad3-qz1-sr1-rk005-s36",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:27Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk005-s38",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk005-s38",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk005-s38",
+            "name": "mad3-qz1-sr1-rk005-s38",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:24Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk005-s40",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk005-s40",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk005-s40",
+            "name": "mad3-qz1-sr1-rk005-s40",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:25Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "localdisk",
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk005-s42",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk005-s42",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk005-s42",
+            "name": "mad3-qz1-sr1-rk005-s42",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:24Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "localdisk",
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk005-s46",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk005-s46",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk005-s46",
+            "name": "mad3-qz1-sr1-rk005-s46",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:27Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "localdisk",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk005-s48",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk005-s48",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk005-s48",
+            "name": "mad3-qz1-sr1-rk005-s48",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-06-17T07:29:23Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "localdisk",
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk005-s50",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk005-s50",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk005-s50",
+            "name": "mad3-qz1-sr1-rk005-s50",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-10-11T14:12:34Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bx3d",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk012-s02",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk012-s02",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk012-s02",
+            "name": "mad3-qz1-sr1-rk012-s02",
+            "cpu_architecture": "s390x",
+            "cpu_family": "ibmz",
+            "created_at": "2024-10-16T11:46:59Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-10-16T11:55:48Z",
+                "policy": "no_schedule_vm",
+                "reason": "reserve",
+                "context": "CHG9363538"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk012-s03",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk012-s03",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk012-s03",
+            "name": "mad3-qz1-sr1-rk012-s03",
+            "cpu_architecture": "s390x",
+            "cpu_family": "ibmz",
+            "created_at": "2024-08-30T10:49:37Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-10-08T02:13:55Z",
+                "applied_by": "Anikhet.Menon@ibm.com",
+                "policy": "no_schedule_vm",
+                "reason": "reserve",
+                "context": "string"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk012-s09",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk012-s09",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk012-s09",
+            "name": "mad3-qz1-sr1-rk012-s09",
+            "cpu_architecture": "s390x",
+            "cpu_family": "ibmz",
+            "created_at": "2024-05-09T18:48:28Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bz2f",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk012-s10",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk012-s10",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk012-s10",
+            "name": "mad3-qz1-sr1-rk012-s10",
+            "cpu_architecture": "s390x",
+            "cpu_family": "ibmz",
+            "created_at": "2024-08-30T10:49:37Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk012-s11",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk012-s11",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk012-s11",
+            "name": "mad3-qz1-sr1-rk012-s11",
+            "cpu_architecture": "s390x",
+            "cpu_family": "ibmz",
+            "created_at": "2024-08-30T10:49:37Z",
+            "instances": [
+                {
+                    "id": "02y7_05bb777b-5121-4208-8945-2963c9888523",
+                    "name": "jenkins-broadly-piranha-368-installer-0",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_15752168-7a02-4646-bd7f-70ac91fa5bf5",
+                    "name": "zdt-vsi-cmd-977",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_1c5df885-dded-4b7a-8bd5-b6acf44f3f65",
+                    "name": "jenkins-neatly-titmouse-283-execution-node-1",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_434f946b-9f54-4d4f-9099-3deaf9227a0a",
+                    "name": "zdt-vsi-cmd-119",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_657445bb-e6b6-4b54-8bc6-6720b6c0b5cd",
+                    "name": "jenkins-neatly-titmouse-283-execution-node-0",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d677b382-26db-434e-82cd-a1628d0da750",
+                    "name": "zdt-vsi-cmd-24",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_da34c77d-06b6-45f8-a78b-116d7b6dafba",
+                    "name": "xvk0xdbjqopi0i",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_edc40da1-83cf-4739-bbf5-ec08b8ecdbac",
+                    "name": "nei2m7xs73t54ngdl4unxpmr889n825792b1qap3mqq20qwxsncmjv",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk012-s17",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk012-s17",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk012-s17",
+            "name": "mad3-qz1-sr1-rk012-s17",
+            "cpu_architecture": "s390x",
+            "cpu_family": "ibmz",
+            "created_at": "2024-05-09T18:48:29Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "bz2f",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk012-s18",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk012-s18",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk012-s18",
+            "name": "mad3-qz1-sr1-rk012-s18",
+            "cpu_architecture": "s390x",
+            "cpu_family": "ibmz",
+            "created_at": "2024-09-09T12:40:44Z",
+            "instances": [
+                {
+                    "id": "02y7_412cbe45-d094-4efe-b5fb-663dbabfc4b7",
+                    "name": "jenkins-broadly-piranha-368-aio-0",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk012-s19",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk012-s19",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk012-s19",
+            "name": "mad3-qz1-sr1-rk012-s19",
+            "cpu_architecture": "s390x",
+            "cpu_family": "ibmz",
+            "created_at": "2024-10-16T11:47:00Z",
+            "instances": [
+                {
+                    "id": "02y7_05482daf-7638-46fe-b391-413fc0f13ff6",
+                    "name": "zdt-vsi-cmd-91",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_068d68d2-1a11-4dd9-ad76-e1d4c3207c12",
+                    "name": "zdt-vsi-cmd-103",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_dd82c669-4167-4d72-8db8-01709ed60dbc",
+                    "name": "zdt-vsi-cmd-70",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-12-12T00:05:01Z",
+                "applied_by": "Anikhet.Menon@ibm.com",
+                "policy": "no_schedule_vm",
+                "reason": "reserve"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk013-s02",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk013-s02",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk013-s02",
+            "name": "mad3-qz1-sr1-rk013-s02",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-02-27T05:24:08Z",
+            "instances": [
+                {
+                    "id": "02y7_89b50c1c-9fc7-4572-a498-5abe5c9df2dd",
+                    "name": "kube-cr9k6d6m0mfb4jl5l8s0-myclustereu-default-000002a9",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l4",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk013-s06",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk013-s06",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk013-s06",
+            "name": "mad3-qz1-sr1-rk013-s06",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-02-27T05:24:07Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l4",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk013-s10",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk013-s10",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk013-s10",
+            "name": "mad3-qz1-sr1-rk013-s10",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-09-03T10:00:43Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l40s",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk013-s14",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk013-s14",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk013-s14",
+            "name": "mad3-qz1-sr1-rk013-s14",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-02-27T05:24:09Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l40s",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk013-s18",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk013-s18",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk013-s18",
+            "name": "mad3-qz1-sr1-rk013-s18",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-02-27T05:24:09Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l4",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk013-s28",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk013-s28",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk013-s28",
+            "name": "mad3-qz1-sr1-rk013-s28",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-02-27T05:24:08Z",
+            "instances": [
+                {
+                    "id": "02y7_a0526d8d-edf5-455e-92ee-85fb2e83a968",
+                    "name": "kube-ct85o59m0rlhv6fhmmr0-myclustgwer-mengthy-0000035a",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l40s",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk013-s32",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk013-s32",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk013-s32",
+            "name": "mad3-qz1-sr1-rk013-s32",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-09-03T10:00:43Z",
+            "instances": [
+                {
+                    "id": "02y7_e6727824-d880-40f0-a5a7-9a7cfa27d10e",
+                    "name": "kube-ctd736pm00fveu4fp5o0-defreyu-ledurd-00000486",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l40s",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk013-s36",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk013-s36",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk013-s36",
+            "name": "mad3-qz1-sr1-rk013-s36",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-02-27T05:24:07Z",
+            "instances": [
+                {
+                    "id": "02y7_dd374c52-df8c-44ec-9a1b-3c72a0a801ee",
+                    "name": "kube-cr9k6d6m0mfb4jl5l8s0-myclustereu-default-00000116",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l4",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk013-s40",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk013-s40",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk013-s40",
+            "name": "mad3-qz1-sr1-rk013-s40",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-02-27T05:24:08Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l4",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-09-02T05:07:43Z",
+                "policy": "no_schedule_vm",
+                "reason": "reserve",
+                "context": "CHG7511447"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk013-s44",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk013-s44",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk013-s44",
+            "name": "mad3-qz1-sr1-rk013-s44",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-09-03T10:00:43Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l40s",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk013-s48",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk013-s48",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk013-s48",
+            "name": "mad3-qz1-sr1-rk013-s48",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-09-03T10:00:43Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l40s",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk014-s02",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk014-s02",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk014-s02",
+            "name": "mad3-qz1-sr1-rk014-s02",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-09-03T10:00:43Z",
+            "instances": [
+                {
+                    "id": "02y7_d0e958d4-e515-4e79-b085-916d9b0ebe6c",
+                    "name": "kube-ct86agcm0h1fitdc3k0g-mycldewhgfv-ferjhuw-00000106",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l40s",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk014-s06",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk014-s06",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk014-s06",
+            "name": "mad3-qz1-sr1-rk014-s06",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-04-04T16:39:29Z",
+            "instances": [
+                {
+                    "id": "02y7_ff5945fe-d5c4-4372-9145-97f66a22288c",
+                    "name": "kube-ct3l7vlm0pftt2vkqgqg-myclustereu-mapkua-000008a6",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l40s",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk014-s10",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk014-s10",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk014-s10",
+            "name": "mad3-qz1-sr1-rk014-s10",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-04-04T16:39:27Z",
+            "instances": [
+                {
+                    "id": "02y7_e2020cd8-fe75-45ce-be41-66d5b8560fe6",
+                    "name": "kube-ctd736pm00fveu4fp5o0-defreyu-ledurd-000003c6",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l40s",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk014-s14",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk014-s14",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk014-s14",
+            "name": "mad3-qz1-sr1-rk014-s14",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-09-03T10:00:44Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l40s",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk014-s18",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk014-s18",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk014-s18",
+            "name": "mad3-qz1-sr1-rk014-s18",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-09-03T10:00:42Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l40s",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk014-s28",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk014-s28",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk014-s28",
+            "name": "mad3-qz1-sr1-rk014-s28",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-04-04T16:39:27Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l40s",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk014-s32",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk014-s32",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk014-s32",
+            "name": "mad3-qz1-sr1-rk014-s32",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-04-04T16:39:27Z",
+            "instances": [
+                {
+                    "id": "02y7_e8351282-f98f-4957-a9ad-e8efecf7cb1d",
+                    "name": "kube-ctbqd9em06cr3ugq9qi0-jeius-jyu-00000337",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l40s",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk014-s36",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk014-s36",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk014-s36",
+            "name": "mad3-qz1-sr1-rk014-s36",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-04-04T16:39:27Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l40s",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk014-s40",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk014-s40",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk014-s40",
+            "name": "mad3-qz1-sr1-rk014-s40",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-04-04T16:39:27Z",
+            "instances": [
+                {
+                    "id": "02y7_000d30c8-a725-4889-905f-f22b392c3fe4",
+                    "name": "kube-ctbqd9em06cr3ugq9qi0-jeius-mfre-000004fe",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l40s",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk014-s44",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk014-s44",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk014-s44",
+            "name": "mad3-qz1-sr1-rk014-s44",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-04-04T16:39:28Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l40s",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk014-s48",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk014-s48",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk014-s48",
+            "name": "mad3-qz1-sr1-rk014-s48",
+            "cpu_architecture": "amd64",
+            "cpu_family": "sapphirerapids",
+            "created_at": "2024-04-04T16:39:29Z",
+            "instances": [
+                {
+                    "id": "02y7_20ea0c11-965a-4f75-ad3b-0af59e98a369",
+                    "name": "kube-ct4viv1m0tn9098l05c0-beychler-verfull-0000024c",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "gx3-l40s",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        }
+    ]
+}

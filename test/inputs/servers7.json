@@ -1,0 +1,3463 @@
+{
+    "first": {
+        "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes?limit=100"
+    },
+    "limit": 100,
+    "total_count": 638,
+    "nodes": [
+        {
+            "id": "mad3-qz1-sr1-rk055-s04",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk055-s04",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk055-s04",
+            "name": "mad3-qz1-sr1-rk055-s04",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-11-14T18:03:14Z",
+            "instances": [
+                {
+                    "id": "02y7_0291d4e5-77ca-414f-ae05-f965fa62fe24",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00035c71",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_081f7c3c-ebcf-46b1-b836-e3b1ea5f7b87",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00032876",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_14200fb4-a889-4adc-9847-f38b0c4edfea",
+                    "name": "vgw-02y79a1f0abe86f5457598d354cb7edd15c9-m2-3d9aa5f4f7c1b4",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_1bc58b66-d6c1-4931-8e06-76a5d9c394c0",
+                    "name": "lb-5abd8a3f-5343837",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_331a977b-6be5-466d-8fac-954c02b4a404",
+                    "name": "lb-c2c6f6cc-5343828",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_3eae1a50-184d-4a35-b5be-f47160f790e4",
+                    "name": "nlb-21aeccfe-5334073",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_950b67a5-9cf6-4794-acd5-f898be85e271",
+                    "name": "kube-css5loem01t0auijm2m0-ibclusproes-cp4d-00001bf8",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_a20e58ff-e64c-4e5f-9059-22c7932d001a",
+                    "name": "kube-css5loem01t0auijm2m0-ibclusproes-cp4d-000019b9",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_a634693e-3825-4f5a-aa7c-ca15fa057413",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-edge-00080e19",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_a6a290c9-98fd-4a6c-ac57-396eba85fbca",
+                    "name": "kube-css5loem01t0auijm2m0-ibclusproes-watsonx-00000737",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_aba173ec-1bac-4ef5-8d30-747994ceb295",
+                    "name": "perfkit-c0990844-0",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_af629db3-cb6e-4da5-91d7-3018d7ae5af5",
+                    "name": "ceph-node2-675940e5cc0dca378231e833",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_b3057903-09a7-444e-aa8c-61e07ec7f85c",
+                    "name": "vsi-nlb-act-pass-tmp-2",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d86cfd76-6d9b-4a5d-ad12-3ac218a64c57",
+                    "name": "lb-19ea53f0-5343468",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk055-s06",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk055-s06",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk055-s06",
+            "name": "mad3-qz1-sr1-rk055-s06",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-10-21T18:47:55Z",
+            "instances": [
+                {
+                    "id": "02y7_080ea525-9f0a-4ac9-b199-94d0cfd71d33",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00035d34",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_80d0dc57-57ce-4bd8-83e6-b5d007a0b6c9",
+                    "name": "cr-vsi-prod-eu-es-3-a939213d-cd87-46e6-bbed-35de638ed879",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_18cdfdae-e71c-44a3-a37b-e4517fcbb407",
+                    "name": "lb-16aa6715-5342346",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_1e154d9d-1d7b-4393-af7f-3433da29b65e",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-default-000343d9",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_2f987d24-816f-4b06-8703-04c7c8bc26bb",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-transit-00081095",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_472e8acd-6913-49dd-9b71-5a939c9a3427",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-00078fe0",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_4b09c6b3-4898-4e05-94c0-c72325611039",
+                    "name": "lb-4b1a8e11-5342924",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_4f6913cd-fd88-430e-bb05-15bde6f6e613",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-edge-0003507b",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_546e95c6-c08e-4482-a045-6a1e7084bca0",
+                    "name": "lb-ac27e3a5-5342641",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_5b35da0e-c76a-4e92-80db-eb79b68d5bbe",
+                    "name": "fit-mad-dyn-c3-iteration-118",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_5ddaf080-9f91-4774-8d6d-31209b053bae",
+                    "name": "kube-cmeo2t3m0njg9lgfg70g-lrprodeuesc-edge-0003e5f1",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_688fe41e-ff83-461c-997a-b2b8434022ff",
+                    "name": "sentinel-server-eu-es-3-ce1e6c92-6",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_71d1e57c-b825-46fb-ac80-74092351e881",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-0003a99b",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_b1a57736-ea0f-455f-88fd-ba93ff5aaf12",
+                    "name": "cr-vsi-prod-eu-es-3-2020943f-3576-4b5e-b56b-d4222d735e41",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_7f1d81a3-68a4-4f62-b5fb-be4fea39b158",
+                    "name": "clicsast01",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_82d3295e-80f9-44f8-a62a-ecf4e73b6ce2",
+                    "name": "kube-ck9d4mgm0lpafcgmpe9g-prodeuescp-ceedgeb-00017ec7",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_6069f9af-7684-497e-b85d-c664a6580982",
+                    "name": "cr-vsi-prod-eu-es-3-5c16aa4f-2259-4fb2-89a7-1b911394e1fd",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_884cd3b5-2b2f-461b-ac2f-0be32dee9be2",
+                    "name": "lb-449be19f-5341913",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_8e0b803c-df97-4fb9-a53c-c8f714dead8c",
+                    "name": "cr-vsi-prod-eu-es-3-57a49954-02dd-4f92-b91d-8d8bae707684",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_8ec8a203-e29e-47cc-bc88-cd409d259ac6",
+                    "name": "lb-15f15465-5343701",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e1823fbe-4b79-4223-968a-736d72785a30",
+                    "name": "kube-cq20liim0q550ddi8epg-vpceuesingr-default-00000c1f",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_5675c40a-60eb-4333-8754-a92f5d266837",
+                    "name": "kube-cs3u1q6m0v4b9ibmotng-bccerhcoscl-bccerhc-00000161",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9a7148dd-ba4a-42df-b966-bad39eea6ad0",
+                    "name": "lb-fb30c672-5342740",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9ed9cddf-b5c3-493a-84c7-1ad7fd776a9b",
+                    "name": "lb-d4837e31-5343279",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_a3d28541-6b75-4da3-86ab-c0fcb52a457e",
+                    "name": "cr-vsi-prod-eu-es-3-2483b606-3c35-420d-b16b-ba3aeefe044f",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ac6c97ae-69d9-4ea0-940a-ec38591ac5e0",
+                    "name": "lb-a831fe0f-5387020",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_af47959c-49f4-4ab0-86e8-9149408801b8",
+                    "name": "lb-cf2af551-5343714",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_0022e5b2-16fb-4c4a-898c-de9c7f8a776d",
+                    "name": "orbciidbs06",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_bd7db3c2-ebbe-4255-a990-7613deedabe9",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00035b83",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_c57d6608-e653-492b-9e3f-4e773b7e19c2",
+                    "name": "lb-a97078bf-5343723",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_cb32e28a-2a7a-44d3-ade3-5146b841772b",
+                    "name": "lb-20301af9-5495940",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d1b79093-a9dd-4c25-9171-944fb7aa388b",
+                    "name": "kube-cmeo2t3m0njg9lgfg70g-lrprodeuesc-default-0003f8e4",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d8668d30-d00e-4b1f-98c9-712b06519b54",
+                    "name": "fit-mad-dyn-m3-iteration-118",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_df8b8109-dba4-4229-9e69-691e83154697",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-transit-00034d77",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk055-s08",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk055-s08",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk055-s08",
+            "name": "mad3-qz1-sr1-rk055-s08",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-11-14T18:03:13Z",
+            "instances": [
+                {
+                    "id": "02y7_03c688c1-129e-43e8-bed4-1f0c176b0a76",
+                    "name": "bpinewss01",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_084f1acb-b1d8-4014-8efe-abb2b5e88aec",
+                    "name": "lb-afd50e65-5343280",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_1c75d745-759f-454f-85ba-d948e26a340b",
+                    "name": "bpibowss02",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_264f7556-babf-43af-bd4c-eca748e97c51",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-000331a7",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_385da46a-da5a-47df-b44f-db41ec122ebc",
+                    "name": "vsi-transit-2-vpn-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_463e7fef-4d09-4d00-b192-3d3be73497d1",
+                    "name": "kube-cns1lp6m0vva94dlmdlg-ibeuescxbor-wpworst-00002072",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_4a43543c-5062-4f4e-909b-92401f44be26",
+                    "name": "lb-9c76d615-5341907",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_4eef9277-b157-4684-97f0-a9c41f86ac0b",
+                    "name": "lb-29469b8d-5343311",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_52243f17-d617-411e-8012-939fa9958d54",
+                    "name": "lb-c0f7a54f-5342759",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_60bdf9e0-a6f2-4236-9e27-d4a6c8d6f9b9",
+                    "name": "gshisast01",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_683ec79f-3edc-4d1a-997b-c08cc6a4b3db",
+                    "name": "lb-c8090861-5341881",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_724edb31-8cf7-472a-8ba6-7d7aca6e9b87",
+                    "name": "lb-b6986386-5343319",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_7807ab00-1b04-43ba-9ca6-6d060363b459",
+                    "name": "lb-c60f14ae-5342141",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_7f3cb64c-9424-440d-a897-64c6cce5fbd4",
+                    "name": "lb-ac57019d-5343312",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9873b954-ce79-4e1c-803c-f8d33824f34d",
+                    "name": "lb-b61ffef4-5343275",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9efcced8-ed13-4b58-afba-98f9bcc22f54",
+                    "name": "bpicsdbt01",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_a579c777-5e8c-40f6-8870-ce22a9156fa2",
+                    "name": "lb-82a7db4a-5343298",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_aa35db48-2344-4e25-b81f-22c754efb33b",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00033284",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_c28aa3f4-e915-4d60-a370-30915be86ca7",
+                    "name": "lb-8664dc1d-5343324",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_f98d8bd8-ee31-46c6-8219-d03e34ea071b",
+                    "name": "bietlasr01",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_cf932a57-9414-4c9c-8c24-47c09a1fc616",
+                    "name": "lb-63b32272-5341890",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d1f4e023-bf19-43bc-b3d2-c327f4dc4535",
+                    "name": "kube-ck9fvc3m0vfg080mpea0-prodeuess01-cesyste-000476b1",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e3d4669d-e911-45ed-abe7-60a4796abbbe",
+                    "name": "bpitfwst04",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_eebc089c-d32b-4b5a-b83a-0a917ce0cf8a",
+                    "name": "earqoasr11",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ef373b50-e533-4b42-8806-74c736cf8ca3",
+                    "name": "kube-cp7e842m0n0k4ovg40lg-ibeuescxbor-wpworst-00000e00",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_f2684d9c-b708-48ac-b4c3-93bf05ba9e30",
+                    "name": "kube-ck6m9b5m0mg647pr1tvg-otctektonpw-workers-00007325",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_fa6fc782-a368-4542-b010-82e08fd0c437",
+                    "name": "lb-fb30c672-5342644",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk055-s10",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk055-s10",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk055-s10",
+            "name": "mad3-qz1-sr1-rk055-s10",
+            "cpu_architecture": "amd64",
+            "avoid": {
+                "applied_at": "2024-06-16T15:48:48Z",
+                "applied_by": "",
+                "policy": "best_effort"
+            },
+            "cpu_family": "cascadelake",
+            "created_at": "2023-11-06T21:29:53Z",
+            "instances": [
+                {
+                    "id": "02y7_2e58d2bb-5fcc-46b7-a6b2-fa9e4f60f2d9",
+                    "name": "kube-cns1lp6m0vva94dlmdlg-ibeuescxbor-wpingst-00001367",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_357496c4-4a9c-4bc7-b847-7b0bd342f9aa",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00030d9e",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_b5df8c73-297a-4809-ba0b-a475c783a2c6",
+                    "name": "bts-eu-es-rhcos-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_5255c718-c641-4efc-93e2-b120d946490f",
+                    "name": "cr-vsi-prod-eu-es-3-98e51bd5-6bcc-4945-a29d-911529519418",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_6557584f-bea4-49f6-ab17-df37012d9189",
+                    "name": "kube-cp7e842m0n0k4ovg40lg-ibeuescxbor-wpsto2s-00000b86",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_68e6138e-df70-4b85-a50f-c34e242bffa7",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00031d75",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_c5f6746d-e4c2-4dc0-8505-f960a007f799",
+                    "name": "kube-cqh8rkbm0kjg5nla6ejg-cpeuesrcp-default-00000484",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_cdab9e23-ef9e-4ddb-98c6-8c728a435627",
+                    "name": "kube-coej5rjm0vj4u1sc58sg-ibeuescxbor-wpingst-000012e1",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ed2ce156-7cd3-48c7-871e-e2accb93a782",
+                    "name": "kube-cns1lq2m01r7e5ob8d9g-ibeuescxbor-wpegrst-000012ae",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "4.15.0-1108-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 5,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk055-s12",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk055-s12",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk055-s12",
+            "name": "mad3-qz1-sr1-rk055-s12",
+            "cpu_architecture": "amd64",
+            "avoid": {
+                "applied_at": "2024-06-16T15:48:51Z",
+                "applied_by": "",
+                "policy": "best_effort"
+            },
+            "cpu_family": "cascadelake",
+            "created_at": "2023-11-06T21:29:53Z",
+            "instances": [
+                {
+                    "id": "02y7_5bb32054-78cf-424e-bf6e-982214c4e893",
+                    "name": "csre-synthetics-mad-vsi3-1",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "4.15.0-1108-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 5,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-10-29T19:40:40Z",
+                "applied_by": "lefurgy@us.ibm.com",
+                "policy": "no_schedule_vm",
+                "reason": "discharge",
+                "context": "FLT-23585"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk055-s14",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk055-s14",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk055-s14",
+            "name": "mad3-qz1-sr1-rk055-s14",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-10-11T14:12:37Z",
+            "instances": [
+                {
+                    "id": "02y7_10cf4c54-4c5d-4872-bd65-0c2b5f5ea081",
+                    "name": "vm3-mad3-vanncyril",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_1b8deb23-1c74-410c-af11-bf47f5b9e7a6",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-000863e7",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_23960ad4-ddca-4ced-bacc-99dac2cb3c09",
+                    "name": "kube-cmeo2t3m0njg9lgfg70g-lrprodeuesc-edge-0003d74f",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_2c6d1080-a614-49c4-899c-c84a4e4d6a09",
+                    "name": "kube-cs75objm0ibcba5se0t0-ic4vroksmad-default-00002768",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_35bdaca1-9687-4be5-986a-dd1e90518a08",
+                    "name": "lb-0b2b77aa-5342260",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_3e06401b-bef7-4ebf-bad9-9a2a59bf3747",
+                    "name": "lb-ddf69d3a-5343639",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_4332391d-d419-4af2-bd83-f527f4de2bdc",
+                    "name": "cr-vsi-prod-eu-es-3-dbb1750f-1f3d-402d-98c6-ce66523f8238",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_44bd2b1b-0bcc-40f3-99b3-d4c6839bb65d",
+                    "name": "lb-fdade68a-5342657",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_49decbec-267e-44a2-9981-435c7806c524",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-00078967",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_4a2c08ba-c891-4db0-abf9-face1c71ff51",
+                    "name": "lb-d1dd4c4d-5343138",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ccf43ea4-57a3-4d0d-93af-87f9666ba49c",
+                    "name": "cr-vsi-prod-eu-es-3-3e71ffc0-49db-4e68-aeec-e14212f57c04",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_72531220-4abe-4485-9d8a-e8266e06bd14",
+                    "name": "cr-vsi-prod-eu-es-3-c6fea841-400e-421d-bbd5-e96994dbe84d",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_51661748-9765-4ac0-9a64-66ac1e862a16",
+                    "name": "lb-ba7a587c-5343111",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ab66885f-c901-404d-88bb-33d842f4d464",
+                    "name": "cr-vsi-prod-eu-es-3-14cd3211-c10d-4fd5-bbbb-2766d64b9bff",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_6384ef2f-686e-4bee-929d-774d7b14788d",
+                    "name": "pxpwiasp11",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_5a868a9c-6aae-4d0f-bd91-5ccd381a02fe",
+                    "name": "lb-6b5177a5-5342310",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_b2e047a4-c41a-4e05-8c29-ff292ac1c214",
+                    "name": "pxpwiasp19",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_68f41429-06b2-4e62-a25d-f91d5cae2009",
+                    "name": "healthmonitor-dedicated-vsi-eu-es-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_6c49635b-d3d3-401e-b3b3-7302fd704070",
+                    "name": "bpitgwst04",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_7b4543fb-d516-4855-9287-c8511b38a585",
+                    "name": "kube-cjjnd4km0in44g464200-eventingeue-default-000021b5",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_7be3ffa4-f95f-4b20-8e9d-4cff702de7e2",
+                    "name": "kube-cmeo2t3m0njg9lgfg70g-lrprodeuesc-default-0003e7e7",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_92a8424e-64ca-41be-9b97-c6fe3f40fc47",
+                    "name": "lb-20301af9-5495941",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9d1e0f88-8430-4318-973e-f990fa936fb8",
+                    "name": "vgw-02y7c7c0f4486f9c4f71a86d6ab4eb3cffe3-m2-3d8e23f1f84779",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_580a9370-08cc-4a6a-a88f-f11542ec4487",
+                    "name": "cr-vsi-prod-eu-es-3-09fc2a0e-205e-46ef-ab03-abce682f207b",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_c55b1129-a351-4ceb-a928-e37b2b32e4ec",
+                    "name": "lb-16e77c9e-5343283",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ca635363-f725-4a40-839e-2f0739704847",
+                    "name": "tsmandsr02",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d28559ec-655a-41ee-9985-ae3440aaf81a",
+                    "name": "lb-e1aba671-5342292",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d4f2f2df-97b3-4342-9321-c1680f709b42",
+                    "name": "bpitgwst02",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_db8f8a85-0ae5-4d96-bbee-c57b07f90756",
+                    "name": "lb-fefc3bbb-5343125",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e0603a60-5574-4330-996d-73db83e2fcd1",
+                    "name": "kube-ck9d4mgm0lpafcgmpe9g-prodeuescp-cesyste-00017f54",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e16f92ac-7e32-46b8-b7a8-2831743c25fc",
+                    "name": "lb-acc988d7-5342137",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_35bc501a-7293-4786-b409-25323400b856",
+                    "name": "sqcliidbt06",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e59ca15b-4391-4032-9bb6-dc4d627bcb8b",
+                    "name": "kube-cs75objm0ibcba5se0t0-ic4vroksmad-default-00002cc3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_c2095874-752a-44c8-98d4-705147e61d36",
+                    "name": "pamasiasp14",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_a7f050bb-11e6-46bc-a664-353b82094e2e",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00027890",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_f07b2c35-515a-4382-8900-d36ac88675bb",
+                    "name": "lb-294269b7-5343120",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ff080418-f22c-48bc-9f9e-21e37da81f08",
+                    "name": "kube-ctfo9cmm0bjk3r685gl0-kubee2epvgl-default-00000228",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk055-s16",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk055-s16",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk055-s16",
+            "name": "mad3-qz1-sr1-rk055-s16",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-10-11T14:12:36Z",
+            "instances": [
+                {
+                    "id": "02y7_01445694-544f-4a85-93a7-d3ff5cba332d",
+                    "name": "nlb-d8bc55f9-5161716",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_03b466fd-7a11-4d25-acb6-208c136e6d1c",
+                    "name": "nlb-a3faee8b-5161341",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_0e564438-7a5e-4703-bfd9-56e7b0874fc4",
+                    "name": "powegiasr02",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_1c80152b-4ccc-4d46-9931-f85565445e56",
+                    "name": "bpiinwst02",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_4b9ada3b-3972-47c9-be2e-7c4c90981b12",
+                    "name": "gesasidbs01",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_320e2742-3bc0-433e-815b-7907803edbe7",
+                    "name": "nlb-6627c6a5-5160582",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_53be1691-00bb-4b55-b178-5872e59c52da",
+                    "name": "rgtniasr01",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_3bfdb877-692d-471f-9270-8fd7619c37e2",
+                    "name": "bpidcwst02",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_4ee93f78-a992-4595-bd1c-314ecae901a9",
+                    "name": "nlb-456d7e77-5231118",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_4ff48985-f99f-44d7-a8d3-a8d68a2c292e",
+                    "name": "fit-mad-lr-s3-iteration-200",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_5c7a21a8-dadb-47c9-b273-8e0786a1fcfa",
+                    "name": "vgw-02y7b2bcc6e3c14f414eb1bf3b815ce06e6e-m1-3d827a10eb4416",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_6885dbd1-aa71-47dc-8279-b7d49ed25f4b",
+                    "name": "lb-571ebb2c-5342971",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_6a274ec4-682c-48ff-8899-a0dd63d527bd",
+                    "name": "nlb-30d4722d-5160147",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_6bf71483-d217-4b3d-9e5c-2dbbe98ca175",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00033a7b",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_73d8418d-72b1-4420-9a72-68e230dbb8da",
+                    "name": "cr-vsi-prod-eu-es-3-657d6b9a-fde6-47fe-8c33-3b148e450ab8",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_7dfb0c64-4873-441a-b208-c4451e5683f1",
+                    "name": "nlb-1f202eb1-5231476",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_7e45ddbd-f334-48e1-a3a6-a2c5fe9febb1",
+                    "name": "nlb-bbf1c249-5161662",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_919b2b24-648f-450a-8a04-3ec7c7df2443",
+                    "name": "lb-9c6b4b94-5086503",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d32f163c-2598-49cf-90bf-a99629e78760",
+                    "name": "kube-cp7e842m0n0k4ovg40lg-ibeuescxbor-wpingst-00000745",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9db7194c-925d-4144-8941-c020ce609e23",
+                    "name": "nlb-b44cf83f-5231410",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ac07e505-d045-4c67-a6cd-f200c195921b",
+                    "name": "mimonasp02",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ae9921b8-84e5-40d4-8db3-756637f8b67c",
+                    "name": "fit-mad-lr-m3-iteration-200",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_b538a96b-356e-4d9e-9351-4c1c85a6b5d6",
+                    "name": "nlb-bc6e9ba2-5161680",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_c2b83768-4682-43dc-bb68-981a2e7b4098",
+                    "name": "ceph-node1-675940e5cc0dca378231e833",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_1f0881d6-0e1c-4162-8479-f682b2c08f35",
+                    "name": "kube-clvn4c9m04jc3f25ap9g-medpcp4d-default-000007d8",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_cede9d65-9bd2-46f8-bdc2-af66c6a09831",
+                    "name": "nlb-456d7e77-5230998",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_2892bcbf-d74a-4d0a-a096-d869637bbf67",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-0006e81e",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d4991f11-ab60-4d4d-8254-f6bc82cff5d3",
+                    "name": "nlb-e3aee878-5161424",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_dc9a365a-f9ed-4965-b2bc-e9a5636c2066",
+                    "name": "bpislast02",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e1ccaf6e-cd25-4bbc-826d-be33a818d163",
+                    "name": "nlb-7ea8754f-5161219",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e8a40b97-8571-4685-85fa-db75474de165",
+                    "name": "nlb-49321c9a-5161667",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_eea2c828-f001-40fe-94eb-496d5e34563e",
+                    "name": "lb-ac27e3a5-5342577",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_f2ae94cf-688e-4330-aebe-95c0d66ab5fb",
+                    "name": "lb-4a55f8a9-5343702",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk055-s18",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk055-s18",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk055-s18",
+            "name": "mad3-qz1-sr1-rk055-s18",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-06-17T07:29:31Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "ox2",
+            "roles": {
+                "node_roles": [
+                    "localdisk",
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk055-s20",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk055-s20",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk055-s20",
+            "name": "mad3-qz1-sr1-rk055-s20",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-06-17T07:29:29Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "ox2",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk055-s28",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk055-s28",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk055-s28",
+            "name": "mad3-qz1-sr1-rk055-s28",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-10-28T07:49:45Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "control"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk055-s30",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk055-s30",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk055-s30",
+            "name": "mad3-qz1-sr1-rk055-s30",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-10-28T07:49:46Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk055-s32",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk055-s32",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk055-s32",
+            "name": "mad3-qz1-sr1-rk055-s32",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-10-11T14:12:36Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "control"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk055-s34",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk055-s34",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk055-s34",
+            "name": "mad3-qz1-sr1-rk055-s34",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-10-11T14:12:35Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "localdisk",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk055-s36",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk055-s36",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk055-s36",
+            "name": "mad3-qz1-sr1-rk055-s36",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-11-14T18:03:13Z",
+            "instances": [
+                {
+                    "id": "02y7_3fdae43d-598f-4820-8541-96c10a5df50b",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00038afd",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_4b503620-5b4c-42eb-9f80-32a5491e611b",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-0003ac3b",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_6a084c7f-7835-4ab8-8587-bf0918e0127e",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00037d4b",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_8d63f9d9-60a5-4f91-b31d-4e9414c17929",
+                    "name": "siedgiasr01",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_a38ca59e-f274-44d2-ac92-1e8adb1b284c",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-0003a229",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_acccd6d6-8159-46f8-9d4c-da6ae7bc7915",
+                    "name": "probaiasr02",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_b73a006b-14b5-4685-b879-6bd9da8f889e",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00039474",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_bb0748cb-5334-4a88-9302-da92a8b6a937",
+                    "name": "probaiasr03",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_c4833f9b-5e19-469b-bed9-91d0547d395f",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00038ca0",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_fa4abbe8-26b1-488a-8954-d52bd7d43254",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-0003ba3c",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ff38952b-aff0-4ea3-a049-ab4bbeed60e0",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-000395b2",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk055-s38",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk055-s38",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk055-s38",
+            "name": "mad3-qz1-sr1-rk055-s38",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-06-17T07:29:30Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1041-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "ox2",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "localdisk",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk055-s42",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk055-s42",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk055-s42",
+            "name": "mad3-qz1-sr1-rk055-s42",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-10-11T14:12:35Z",
+            "instances": [
+                {
+                    "id": "02y7_034a620a-58cd-49fc-853b-0de08e6972af",
+                    "name": "healthmonitor-dedicated-vsi-eu-es-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_03f7fbf9-9a13-421a-9e4b-738618337a45",
+                    "name": "lb-d66f009c-5342304",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_0b076614-8072-4374-90da-9f4035017d85",
+                    "name": "kube-cnbrfmam0sclno36becg-btsvpcoc4eu-default-00003972",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_1c143508-0c17-4a4e-b0c0-954ccba32711",
+                    "name": "kube-ck6m9b5m0mg647pr1tvg-otctektonpw-control-000072af",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_37381e6f-12de-4f10-bda6-894b3245f357",
+                    "name": "sentinel-client-eu-es-3-7dd1e480-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_43d9cfa2-43ee-4860-b5d7-6da47ad8ca1f",
+                    "name": "nlb-49c6d2b9-5161610",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_46bf21e9-db92-4bd8-b4cd-b6688ec29c3a",
+                    "name": "vsi-testing-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_48544567-329a-4a8d-89a6-994cb1423d3c",
+                    "name": "lb-a4f3b890-5475786",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_eb5e6a98-199d-4d04-b43e-dfbfbce3c737",
+                    "name": "splfidbp04",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_525dfd6f-0044-4314-9e8f-b726a18f66f8",
+                    "name": "nlb-5a1a6fd8-5470351",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_1bcf18ce-3bcc-4ea3-bf5d-bdb46fe0eee3",
+                    "name": "kube-cq20liim0q550ddi8epg-vpceuesingr-default-00000bf0",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_64582b4e-d5ae-4304-a0d3-4d4cb06396d5",
+                    "name": "kube-ck9fvc3m0vfg080mpea0-prodeuess01-ceedgeb-0004724e",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_95bf904a-77c7-4213-8331-945027bd88f1",
+                    "name": "pamasiasp13",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_88625290-65c0-421f-8758-1e6b96779eea",
+                    "name": "kube-ck6m9b5m0mg647pr1tvg-otctektonpw-control-000071bb",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_7c15c3f7-b817-4c96-801f-87f2cc3d1eb5",
+                    "name": "csre-synthetics-mad-vsi3-2",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9c92cc1b-a1bc-42de-91b6-b9771a6816ec",
+                    "name": "nlb-017f5518-5231253",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9db645c9-966c-4d6a-b14b-9bfb50e640cc",
+                    "name": "cr-vsi-prod-eu-es-3-39c8ce4e-90f9-4357-af35-bc4b391cb342",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9f3deac3-46b1-4036-8b29-f3d3ee76a1b7",
+                    "name": "kube-cmeo2t3m0njg9lgfg70g-lrprodeuesc-edge-00040ea7",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9ffa95cd-b234-4960-9673-62b70190a930",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-transit-00033c3e",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_aa737137-1167-4f1a-8ee4-e653e7f1178e",
+                    "name": "kube-ck9fvc3m0vfg080mpea0-prodeuess01-cesyste-00047501",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ac291997-eb61-4399-8e2a-4c4ab9fbe09a",
+                    "name": "lb-57b04fc5-5440641",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_b2016cea-8428-4148-ae51-c67f138842fe",
+                    "name": "at-hawkeye-bm-nlbhostsoftirqcpuuptcp-2024-12-11t00-22-42z-2",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_c6db26fa-015b-4ca2-b040-5c41921ddfc4",
+                    "name": "lb-d1cfa0eb-5343121",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_c7259a13-ebfe-49d6-959e-03690b7490f5",
+                    "name": "kube-ck9d4mgm0lpafcgmpe9g-prodeuescp-ceedgeb-00017d53",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_c969cea7-33a5-4d3c-87e2-b0a625c7bab0",
+                    "name": "lb-7366531b-5417995",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d3dd3c4a-0df4-406f-b1d3-afabd82ada1e",
+                    "name": "kube-cnbs1nlm0rmfrs36bed0-btsvpcikseu-default-000065eb",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d45aa5d1-efce-4a1b-b484-fa0864c56142",
+                    "name": "kube-ck9fvc3m0vfg080mpea0-prodeuess01-cesyste-0004743b",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d742f3c1-a55e-4523-8c21-d203e59ed5a9",
+                    "name": "fit-mad-dyn-s3-iteration-118",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d8379424-4856-4da1-88cb-a61c350fdcee",
+                    "name": "lb-68077069-5343119",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_db4f3468-ca73-488a-a38c-c9cf361d45d1",
+                    "name": "fit-mad-lr-c3-iteration-200",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e0834762-82cd-407b-8db5-18772b8ba2e1",
+                    "name": "vgw-02y780a72cc983c145cab741d9ecd2d1780a-m2-3d8279a8448efd",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e238e030-7610-40b5-adaf-ccb081386b19",
+                    "name": "kube-cnbrpk4m0o2t56ls41v0-btsvpcoc4eu-default-00004f5c",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e9ce2796-695b-4772-9711-1fddd8339f45",
+                    "name": "sentinel-client-eu-es-3-f166cfea-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ed035183-7839-49f5-a979-df08b553f6a4",
+                    "name": "lb-0a84ac1c-5343643",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_faf3dd47-e4ff-4a9e-8c00-82b6f585ea36",
+                    "name": "nlb-49c6d2b9-5161646",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_fb77a294-7749-4633-82d9-056aab8f7d39",
+                    "name": "kube-ctfo9cmm0bjk3r685gl0-kubee2epvgl-default-0000038e",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_fea713eb-d8b3-4eba-a365-724884b8b17a",
+                    "name": "kube-cmeo2t3m0njg9lgfg70g-lrprodeuesc-default-0003e89a",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk055-s44",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk055-s44",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk055-s44",
+            "name": "mad3-qz1-sr1-rk055-s44",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2023-11-06T21:29:54Z",
+            "instances": [],
+            "kernel_version": "4.15.0-1108-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 5,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk055-s46",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk055-s46",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk055-s46",
+            "name": "mad3-qz1-sr1-rk055-s46",
+            "cpu_architecture": "amd64",
+            "avoid": {
+                "applied_at": "2024-06-16T15:49:27Z",
+                "applied_by": "",
+                "policy": "best_effort"
+            },
+            "cpu_family": "cascadelake",
+            "created_at": "2023-11-06T21:29:53Z",
+            "instances": [
+                {
+                    "id": "02y7_3106f7c2-4585-41e4-86d1-8ef6d5720fde",
+                    "name": "kube-cnnip87m0har06dckgsg-ibeuescxbor-wpsto1s-000018b8",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "4.15.0-1108-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 5,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-10-29T19:40:44Z",
+                "applied_by": "lefurgy@us.ibm.com",
+                "policy": "no_schedule_vm",
+                "reason": "discharge",
+                "context": "FLT-23585"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk055-s48",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk055-s48",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk055-s48",
+            "name": "mad3-qz1-sr1-rk055-s48",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2023-11-06T21:29:53Z",
+            "instances": [],
+            "kernel_version": "4.15.0-1108-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 5,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "control"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk055-s50",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk055-s50",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk055-s50",
+            "name": "mad3-qz1-sr1-rk055-s50",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-11-14T18:03:13Z",
+            "instances": [
+                {
+                    "id": "02y7_05d8c064-bdfc-41cb-a8ba-3d0ae8b23d51",
+                    "name": "lb-17b726aa-5343794",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_08924265-6936-45a2-aeaa-c2dcd786829e",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-00085e5b",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_1dae9e6a-5135-4033-84b4-f0b8ad145a63",
+                    "name": "lb-1383cd1c-5343667",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_25a099d1-bde7-4052-9f45-c173a81892d3",
+                    "name": "lb-6befd26e-5343524",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_44cf1f3e-7e0e-458c-afca-843aaeca8a16",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-00086a03",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_6b6cd92a-6bce-481b-ac0e-48f205e6011c",
+                    "name": "kube-cnt08d5m0o5cc47h9p9g-ibeuescxbor-wpworst-0000208c",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_8dbc738b-28c7-42dd-9375-da1437ad95ca",
+                    "name": "lb-d5d30e9a-5343532",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_931f4822-e3ad-4287-8ab1-707c3feb3b06",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-00085942",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_c88c6f71-2d5b-4a85-a524-696287fd84c8",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-0008554c",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e4f61f6d-d29a-4328-94fc-bd2209234e86",
+                    "name": "kube-css5loem01t0auijm2m0-ibclusproes-watsonx-00000851",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_fb309f39-405d-48ad-a169-fd948b327961",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-000836e1",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk057-s04",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk057-s04",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk057-s04",
+            "name": "mad3-qz1-sr1-rk057-s04",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-10-11T14:12:35Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk057-s06",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk057-s06",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk057-s06",
+            "name": "mad3-qz1-sr1-rk057-s06",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-10-21T18:47:55Z",
+            "instances": [
+                {
+                    "id": "02y7_1a9c65ef-afe2-4090-a7a0-3b828e1c4784",
+                    "name": "kube-coej5rjm0vj4u1sc58sg-ibeuescxbor-wpworst-00001f96",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_3043da40-b0b8-491b-9e4c-deb60c088c35",
+                    "name": "lb-a9f38f32-5342578",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_370e5310-2e46-4dd5-8418-b0124190fdbe",
+                    "name": "cr-vsi-prod-eu-es-3-2f61a4d7-5f06-4380-83a4-2483779751cf",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_45c18fdf-ed91-4ead-bd5c-941a4e0bf01a",
+                    "name": "kube-csph78mm054vfnojgl30-ibeuesbpior-wpingst-0000056f",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_4a227a07-3fb8-4a8f-a32c-c8a045d806bd",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-000786ec",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_53785759-7497-4ff0-a8c7-a6076852a322",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-0008619b",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_69f3498c-47b3-42bc-9c2d-7a71b6cdcbb9",
+                    "name": "lb-78e7fa5f-5416261",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_3b381c1d-fb79-49e6-9146-7c8d523d9dfc",
+                    "name": "michicluster-infra3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_72b2331a-790e-4721-b1ad-fc480a4c40a5",
+                    "name": "bpibmass02",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_914ba7ce-30ab-46bb-8571-9b0191dff2d0",
+                    "name": "lb-74c63506-5400928",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_93d73c3b-617c-4633-814c-cfcaf16042a0",
+                    "name": "lb-b7621d5c-5343697",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_a1e8f2d8-39c8-43be-a45f-ec4d1e7543b4",
+                    "name": "kube-cstmgs8m0qbefl7vpj6g-sasviyaprod-caswork-000012af",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_cd2df945-b8ae-4fe4-bf2d-895c012a3cfc",
+                    "name": "ssmwivdcmsvc41",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d0910032-2ce4-4c3c-b2bb-243e7cd1ef34",
+                    "name": "kube-css5loem01t0auijm2m0-ibclusproes-watsonx-00000956",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_b784089c-b220-4daf-8b3c-fea042a33361",
+                    "name": "kube-crljg31m0abdf8tnc87g-lrdeveuescl-edge-00001178",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_8005c74e-f11a-46b8-969a-2437c69abc38",
+                    "name": "orbciidbs03",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_eecd9a68-d392-44e0-b4e4-0f254fd606a5",
+                    "name": "bpisdass02",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_fd723d0c-7327-4c2a-ab07-e7abb0de3337",
+                    "name": "scappast02",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk057-s08",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk057-s08",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk057-s08",
+            "name": "mad3-qz1-sr1-rk057-s08",
+            "cpu_architecture": "amd64",
+            "avoid": {
+                "applied_at": "2024-06-16T15:49:32Z",
+                "applied_by": "",
+                "policy": "best_effort"
+            },
+            "cpu_family": "cascadelake",
+            "created_at": "2023-11-06T21:29:54Z",
+            "instances": [
+                {
+                    "id": "02y7_003c1970-90a1-416b-9af7-0f6c39ef0a71",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-0002bd9b",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_2c670283-e310-4a2e-b658-b45a47d20150",
+                    "name": "bm1-vsi3-vni-crdp-ing-cz-vsi-9wrj-qm5z",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_395f732f-e956-4e4e-8569-e88316f4cbc1",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-0002a5ef",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_4cd071b8-e156-47cd-a95a-ec022d4b0d48",
+                    "name": "fincaasp04",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_5ae50ba4-8c7d-4063-b373-5638fa9d71a1",
+                    "name": "orcliidbr06",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_6fce9dfa-6704-4005-bad1-26d3bd599285",
+                    "name": "mad3-alb-forwarder-api",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9fee0019-ad86-40c4-8fd4-2a5b0400cf20",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00029012",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_a09e2d52-3726-4ff0-b541-d3d5b83fde1d",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00030ee2",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_bd3d27d7-7745-4bb0-bd00-3b5d92ccb0ab",
+                    "name": "kube-cs3u1q6m0v4b9ibmotng-bccerhcoscl-bccerhc-0000025c",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_cafd6069-ca11-40ce-837c-95868b36798d",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-0003a183",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_cdf4430f-9ab8-4fe3-b724-5e49164731ec",
+                    "name": "kube-csr2jvkm0ptqjiku2cbg-myclustereu-default-000008c1",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ed4128d3-7b25-4be4-b54b-beeaa0be51df",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-0002dc56",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_fd90687f-7758-43d6-a091-c9fc051f92f4",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-000265b3",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "4.15.0-1108-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 5,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk057-s12",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk057-s12",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk057-s12",
+            "name": "mad3-qz1-sr1-rk057-s12",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-10-21T18:47:55Z",
+            "instances": [
+                {
+                    "id": "02y7_03b54749-cb14-4794-bae6-0229fb67ed02",
+                    "name": "lb-37fefd3c-5343827",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_06034d26-1e9b-4f39-9cca-7d30f558aacc",
+                    "name": "sentinel-server-eu-es-3-501f7df9-6",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_15e77601-e899-4959-b9b8-33f755a0cf33",
+                    "name": "sentinel-client-eu-es-3-5f7cb7a6-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_2902a9b3-e8c5-46cd-af28-6ad1914150fb",
+                    "name": "lb-7f7c2554-5495803",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_342fd942-c90f-4616-ab01-de104a1d88ff",
+                    "name": "lb-c8aa49da-5343278",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_3d6883a6-16a1-4648-847b-32220c6512c2",
+                    "name": "lb-c51ec74a-5428926",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_728a06fa-5610-4e1c-b4be-3668c8918928",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-0002a1d2",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_4bfd0bc6-350c-4e5d-9fa7-c2f747fa561d",
+                    "name": "splfiasp12",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_4d982537-eb03-41c3-ac4e-19425d925c2b",
+                    "name": "fit-mad-dyn-s30-service-iteration-118",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_19b981c3-d65f-4fe2-a990-261870158e6f",
+                    "name": "kube-cnt08d5m0o5cc47h9p9g-ibeuescxbor-wpsto2s-00001d2e",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_5bb4fb35-e92a-4655-9cee-caac8d0f3b36",
+                    "name": "nlb-1525a661-5293686",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_5d2a2a79-5d0c-4027-973e-0d72f5559bb7",
+                    "name": "sentinel-client-eu-es-3-5ccd57f2-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_69398a58-3193-4107-9ced-25aa87463144",
+                    "name": "sentinel-client-eu-es-3-ee195fc9-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_73f5d719-df52-45ab-8a39-caa326bbcd40",
+                    "name": "sentinel-server-eu-es-3-ed7cb689-6",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ac1a15b0-88df-4a98-8962-1c97ec389e80",
+                    "name": "kube-cqh8rkbm0kjg5nla6ejg-cpeuesrcp-default-0000033e",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_7a54f21b-da74-4af0-a0cb-5633f454520d",
+                    "name": "sentinel-client-eu-es-3-ce1e6c92-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_5667acdb-2809-42ee-9582-5f16d9d46f9c",
+                    "name": "apibmiasr02",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_a66c86c4-6fce-4cf6-94e8-f4b4c834b3a3",
+                    "name": "cr-vsi-prod-eu-es-3-04a23305-be58-4821-bced-ba5fd1d7f431",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_978033d8-8b97-4a5a-8723-0dfca157f5b9",
+                    "name": "sentinel-client-eu-es-3-5f6a41bb-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_53062718-549d-40be-bc45-a90ea4c8b8ad",
+                    "name": "bm1-vsi0-vni-crdp-ing-cz-vsi-9wrj-eyk0",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_a5738659-cbb8-4d53-a8a3-81d0913e8102",
+                    "name": "c2s-r0509b0468f4c22443f68776b0b8a6c7a5d9-m1-3d87f74c1736a7",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_92c6b039-2919-4600-9fef-8394415dc501",
+                    "name": "cr-vsi-prod-eu-es-3-ead2ce6b-5dd8-4121-b1b9-377df2a73f3a",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_b53cf590-e269-4d04-bf94-de5c88a32f48",
+                    "name": "sentinel-client-eu-es-3-c1593539-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_bdab454e-5634-4f0f-9075-ce09c5b7893e",
+                    "name": "lb-441fb20b-5343790",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_be93ead0-e956-406f-a51f-6dd953f87640",
+                    "name": "lb-d4a0795d-5343665",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ec982d19-9bfa-4693-b815-76a629d6cb00",
+                    "name": "cr-vsi-prod-eu-es-3-0a7fcf69-f0af-418a-97c1-3e5ee8d982eb",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_1008be54-c9fa-422d-80b6-759c51e897aa",
+                    "name": "cr-vsi-prod-eu-es-3-c9f032b2-86da-4975-b760-53c03389c321",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e44af2e6-8b56-410a-8b80-89471463c63b",
+                    "name": "lb-c0693fb4-5342295",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_b84e87b1-220b-415d-9521-68ed4aab7f13",
+                    "name": "kube-cq2g7anm07qi9jn7un7g-ibeuescxbor-wpingst-00000654",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ecaece09-e720-44cc-8afc-981c2564523e",
+                    "name": "lb-a1170e82-5343393",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_f05f709f-3c11-4168-bda3-92fb33535a05",
+                    "name": "at-hawkeye-bm-albmissingmetricsrecovery-2024-12-11t00-22-42z-2",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_f6324c5d-773a-462b-9145-d6d9619e658e",
+                    "name": "sentinel-client-eu-es-3-343a1b72-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_60e989fe-8d4e-4c30-85c4-0798fbcf7cda",
+                    "name": "michicluster-master3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_8b72f594-00c4-4265-944c-def7bd1415d0",
+                    "name": "kube-cnt08d5m0o5cc47h9p9g-ibeuescxbor-wpworst-00001618",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_fc3a2fd7-4a0d-4624-98d7-31007845cab3",
+                    "name": "ga-er355-dr-e2e-server-a-rearrange-finic",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk057-s14",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk057-s14",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk057-s14",
+            "name": "mad3-qz1-sr1-rk057-s14",
+            "cpu_architecture": "amd64",
+            "avoid": {
+                "applied_at": "2024-06-16T15:49:38Z",
+                "applied_by": "",
+                "policy": "best_effort"
+            },
+            "cpu_family": "cascadelake",
+            "created_at": "2023-11-06T21:29:53Z",
+            "instances": [
+                {
+                    "id": "02y7_442245a3-d6fb-46d6-8bd9-40bed9c3e15d",
+                    "name": "cisauto-g2-es3-dp-test-vsi",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_233c1aed-c7a4-4522-bc9e-0c1bcf77b516",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-0002aaa8",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_39040cba-7d7e-4bc3-bfd5-163e697583cc",
+                    "name": "kube-cnoj7dsm09nsbta5d520-euesvpcmonk-default-00000409",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_56f77bd7-fd2f-47fa-9cfd-91ae44bfcb38",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-0002f0ca",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_651948a7-1b61-4e1b-a95f-e3e14741a9c1",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-0002c706",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_85e0bcae-a503-49a0-886b-6ef38b3d3149",
+                    "name": "mad3-alb-forwarder-cert",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_94d03b45-4442-4137-89a6-6f43ef13429e",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00038bb1",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9b7d65f4-8081-4aa8-bf2e-3fb81fda3bbd",
+                    "name": "kube-cns1lq2m01r7e5ob8d9g-ibeuescxbor-wpsto2s-00001c40",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d316235f-5caa-40dc-9d30-267d73e544c0",
+                    "name": "cr-vsi-prod-eu-es-3-0c16638a-a6d5-460f-8cf8-1a4acdf1f480",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_f6343b02-b317-4680-8ed6-0fc56ed51f98",
+                    "name": "cr-vsi-prod-eu-es-3-91f1c297-a31b-4eaf-ba5e-f37bbca42944",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e19d5b8c-4c53-47e8-a320-2b881daa377d",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-0002e4e0",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e4b2b3b3-8a99-4854-b3c7-59bdac3439f3",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-000388ec",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e9f62f15-df8a-4328-a139-f14315496a39",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-0002be3b",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "4.15.0-1108-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 5,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk057-s16",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk057-s16",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk057-s16",
+            "name": "mad3-qz1-sr1-rk057-s16",
+            "cpu_architecture": "amd64",
+            "avoid": {
+                "applied_at": "2024-06-16T15:49:38Z",
+                "applied_by": "",
+                "policy": "best_effort"
+            },
+            "cpu_family": "cascadelake",
+            "created_at": "2023-11-06T21:29:53Z",
+            "instances": [
+                {
+                    "id": "02y7_60554e79-85c2-49e8-84cf-c4dff86d922d",
+                    "name": "icmad05vtspgwyot02",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "4.15.0-1108-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 5,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "taint": {
+                "applied_at": "2024-10-29T19:40:47Z",
+                "applied_by": "lefurgy@us.ibm.com",
+                "policy": "no_schedule_vm",
+                "reason": "discharge",
+                "context": "FLT-23585"
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk057-s20",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk057-s20",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk057-s20",
+            "name": "mad3-qz1-sr1-rk057-s20",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-10-11T14:12:35Z",
+            "instances": [
+                {
+                    "id": "02y7_05a222af-96aa-4d35-bd17-75223bf890f8",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-0008468d",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_32534614-fee5-49cc-b14e-8cfe5bd047c1",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-0008420d",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_4ae2e398-d4d7-4c6e-8f7c-25fcbb714f23",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-00085db3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9fe7044b-5a0d-4829-8834-a421bb273999",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-00085781",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_a6aa9e9e-b646-4a84-94f0-883c9be8f01d",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-00085ab3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_a6d8219e-9a6f-49fd-bc0f-e7793344fccd",
+                    "name": "vsi-workload-1-az-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_f2478d55-5bc0-41db-be7b-02b3deb2e976",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-000837af",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk057-s28",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk057-s28",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk057-s28",
+            "name": "mad3-qz1-sr1-rk057-s28",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2023-11-06T21:29:54Z",
+            "instances": [],
+            "kernel_version": "4.15.0-1108-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 5,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "control"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk057-s30",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk057-s30",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk057-s30",
+            "name": "mad3-qz1-sr1-rk057-s30",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-10-28T07:49:46Z",
+            "instances": [
+                {
+                    "id": "02y7_134d979a-66f6-44f3-8703-94abd2146f6e",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-000326d5",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_35151f5d-955c-444c-8fd6-dde2f27d6101",
+                    "name": "bm1-vsi2-vni-crdp-ing-cz-vsi-9wrj-qayt",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_026b898e-03d8-436a-b93d-9c860e685555",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00028f35",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_2bb212a0-46a8-4464-b6dc-44eed3be4782",
+                    "name": "kube-ctfo1oam0qadhvgcre2g-kubee2epvga-default-00000620",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_3cc28dbf-f25a-4746-bf88-7aa7f793cbba",
+                    "name": "lb-738db3e7-5343199",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_a39be356-548f-403e-83d8-a11b3c9e2946",
+                    "name": "mad3-alb-forwarder-kmip",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_453b2ad8-2280-4b2f-a49c-0a18587eabdb",
+                    "name": "kube-ck9d4mgm0lpafcgmpe9g-prodeuescp-cesyste-0001803c",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_619ea82f-dea6-4f94-85cd-c6e118b4df56",
+                    "name": "lb-7374257f-5343207",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_6fe11585-274f-4b8b-9994-b52030fdd392",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-000783e5",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_704fda4e-18f6-4487-a54a-52a417143f9e",
+                    "name": "at-hawkeye-bm-nlbtotalactiveconnection-2024-12-11t00-22-42z-2",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_8b670e24-f31d-4ecb-b747-b573e886fc54",
+                    "name": "cr-vsi-prod-eu-es-3-fb825154-0db4-4b5f-af0c-309168590a49",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_7703a0bd-1ed1-468f-b981-46d1473e571f",
+                    "name": "lb-ecb1c9fd-5343163",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_97c210ca-734d-4344-be2d-2762e3fec8a8",
+                    "name": "icfra03vtsdpsp02",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_8072a493-840a-4e19-9024-75a29b11f62b",
+                    "name": "lb-80a24df8-5343113",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_8dc5232f-eca5-4335-ad82-25fd398c5901",
+                    "name": "kube-csigdbvm0ob4qman34k0-valenciarok-default-00000152",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_911d010e-f6d9-45c2-b203-7ed94db53bd5",
+                    "name": "lb-0c5b5bb6-5343234",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9da6f5e2-6516-4ef9-9996-c8a5a1415248",
+                    "name": "kube-couekb9m0ujiqucbna0g-ibeuescxbor-wpegrst-0000086a",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_aaefeac6-4d00-46c9-87d2-5aa3e7135bf3",
+                    "name": "kube-csph78mm054vfnojgl30-ibeuesbpior-wpworst-00000ad3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_b67ea2e8-2dfc-4d84-8189-d63463bc6de5",
+                    "name": "lb-e489ba0b-5342918",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_0ff75f16-572c-4374-9244-4555c26cb601",
+                    "name": "mad3-alb-forwarder-ep11",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_cf541e20-a260-4dd8-96ac-725f5d5f9e05",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-00077e9b",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_da37afb7-7590-4f83-bd16-ca707c8c8cee",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-edge-00033fe2",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_13aa7e41-ee2f-4c7a-b63e-842ba0ab72ef",
+                    "name": "mad3-alb-forwarder-ep11-mad3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_fa564cec-f4bc-4468-b20d-57cf06432a56",
+                    "name": "nlb-63796d9a-5334065",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_fb6ebdc8-2bc3-46a8-bd01-df4fd91b2cb1",
+                    "name": "kube-cnl2papm0l68jd5gug60-production-main-000002ab",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_fcf6e94f-ed3e-4830-a109-1c4554731f9e",
+                    "name": "c2s-r0509933d299766d41ec970716d5892a1bfe-m1-3d87f79f0da887",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk057-s32",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk057-s32",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk057-s32",
+            "name": "mad3-qz1-sr1-rk057-s32",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-10-11T14:12:36Z",
+            "instances": [
+                {
+                    "id": "02y7_023b13bd-3b6c-4612-92cb-847a3ee04826",
+                    "name": "vsi-rm",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ba9ab080-e634-46dc-81a0-cc9fb29b7644",
+                    "name": "cr-vsi-prod-eu-es-3-e17d8fca-88d0-4ccd-952a-54a11ce13f64",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_192847cd-90cb-4d7b-a8ec-b648bb9f1347",
+                    "name": "lb-2fb1c39a-5344134",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_1ebe3348-b504-4c24-9786-b99f10fe913b",
+                    "name": "at-hawkeye-bm-nlbhostreceivebytesrate-2024-12-11t00-22-42z-2",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_347ced90-7d7b-4f86-889e-24a27121b148",
+                    "name": "lb-437b15ee-5342643",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_36b323d5-ad0c-42c6-9481-a54c02a9d221",
+                    "name": "kube-cmeo2t3m0njg9lgfg70g-lrprodeuesc-default-0003ed74",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_374e9f5c-6e3b-41fb-822f-91a4a3fc4b29",
+                    "name": "bpiisidbt01",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_fcc94e61-b7e1-4b87-859f-0567e0d1fab8",
+                    "name": "kube-crljg31m0abdf8tnc87g-lrdeveuescl-edge-0000127f",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_50d61f2d-2470-4265-af8f-6f48a2b814e1",
+                    "name": "lb-c05f8330-5341901",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_5db1f14f-6a36-4acc-8e66-88d4c877f708",
+                    "name": "lb-2b969553-5342382",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_5e74549e-a9f6-42e9-8cea-c37ce1541c7e",
+                    "name": "bpiiiwst02",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_7a07d058-9aae-40dc-b4af-8342b92dba68",
+                    "name": "pxpwiasp07",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_886fa707-cf27-4576-ac87-535b90c1ed6a",
+                    "name": "splatasr01",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_8b51fc30-26f8-4dc1-80fb-b3c95b4a596e",
+                    "name": "lb-e9b8f289-5341883",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_8f56eaee-a713-49fe-b49e-acbf8a5b6c57",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00032f7c",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_0fd15abe-f078-4020-bac7-0181806fb6bb",
+                    "name": "sqcliidbp06",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_bb92f610-3ce5-40fc-b61e-2605349451ab",
+                    "name": "kube-csph78mm054vfnojgl30-ibeuesbpior-wpegrst-000004e4",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_be126aaf-7ef8-4e9f-a15d-9d22f03240d8",
+                    "name": "nlb-f8d8de61-5161478",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_f6169633-5878-4ce9-b549-84e1bc0f8ec9",
+                    "name": "prvep-35-lr-e2e-server-vpc3-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d543f1ee-7b20-465f-82ca-a493970fe12e",
+                    "name": "tsmfiasr04",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_b74a9716-6656-4110-b2f0-2860572a9710",
+                    "name": "vsi-3-eu-es-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e1f0931d-cf1a-48fb-b822-6fb777283bd3",
+                    "name": "lb-5c2881b4-5342783",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e2382751-7933-4967-b9cb-86f26ae9d236",
+                    "name": "kube-cmeo2t3m0njg9lgfg70g-lrprodeuesc-redis-0003d324",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e8dc5b5a-b06c-477d-9908-ce02e51f40f9",
+                    "name": "nlb-cb319f2f-5161777",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_956d1793-5666-4ba3-bc34-438c7d28cb24",
+                    "name": "kube-coej5rjm0vj4u1sc58sg-ibeuescxbor-wpworst-00001ae2",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9b63e62f-82f7-42d0-95e1-ddfa3597b2d1",
+                    "name": "kube-clvn4c9m04jc3f25ap9g-medpcp4d-odf-000004e7",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk057-s36",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk057-s36",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk057-s36",
+            "name": "mad3-qz1-sr1-rk057-s36",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-11-14T18:03:13Z",
+            "instances": [
+                {
+                    "id": "02y7_00bfc0b9-ee08-4309-9308-d3ba01cbe119",
+                    "name": "lb-96c3c361-5342221",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_017f3af8-5d5c-4eed-83c2-68ba7adbe202",
+                    "name": "lb-54204037-5342485",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_0b11e900-c533-4b62-a0ca-be60be837fa6",
+                    "name": "lb-80429a40-5341918",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_12ecd359-beb0-4cbc-b3f8-3f4fa90ac5c2",
+                    "name": "lb-d725cb3b-5342953",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_1c361a6e-46f5-4a19-85d3-a5bc8f3d225a",
+                    "name": "lb-beb5407a-5342768",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_2078284c-ab69-4a53-9f9c-80efcc84917c",
+                    "name": "lb-d7d195bd-5342584",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_22e1da3a-a72c-4dfe-ae98-ccafb3df6202",
+                    "name": "lb-90fd5485-5342998",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_24297b72-f91c-4757-89b9-8fd56783b779",
+                    "name": "at-hawkeye-bm-nlbhostsoftirqcpuupudp-2024-12-11t00-22-42z-2",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_354c9f53-90a3-4d39-90ca-7e49f460da64",
+                    "name": "lb-2efed8e2-5342896",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_36715b6d-0792-4ba7-bb0a-3c069c651f40",
+                    "name": "lb-19fc75dd-5342602",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_39be2a43-64c4-442a-9abb-4e9c43732e27",
+                    "name": "vsi-svcs-hub-az-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_4018ec0f-9797-44df-ac5b-652cd0d926da",
+                    "name": "lb-65fdcd9b-5342073",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_434e1c1c-3d00-42e9-8df5-a970665ee105",
+                    "name": "sentinel-server-eu-es-3-343a1b72-6",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_4445daa6-ff87-4a7d-99b5-5fb505dc4c64",
+                    "name": "lb-ce83c82a-5342850",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_551e5711-df00-4f03-afaa-16e315db2ad5",
+                    "name": "lb-295ec0db-5342259",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_66631a30-922a-49f4-9db2-44d32ad95291",
+                    "name": "lb-fdb9b6f0-5342147",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_6e5ba050-9b52-48c3-bf9a-54950708d6b4",
+                    "name": "idcfmasp02",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_6e99f175-034e-4514-be44-ef826d350c35",
+                    "name": "lb-87cf1004-5342957",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_727f0244-8a1c-401f-99a0-b969f1eef0b7",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00036e42",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_7fdd785c-f027-4760-8730-828ff7c88887",
+                    "name": "lb-d711f188-5342579",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_845da8b6-2847-4ada-9b0a-3c05b874bcd1",
+                    "name": "lb-e0960948-5342927",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_86ab2786-c37a-4297-8997-189e692ff7da",
+                    "name": "lb-5d762d97-5342514",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_86b5aef2-e675-492c-b6e7-f129bc28f5d9",
+                    "name": "lb-52859077-5342399",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_87ad1eed-e11d-4c7e-ae1a-c503f0be0914",
+                    "name": "sqlcodbt04",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_91c01e67-f910-43a3-b61c-9ff60349a9c4",
+                    "name": "lb-03bf9a22-5342542",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9412e9f7-fe31-4972-93bb-1e5369bbeff3",
+                    "name": "lb-b2b864c8-5342380",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9534eb78-085a-4974-aad0-5b21e054b50e",
+                    "name": "lb-e75a5db8-5342968",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_96be2267-2af7-4047-9738-8b16aa3eea09",
+                    "name": "lb-844efa00-5342153",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_97af9377-9dbf-466b-8475-ce79f287d196",
+                    "name": "lb-f8df0dfa-5342925",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9c511838-34c4-4bda-a620-f1f0a4c8d5c1",
+                    "name": "lb-bbff277c-5342817",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_a4e6500e-7106-4a95-8537-eeda065134ff",
+                    "name": "lb-0238afa7-5342786",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_a66d42b3-d67f-497b-9815-062584b861b0",
+                    "name": "lb-5c2881b4-5342854",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_a8d2ca24-8425-4f91-92a4-36aabed0708d",
+                    "name": "lb-a88c8a86-5342899",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ad8bd1a1-f208-49c0-929a-3a5c87e9eb04",
+                    "name": "powegiasr04",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_aecb3007-16cc-49f6-a4c7-1dd9deb32f92",
+                    "name": "lb-c0f7a54f-5342836",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_b16cc12c-48fa-4924-9b64-c676a2bd0a36",
+                    "name": "lb-33240b3a-5342467",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_b279b584-cc1c-447d-a5e3-b474a67ad806",
+                    "name": "lb-c5bcd382-5342461",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_b5aecdad-9e68-4ab7-b3f1-fe36a332bb2a",
+                    "name": "lb-54e485a7-5342055",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_be4a5194-d534-4849-8cef-4f2855a3511a",
+                    "name": "lb-9bd7f268-5342458",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_cd06cae4-154f-4866-b0c1-3b6d418feaa9",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-0003a867",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d245346a-f09b-49f6-afba-7d91a671ba1c",
+                    "name": "lb-d0a63f9e-5342580",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d8c9d6c9-1bde-4692-9470-0f5f9ab3c3d8",
+                    "name": "lb-fdade68a-5342575",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_db20ce3d-5277-4bef-a111-774c2586a3d5",
+                    "name": "lb-7ccfb293-5342771",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_dcad81d3-9193-4358-bb8d-b2515d3d74ed",
+                    "name": "earqoasr09",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e42064ff-d00e-4c16-af41-3366f16efde4",
+                    "name": "lb-870b18dd-5342052",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e5157f1f-8621-495e-9d51-4171be6de468",
+                    "name": "lb-294fc25c-5342857",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e8afcb5d-30b7-4a7c-8c03-718c1ca52762",
+                    "name": "lb-0651ce6c-5342581",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ef0c95a5-c645-4a69-b667-70fe86a21109",
+                    "name": "lb-88ae9fcc-5342227",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_f11ef811-0a78-4242-99e6-5d64a432d4e9",
+                    "name": "vgw-02y79a1f0abe86f5457598d354cb7edd15c9-m1-3d9aa5eff6b922",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ffb49e33-e1c3-404e-8e57-9a3d7af4763b",
+                    "name": "lb-52bdbe42-5342944",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk057-s38",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk057-s38",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk057-s38",
+            "name": "mad3-qz1-sr1-rk057-s38",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-10-11T14:12:35Z",
+            "instances": [
+                {
+                    "id": "02y7_1ac2664e-de4a-41e1-b4ca-ad3a3d736ed0",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-00086cdf",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_20e5cae6-63be-4d56-ba2f-8a2bb1d3fed3",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-0003b664",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_534778b9-2df6-42cf-97e5-82efd5cafe25",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-0007ff42",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute",
+                    "localdisk"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk057-s40",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk057-s40",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk057-s40",
+            "name": "mad3-qz1-sr1-rk057-s40",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-11-14T18:03:14Z",
+            "instances": [
+                {
+                    "id": "02y7_0a098750-7518-451a-926b-332377ace198",
+                    "name": "bpitfast02",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_1702ae65-a06e-43ba-a7c4-883a09c14b49",
+                    "name": "kube-cstmgs8m0qbefl7vpj6g-sasviyaprod-cascont-00000d67",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_4d72d1a8-85fc-4f41-ba13-dbb6d29d018b",
+                    "name": "vcdmsasr01",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_50c8e80c-6b2b-44cd-92d1-4462281d40e9",
+                    "name": "bpitqwss01",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_53ba5e6b-eb7d-4c21-823f-fe74fe9a4f04",
+                    "name": "kube-css5loem01t0auijm2m0-ibclusproes-watsonx-000006a6",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_5c06e1e5-cd59-4669-8b02-e137b2c3fbc4",
+                    "name": "sentinel-client-eu-es-3-ce4fb621-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_6dba2fbd-47e4-4b71-94c4-66d9f1902c84",
+                    "name": "vsi-spoke-2-az-3-vm",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_701a4e01-712d-4443-8420-30e41b782369",
+                    "name": "testing-3-on-prem",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_7cd61326-0d86-44c5-8f03-9b26f774f82c",
+                    "name": "sentinel-client-eu-es-3-995803d6-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_8b01b399-8375-4ea6-b40f-ee52a6b38bd8",
+                    "name": "kube-css5loem01t0auijm2m0-ibclusproes-odf-0000052f",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9161a3fb-ee47-4492-9aad-c84d4f078638",
+                    "name": "at-hawkeye-bm-albprofilecpuscaleup-2024-12-11t00-22-42z-2",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9752426a-936f-497b-99ad-77762447cb33",
+                    "name": "kube-cmeo2t3m0njg9lgfg70g-lrprodeuesc-transit-0003e934",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_98267f66-2c3b-41ac-9cd5-7122f9217b82",
+                    "name": "lb-185e8207-5342308",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9c451a41-3fa8-4733-bb69-740d1e24295f",
+                    "name": "sentinel-server-eu-es-3-84c209a1-6",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9d4aff30-5d09-496b-8ba9-d6eb48134f19",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00035ff5",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_a569836a-95f5-46f4-bf52-920b801ec0c6",
+                    "name": "kube-ctfo9cmm0bjk3r685gl0-kubee2epvgl-default-00000146",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_b393f84d-c6d5-41a9-b28a-0c400668abf2",
+                    "name": "kube-cs75objm0ibcba5se0t0-ic4vroksmad-default-000026cf",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d9769ac9-0cfe-4182-bb78-6c3f7e0059de",
+                    "name": "nlb-21aeccfe-5334075",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e9876bf8-df49-4ea2-afcc-6896e42fc4ba",
+                    "name": "kube-cstmgs8m0qbefl7vpj6g-sasviyaprod-statefu-00000ae4",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_f18151ba-abb4-40e0-bff4-341f17181027",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-000856d9",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk057-s42",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk057-s42",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk057-s42",
+            "name": "mad3-qz1-sr1-rk057-s42",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-10-11T14:12:36Z",
+            "instances": [
+                {
+                    "id": "02y7_0729ce7f-e858-44c6-9652-08471963edd2",
+                    "name": "nlb-49321c9a-5161625",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_0a4af9a8-c878-41f4-ad00-b49de771f617",
+                    "name": "lb-1a687436-5382774",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_143c0473-5f69-47ca-a264-894716389fd9",
+                    "name": "nlb-bc6e9ba2-5161596",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_184409e4-7daf-4ccb-87e6-b50cc9007b2f",
+                    "name": "lb-e221a354-5342384",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_1c4cee6e-4bc0-4a40-8729-22a6d7cc55b4",
+                    "name": "bpiinast02",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_51829d14-6ec5-42b3-9dcf-072d3c1a02ed",
+                    "name": "bpmlfass02",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_2b027077-27b2-46fd-8c36-179871895c23",
+                    "name": "paloalto-fw-transito-mzr-03",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_2dbc8cd6-8ae2-4b0f-97fe-cb6e94c50d05",
+                    "name": "lb-d357a39e-5342847",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_2edd27e3-9604-482d-bec9-048bcfece424",
+                    "name": "bpineass01",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_3352c8df-21e4-4269-a3ea-8dade4168cdb",
+                    "name": "nlb-dc7a3acc-5161422",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_3608a246-7d78-4d57-a319-b683790cd23f",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-00086681",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_3a0ff83b-80d2-4cc1-b805-7e07b8348316",
+                    "name": "nlb-dc7a3acc-5161465",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_710a2a8c-9917-4ef9-98f3-11102d307c4d",
+                    "name": "nlb-a3faee8b-5161283",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_bede054d-1903-4b38-ab08-f050b8bd832f",
+                    "name": "vsi-6-eu-es-3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_83e15c93-4733-4c44-831d-4e7357dc23f4",
+                    "name": "nlb-21ae5171-5159882",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_8cd4e869-4f94-4b27-a1fc-48bb02051bfe",
+                    "name": "bpispwst02",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_94d0c8cf-b8ac-4e48-afb2-13fe8a679d5f",
+                    "name": "kube-cp7e842m0n0k4ovg40lg-ibeuescxbor-wpegrst-00000994",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9b4d7692-a2e4-433e-95d4-9af3e8050a42",
+                    "name": "nlb-30d4722d-5160092",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_c46b39d4-f4fa-4982-9066-135ca0224011",
+                    "name": "bpifvast01",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_c4918533-5a27-498c-83d5-94c7fdd2a838",
+                    "name": "idcfmasp04",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_41a38bbd-7635-4cf0-8b78-8b05356e4604",
+                    "name": "cr-vsi-prod-eu-es-3-0c7695c5-b922-4b86-90d0-c2b921ec73ef",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d49305ee-4e90-43c4-8feb-42bb099ffa1f",
+                    "name": "kube-ck9fvc3m0vfg080mpea0-prodeuess01-cesyste-000477cd",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d82203af-817f-4499-97f2-0429e44de1f3",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-000330d4",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_daec8b78-48d1-4de1-abbb-e55b763b167b",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-000833cb",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_38cd52c6-854b-4aa0-90c6-be4040edf2c9",
+                    "name": "kube-crljg31m0abdf8tnc87g-lrdeveuescl-default-0000064a",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e3a2b101-f746-4791-9ac6-466a21b6d244",
+                    "name": "kube-cqqvv9km0fcldfocflpg-iksspoke1ma-wp1-0000099b",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_fef54b7e-25a0-41d9-99e5-949f92ab9689",
+                    "name": "rias-metad-csi-inst-1xk3-0avkuayp",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ffb348bb-d81f-484d-9025-605b54d74766",
+                    "name": "nlb-7ea8754f-5161159",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "compute",
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk057-s44",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk057-s44",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk057-s44",
+            "name": "mad3-qz1-sr1-rk057-s44",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2023-11-06T21:29:53Z",
+            "instances": [],
+            "kernel_version": "4.15.0-1108-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 5,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk057-s46",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk057-s46",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk057-s46",
+            "name": "mad3-qz1-sr1-rk057-s46",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-10-11T14:12:36Z",
+            "instances": [
+                {
+                    "id": "02y7_2b313a97-0963-40ca-bd8b-3b39f372a9c4",
+                    "name": "lb-d66f009c-5342222",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_ce2f8612-940f-49ff-b91b-3740b878f407",
+                    "name": "rdmrxidbr03",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_3b60ae22-f11c-40be-a002-a1a939c3e93c",
+                    "name": "kube-cpgr9qbm0av1apqi04bg-logsprodeue-private-00033300",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_3ba83ef3-440a-4c43-9f61-88aa9e8e5631",
+                    "name": "kube-csougt5m07ijo74n5na0-ibeuesbpior-wpegrst-000004b5",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_aacc88ec-ced7-47ce-8809-27a9ab07f522",
+                    "name": "kube-clvn4c9m04jc3f25ap9g-medpcp4d-odf-000005ad",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_4f18a39a-b3b7-4172-ab26-12e44724401d",
+                    "name": "aptorasr01",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_58b9b189-bea7-4379-a1df-148db8bdc910",
+                    "name": "lb-2a39c947-5342223",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_6471e691-218d-4b12-8d00-453c684fd33b",
+                    "name": "gesasidbt01",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_63f29f27-05de-4fe8-8ca9-7921e92c2471",
+                    "name": "hwsrvasr01",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_71bc2e3e-ff58-4782-aded-e4dd3bc8b0d2",
+                    "name": "vgw-02y75ed16ee0f3734c0798c6011c09470b28-m1-3d8279ade62bf3",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_89b48170-395e-4c62-930f-1c02e52a4b10",
+                    "name": "lb-d6fe46eb-5342143",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_8de51cfd-065c-41e5-8bdc-ee1099a19036",
+                    "name": "ceph-node4-676006f1cede2185c41a61e4",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_94adadf4-0755-4bb5-b6a8-014260dafc6c",
+                    "name": "lb-b6aa6561-5342947",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_9f4922f6-5990-4d2c-aca3-ce019773d218",
+                    "name": "kube-cs75objm0ibcba5se0t0-ic4vroksmad-default-000025bd",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_b8cbcab1-cbd6-4e53-93d9-6cd363f66a40",
+                    "name": "kube-cmokprvm07vp28drt520-logsdeveues-private-000865e1",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_bab336ff-3389-4afe-b501-3867a831d214",
+                    "name": "lb-3553a557-5342921",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_7b001a64-c675-42be-91f8-a7fe38c4d364",
+                    "name": "kube-co5he72m0v0brphrmnl0-ub1workload-default-00000a59",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_c62370e5-c17f-47e4-9094-5e7e0cb2ec30",
+                    "name": "lb-c60f14ae-5342051",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d94abcb7-d16d-4db3-84b8-0394b73262ee",
+                    "name": "ceph-workstation-676006f1cede2185c41a61e4",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_d9e4d712-1459-4156-ac38-7f8a33e9e1a9",
+                    "name": "lb-8e7f9e97-5342057",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_7a3bcc13-370e-46b8-b9db-b7a1f335c753",
+                    "name": "kube-cns1lp6m0vva94dlmdlg-ibeuescxbor-wpegrst-0000113c",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_e87e64b4-8c23-470c-bb23-8ce094470f21",
+                    "name": "lb-7c7cde8b-5342072",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_eaba1fb4-4367-42ba-941c-cc33a05e16bc",
+                    "name": "lb-266c912f-5342228",
+                    "resource_type": "instance"
+                },
+                {
+                    "id": "02y7_8325bf5e-78a2-4b69-a8be-0f9c0faef346",
+                    "name": "rgipliasp02",
+                    "resource_type": "instance"
+                }
+            ],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "worker",
+                    "compute"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk057-s48",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk057-s48",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk057-s48",
+            "name": "mad3-qz1-sr1-rk057-s48",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2023-11-06T21:29:53Z",
+            "instances": [],
+            "kernel_version": "4.15.0-1108-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 5,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "control"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        },
+        {
+            "id": "mad3-qz1-sr1-rk057-s50",
+            "crn": "crn:v1:internal:public:is-vpc-operations:eu-es-3:a/be0c3efdd2de499a84d12bfa97363087::node:mad3-qz1-sr1-rk057-s50",
+            "href": "https://eu-es.operator.iaas.cloud.ibm.com/operator/v1/nodes/mad3-qz1-sr1-rk057-s50",
+            "name": "mad3-qz1-sr1-rk057-s50",
+            "cpu_architecture": "amd64",
+            "cpu_family": "cascadelake",
+            "created_at": "2024-08-27T21:30:03Z",
+            "instances": [],
+            "kernel_version": "5.15.0-1057-ibm-gt",
+            "kubelet_version": "v1.29.9",
+            "host_os_major": 6,
+            "profile_class": "default",
+            "roles": {
+                "node_roles": [
+                    "master"
+                ]
+            },
+            "location": {
+                "zone": {
+                    "data_center": "MAD05"
+                }
+            },
+            "resource_type": "node"
+        }
+    ]
+}

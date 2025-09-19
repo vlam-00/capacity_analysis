@@ -1,0 +1,9 @@
+{
+    "rackClass": "compute_ng3-2_s02_s50_7010tx-48_pdu_down",
+    "servers": {
+        "vx3d": 5,
+        "vx3d-elba": 7,
+        "mx3d": 5,
+        "bx3d": 5
+    }
+}
