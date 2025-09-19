@@ -1,0 +1,6 @@
+{
+    "rackClass": "compute_ng3-2_s02_s50_7010tx-48_pdu_down",
+    "servers": {
+        "bx4d": 10
+        }
+}

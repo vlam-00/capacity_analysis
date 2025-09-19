@@ -1,0 +1,9 @@
+{
+    "rackClass": "compute_ng2_s01_s22_7010t-48_pdu_down",
+    "servers": {
+        "bx2": 5,
+        "ux2d": 7,
+        "gx2": 5,
+        "bx2h": 5
+    }
+}

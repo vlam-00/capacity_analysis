@@ -1,0 +1,6 @@
+{
+    "rackClass": "mi300x_s12_s20_pdu_down",
+    "servers": {
+        "gx3d-mi300x-dell": 2
+    }
+}
