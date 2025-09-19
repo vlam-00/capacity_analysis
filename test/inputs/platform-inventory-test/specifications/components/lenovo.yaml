@@ -1,0 +1,452 @@
+vendor: lenovo
+components:
+  - id: SR630                   # This is SR630v3, for SR630v1 see below SR650v3
+    type: server
+    rack_units: 1
+    motherboard: "SR630"
+    dcim:
+      available: true
+      models:
+        - "Lenovo SR630 V3"
+    sockets: 2
+    psu_configurations:
+      - psu_config:
+          - id: standard
+            available_slots: [0, 1]
+            required_slots: [0, 1]
+            name: server-psu
+            model:
+              - ThinkSystem 1800W 230V Platinum # What shows in IMS
+              - 4P57A26294 # The Lenovo Part Number
+    supported_deployments:
+      #  - id: "2.51-2.10"
+      #    firmware: "2.51"
+      #    bios: "2.10"
+      #  - id: "3.13-2.22" # cannot back level from here
+      #    firmware: "3.13"
+      #    bios: "3.22"
+      # These are the levels for the production-level servers
+      - id: "3.50-2.25" # cannot back level from here
+        firmware: "3.50"
+        bios: "2.25"
+        prereqs:
+          - id: "2.51-2.10"
+          - id: "3.13-2.22"
+          - id: "3.92-3.11"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "6.00-3.40"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "6.20-3.50"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "3.92-3.11"
+        firmware: "3.92"
+        bios: "3.11"
+        prereqs:
+          - id: "3.50-2.25"
+      - id: "5.54-3.31"       # cannot back level BIOS 3.31 below 3.14
+        firmware: "5.54"
+        bios: "3.31"
+        prereqs:
+          - id: "3.50-2.25"
+          - id: "3.55-3.11"
+          - id: "3.92-3.11"
+          - id: "6.00-3.40"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "6.20-3.50"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "6.00-3.40"
+        firmware: "6.00"
+        bios: "3.40"
+        prereqs:
+          - id: "3.50-2.25"
+          - id: "3.55-3.11"
+          - id: "3.92-3.11"
+          - id: "5.54-3.31"
+          - id: "6.20-3.50"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "6.20-3.50"
+        firmware: "6.20"
+        bios: "3.50"
+        prereqs:
+          - id: "3.50-2.25"
+          - id: "3.55-3.11"
+          - id: "3.92-3.11"
+          - id: "5.54-3.31"
+          - id: "6.00-3.40"
+    boot_device:
+      mgmt_network: "0000:16:00.0" # Assumption made from "it's the same as the SR650"
+      data_network: "0000:38:00.0"
+    bios:
+      - id: "2.10"
+        version: "2.10"
+        file: "lnvgy_fw_uefi_ese114g-2.10_anyos_comp.uxz"
+        sha256sum: "90c58cf43c1cee3ee3315e60b82c2a3e52605c7e69a7e0232a4c4fb1f22b8828"
+      - id: "2.25"
+        version: "2.25"
+        file: "lnvgy_fw_uefi_ese120k-2.25_anyos_comp.uxz"
+        sha256sum: "a43308c723521957c65ffae3aea2fd44d04dd6ba0151581c110ed2f34ea180cc"
+      - id: "3.31"
+        version: "3.31"
+        file: "lnvgy_fw_uefi_ese128e-3.31_anyos_comp.uxz"
+        sha256sum: "f26129495ea06004190c49fa793ec68ff63a59b947f94c4038d8e4c1bf3e2628"
+      - id: "3.40"
+        version: "3.40"
+        file: "lnvgy_fw_uefi_ese130e-3.40_anyos_comp.uxz"
+        sha256sum: "979d5380c433088b2f6c9fb7f7e80a97543192f1d5f7cc94c96faeb9995209f7"
+      - id: "3.50"
+        version: "3.50"
+        file: "lnvgy_fw_uefi_ese132y-3.50_anyos_comp.uxz"
+        sha256sum: "6bfad72fb1de2fd10b83e0ecd25ac214a3e446a946726c4cfcbee30ffecf174c"
+    firmware:
+      - id: "2.51"
+        version: "2.51"
+        file: "lnvgy_fw_xcc_esx312b-2.51_anyos_comp.uxz"
+        sha256sum: "35c89737fa31139ec53bf095c4dfc22403cdd6e03930b2bc97ea0decfd0e22c4"
+      - id: "3.50"
+        version: "3.50"
+        file: "lnvgy_fw_xcc_esx318u-3.50_anyos_comp.uxz"
+        sha256sum: "d076fb9d2d2c5fdf27384a845536c16851765084c0253462d863b7b9a56544c1"
+      - id: "3.55"
+        version: "3.55"
+        file: "lnvgy_fw_xcc_esx318z-3.55_anyos_comp.uxz"
+        sha256sum: "276583ca8c594f8dcb31efe7d2e2bec148540b8c92eb8f6f8bf4396bf096573e"
+      - id: "5.54"
+        version: "5.54"
+        file: "lnvgy_fw_xcc_esx334q-5.54_anyos_comp.uxz"
+        sha256sum: "344f831650db8b9780b6cda598a3e02b83642f80ead6402638d3261ab092095d"
+      - id: "6.00"
+        version: "6.00"
+        file: "lnvgy_fw_xcc_esx338t-6.00_anyos_comp.uxz"
+        sha256sum: "8c87619c7efe99b34bff29f89e805d026c743df225a1a0f3a85b3be461943744"
+      - id: "6.20"
+        version: "6.20"
+        file: "lnvgy_fw_xcc_esx344o-6.20_anyos_comp.uxz"
+        sha256sum: "bc5e13420bef7176fcf4ea41f15ec3467ae4a1bdc54ed77082092776e6699fcb"
+  - id: SR645
+    type: server
+    rack_units: 2
+    motherboard: "SR645"
+    dcim:
+      available: true
+      models:
+        - "Lenovo SR645"
+    sockets: 2
+    psu_configurations:
+      - psu_config:
+          - id: standard
+            available_slots: [0, 1]
+            required_slots: [0, 1]
+            name: server-psu
+            model:
+              - ThinkSystem 1800W AC DC # What shows in IMS
+              - 4P57A78362 # Platinum PSU from Lenovo
+              - 4P57A78359 # Titanium PSU from Lenovo
+    supported_deployments:
+      - id: "3.01-2.01"
+        firmware: "3.01"
+        bios: "2.01"
+      - id: "3.20-2.10"
+        firmware: "3.20"
+        bios: "2.10"
+        prereqs:
+          - id: "3.53-2.21"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "3.53-2.21"
+        firmware: "3.53"
+        bios: "2.21"
+        prereqs:
+          - id: "3.20-2.10"
+          - id: "4.12-2.42"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "4.71-2.61"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "5.02-3.11"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "5.84-3.41"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "4.12-2.01"
+        firmware: "4.12"
+        bios: "2.01"
+      - id: "4.12-2.42"
+        firmware: "4.12"
+        bios: "2.42"
+        prereqs:
+          - id: "3.01-2.01"
+          - id: "3.53-2.21"
+          - id: "4.12-2.01"
+          - id: "4.71-2.61"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "5.02-3.11"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "5.84-3.41"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "4.71-2.61"
+        firmware: "4.71"
+        bios: "2.61"
+        prereqs:
+          - id: "3.53-2.21"
+          - id: "4.12-2.42"
+          - id: "5.02-3.11"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "5.84-3.41"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "5.02-3.11"
+        firmware: "5.02"
+        bios: "3.11"
+        prereqs:
+          - id: "3.53-2.21"
+          - id: "4.12-2.42"
+          - id: "4.71-2.61"
+          - id: "5.84-3.41"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "5.84-3.41"
+        firmware: "5.84"
+        bios: "3.41"
+        prereqs:
+          - id: "3.53-2.21"
+          - id: "4.12-2.42"
+          - id: "4.71-2.61"
+          - id: "5.02-3.11"
+    boot_device:
+      mgmt_network: "0000:21:00.0"
+      data_network: "0000:01:00.0"
+    bios:
+      - id: "2.10"
+        version: "2.10"
+        file: "lnvgy_fw_uefi_d8e120j-2.10_anyos_32-64.uxz"
+        sha256sum: "98cf53cbee3685a408b2636d4210c6ae96c6954d3c28c4d273cc7960288939df"
+      - id: "2.21"
+        version: "2.21"
+        file: "lnvgy_fw_uefi_d8e122l-2.21_anyos_32-64.uxz"
+        sha256sum: "85bed18a5f7f166b0e52a4585a3db7454da4c95cab80f8ae5e2fa17eb5950635"
+      - id: "2.42"
+        version: "2.42"
+        file: "lnvgy_fw_uefi_d8e126j-2.42_anyos_32-64.uxz"
+        sha256sum: "553c6176254517d9aabc1ee9e6599e90e721329904ad935a0858ba0bf5fd485e"
+      - id: "2.61"
+        version: "2.61"
+        file: "lnvgy_fw_uefi_d8e130g-2.61_anyos_32-64.uxz"
+        sha256sum: "065a2426d2a785f10449d90644c5da120da2a1a871106d05de74bbe89fa139e1"
+      - id: "3.11"
+        version: "3.11"
+        file: "lnvgy_fw_uefi_d8e132h-3.11_anyos_32-64.uxz"
+        sha256sum: "c968a01b7ae7d98b83528800cb8ba276d6607082998a012d8fe7a7a0cb40918d"
+      - id: "3.41"
+        version: "3.41"
+        file: "lnvgy_fw_xcc_d8bt66h-5.84_anyos_noarch.uxz"
+        sha256sum: "a29183a76dca4c76b1ce44593cd14a43ba0562da464fff0849868b8353cebcb0"
+    firmware:
+      - id: "3.20"
+        version: "3.20"
+        file: "lnvgy_fw_xcc_d8bt20m-3.20_anyos_noarch.uxz"
+        sha256sum: "4e985b25cc6e4db02214bc96d7befb876ffd7177602570902b914f41797d94d3"
+      - id: "3.53"
+        version: "3.53"
+        file: "lnvgy_fw_xcc_d8bt26o-3.53_anyos_noarch.uxz"
+        sha256sum: "5f389321897a34b655ee83ac17753caff45f0f0109b317b4c67ce2cd99821a49"
+      - id: "4.12"
+        version: "4.12"
+        file: "lnvgy_fw_xcc_d8bt38q-4.12_anyos_noarch.uxz"
+        sha256sum: "7be6a566d4b7d6a90777d3bd54ee6dfdfe5c045987c6513d3ccc8b5be0ac1aa1"
+      - id: "4.71"
+        version: "4.71"
+        file: "lnvgy_fw_xcc_d8bt48p-4.71_anyos_noarch.uxz"
+        sha256sum: "1a400357f0cbd57072b18cb0ae66746c0a363a9930d4bbf273cf40f2448e0fec"
+      - id: "5.02"
+        version: "5.02"
+        file: "lnvgy_fw_xcc_d8bt54o-5.02_anyos_noarch.uxz"
+        sha256sum: "2174704bc9097b6f0462490115b4bc00423bc5a9f7e818fdd329ad41b03aca21"
+      - id: "5.84"
+        version: "5.84"
+        file: "lnvgy_fw_uefi_d8e138f-3.41_anyos_32-64.uxz"
+        sha256sum: "71075c1394fc627faf56af47ae32ced1c0e2878ff62c9bbcaa15d16f798f4ce9"
+  - id: SR650
+    type: server
+    rack_units: 2
+    motherboard: "SR650"
+    dcim:
+      available: true
+      models:
+        - Lenovo SR650
+        - Lenovo SR650-V3
+        - Lenovo SR650 v3 (Pre-production model)
+    sockets: 2
+    psu_configurations:
+      - psu_config:
+          - id: platinum # This is for everywhere but the EU
+            available_slots: [0, 1]
+            required_slots: [0, 1]
+            name: server-psu
+            model:
+              - 4P57A26294 # Lenovo model numbers
+              - 4P57A78362
+              - ThinkSystem 1800W AC DC # IMS Model
+      - psu_config:
+          - id: titanium # This is for the EU (Lot 9)
+            available_slots: [0, 1]
+            required_slots: [0, 1]
+            name: server-psu
+            model:
+              - 4P57A78359 # Lenovo model numbers
+              - ThinkSystem 1800W AC DC # IMS Model
+    supported_deployments:
+      # These are the levels for the production-level servers
+      - id: "3.50-2.25" # Base prod; cannot back level from here
+        firmware: "3.50"
+        bios: "2.25"
+        prereqs:   # Original manufacturing level (no backlevel supported, so no prereqs)
+          - id: "3.50-2.25"
+            order_override: ["bios", "firmware"] # back level BIOS
+          - id: "3.92-3.11"
+            order_override: ["bios", "firmware"] # back level BIOS
+          - id: "5.54-3.31"
+            order_override: ["bios", "firmware"] # back level BIOS
+          - id: "6.00-3.40"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "6.20-3.50"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "3.55-3.11"             # cannot back level BIOS from 3.11
+        firmware: "3.55"
+        bios: "3.11"
+        prereqs:              # This FW/BIOS level was only released to bare metal
+          - id: "3.50-2.25"
+          - id: "3.92-3.11"
+            order_override: ["bios", "firmware"] # back level BIOS
+          - id: "5.54-3.31"
+            order_override: ["bios", "firmware"] # back level BIOS
+          - id: "6.00-3.40"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "3.92-3.11"       # cannot back level BIOS from 3.11
+        firmware: "3.92"
+        bios: "3.11"
+        #prereqs:             # This FW level did not pass testing, only present
+        #  - id: "3.50-2.25"  # for qz2 upgrades
+        #  - id: "3.55-3.11"
+      - id: "5.54-3.31"       # cannot back level BIOS 3.31 below 3.14
+        firmware: "5.54"
+        bios: "3.31"
+        prereqs:              # This FW/BIOS level was only released to
+          - id: "3.50-2.25"   # confidential computing
+          - id: "3.55-3.11"
+          - id: "3.92-3.11"
+          - id: "6.00-3.40"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "6.20-3.50"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "6.00-3.40"
+        firmware: "6.00"
+        bios: "3.40"
+        prereqs:
+          - id: "3.50-2.25"
+          - id: "3.55-3.11"
+          - id: "3.92-3.11"
+          - id: "5.54-3.31"
+          - id: "6.20-3.50"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "6.20-3.50"
+        firmware: "6.20"
+        bios: "3.50"
+        prereqs:
+          - id: "3.50-2.25"
+          - id: "3.55-3.11"
+          - id: "3.92-3.11"
+          - id: "5.54-3.31"
+          - id: "6.00-3.40"
+    boot_device:
+      mgmt_network: "0000:16:00.0"
+      data_network: "0000:38:00.0"
+    bios:
+      - id: "2.25"
+        version: "2.25"
+        file: "lnvgy_fw_uefi_ese120k-2.25_anyos_comp.uxz"
+        sha256sum: "a43308c723521957c65ffae3aea2fd44d04dd6ba0151581c110ed2f34ea180cc"
+      - id: "3.11"
+        version: "3.11"
+        file: "lnvgy_fw_uefi_ese124y-3.11_anyos_comp.uxz"
+        sha256sum: "711ca4b680dc35b6cd8246e43c7f2d9dc0ba64ba7d0491f25b402495370c0950"
+      - id: "3.31"
+        version: "3.31"
+        file: "lnvgy_fw_uefi_ese128e-3.31_anyos_comp.uxz"
+        sha256sum: "f26129495ea06004190c49fa793ec68ff63a59b947f94c4038d8e4c1bf3e2628"
+      - id: "3.40"
+        version: "3.40"
+        file: "lnvgy_fw_uefi_ese130e-3.40_anyos_comp.uxz"
+        sha256sum: "979d5380c433088b2f6c9fb7f7e80a97543192f1d5f7cc94c96faeb9995209f7"
+      - id: "3.50"
+        version: "3.50"
+        file: "lnvgy_fw_uefi_ese132y-3.50_anyos_comp.uxz"
+        sha256sum: "6bfad72fb1de2fd10b83e0ecd25ac214a3e446a946726c4cfcbee30ffecf174c"
+    firmware:
+      - id: "3.50"
+        version: "3.50"
+        file: "lnvgy_fw_xcc_esx318u-3.50_anyos_comp.uxz"
+        sha256sum: "d076fb9d2d2c5fdf27384a845536c16851765084c0253462d863b7b9a56544c1"
+      - id: "3.55"
+        version: "3.55"
+        file: "lnvgy_fw_xcc_esx318z-3.55_anyos_comp.uxz"
+        sha256sum: "276583ca8c594f8dcb31efe7d2e2bec148540b8c92eb8f6f8bf4396bf096573e"
+      - id: "5.54"
+        version: "5.54"
+        file: "lnvgy_fw_xcc_esx334q-5.54_anyos_comp.uxz"
+        sha256sum: "344f831650db8b9780b6cda598a3e02b83642f80ead6402638d3261ab092095d"
+      - id: "6.00"
+        version: "6.00"
+        file: "lnvgy_fw_xcc_esx338t-6.00_anyos_comp.uxz"
+        sha256sum: "8c87619c7efe99b34bff29f89e805d026c743df225a1a0f3a85b3be461943744"
+      - id: "6.20"
+        version: "6.20"
+        file: "lnvgy_fw_xcc_esx344o-6.20_anyos_comp.uxz"
+        sha256sum: "bc5e13420bef7176fcf4ea41f15ec3467ae4a1bdc54ed77082092776e6699fcb"
+  - id: SR630V1
+    type: server
+    rack_units: 1
+    motherboard: "SR630"
+    dcim:
+      available: true
+      models:
+        - "Lenovo SR630"
+    sockets: 2
+    psu_configurations:
+      - psu_config:
+          - id: standard
+            available_slots: [0, 1]
+            required_slots: [0, 1]
+            name: server-psu
+            model:
+              - ThinkSystem 750W AC PS # What shows in IMS
+    supported_deployments:
+      - id: "9.98-4.13"
+        firmware: "9.98"
+        bios: "4.13"
+    boot_device:
+      mgmt_network: "0000:06:00.0"
+      data_network: "0000:2f:00.0"
+    bios:
+      - id: "4.13"
+        version: "4.13"
+        file: "lnvgy_fw_uefi_ive184h-4.13_anyos_32-64.uxz"
+        sha256sum: "23bdcacd4fa55601cc347ec6d614d64b5a0466ffb7ef0d469be7be473b52a3a6"
+        directory: "bios/lenovo"
+    firmware:
+      - id: "9.98"
+        version: "9.98"
+        file: "lnvgy_fw_xcc_cdi3b4e-9.98_anyos_noarch.uxz"
+        sha256sum: "27ab04d8170194d2f63592bfd2fb9c286957fe9b22041dc720d3963aa1e80ea3"
+  - id: len-raid-kit-4Y37A79663
+    type: raid_carrier
+    dcim:
+      available: true
+      models:
+        - 4Y37A79663
+    slots: 2
+    firmware:
+      - id: "1.0.20.1052"
+        version: "1.0.20.1052"
+        sha256sum: "255977be9ffe31d1530c4220b72fa87badd72081349a62c7fe5f4a63228e8061"
+        directory: "raidcarrier/lenovo/4Y37A09750"
+        file: "lnvgy_fw_bootstor_nvme-j9c5i-0232_anyos_comp.zip"
+      - id: "1.0.20.1055"
+        version: "1.0.20.1055"
+        sha256sum: "dd7bd4e5151b66658f08da4eac2cd4026c89d5eeb6dd8ee1ad7668efd247b8fe"
+        directory: "raidcarrier/lenovo/4Y37A09750"
+        file: "lnvgy_fw_bootstor_nvme-j9mdd-0302_anyos_comp.zip"

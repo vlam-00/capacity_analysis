@@ -1,0 +1,1163 @@
+vendor: supermicro
+components:
+  - id: smc-gen2
+    type: server
+    rack_units: 2
+    motherboard: "X11QPH+_R1.20"
+    dcim:
+      available: true
+      models:
+        - SuperMicro SMCH12
+        - SuperMicro SMCH24
+        - SuperMicro SMCH24 SYS-2049U-TR4
+    sockets: 4
+    psu_configurations:
+      - psu_config:
+          - id: standard
+            available_slots: [0, 1]
+            required_slots: [0, 1]
+            name: server-psu
+            model: "PWS-2K03P-1R"
+    supported_deployments:
+      - id: "6.71.0D-3.1b"
+        firmware: "6.71.0D"
+        bios: "3.1b"
+      - id: "6.71.0D-3.3a"
+        firmware: "6.71.0D"
+        bios: "3.3a"
+        prereqs:
+          - id: "06.73.12-30.4"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "06.74.04-3.6.V1"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "06.73.12-30.4"
+        firmware: "06.73.12"
+        bios: "30.4"
+        prereqs:
+          - id: "01.74.09-30.4"
+          - id: "1.71.11-3.3"
+          - id: "01.73.08-3.6"
+          - id: "01.73.12-3.5"
+          - id: "01.73.12-3.6"
+          - id: "01.74.02-3.6"
+          - id: "01.74.09-30.4"
+          - id: "01.74.09-3.8b"
+          - id: "6.71.0D-3.3a"
+          - id: "6.71.0D-3.3"
+          - id: "6.71.11-3.1b"
+          - id: "6.71.11-3.2"
+          - id: "6.71.11-3.3"
+          - id: "06.73.08-3.4"
+          - id: "06.73.12-3.3"
+          - id: "06.73.12-3.3a"
+          - id: "06.73.12-3.4"
+          - id: "06.73.12-3.6"
+            order_override: ["bios", "firmware"] # it's a back level for bios
+          - id: "06.74.07-30.4"
+          - id: "06.74.04-3.6.V1"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "06.74.08-4.2v1"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "01.73.12-3.6"
+        firmware: "01.73.12"
+        bios: "3.6"
+      - id: "06.74.04-3.6.V1"
+        firmware: "06.74.04"
+        bios: "3.6.V1"
+        prereqs:
+          - id: "1.71.11-3.3"
+          - id: "01.73.08-3.6"
+          - id: "01.73.12-3.5"
+          - id: "01.73.12-3.6"
+          - id: "01.74.02-3.6"
+          - id: "01.74.09-30.4"
+          - id: "01.74.09-3.8b"
+          - id: "01.74.13-4.0"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "6.71.0D-3.3a"
+          - id: "06.73.12-30.4"
+          - id: "6.71.0D-3.3"
+          - id: "6.71.11-3.1b"
+          - id: "6.71.11-3.2"
+          - id: "6.71.11-3.3"
+          - id: "06.73.08-3.4"
+          - id: "06.73.12-3.3"
+          - id: "06.73.12-3.3a"
+          - id: "06.73.12-3.4"
+          - id: "06.73.12-3.6"
+          - id: "06.74.07-30.4"
+          - id: "06.74.07-3.8v3"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "06.74.04-4.2v1"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "06.74.08-4.2v1"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "06.74.07-4.2v1"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "06.74.07-3.8v3"
+        firmware: "06.74.07"
+        bios: "3.8v3"
+        prereqs:
+          - id: "1.71.11-3.3"
+          - id: "01.74.09-30.4"
+          - id: "01.73.08-3.6"
+          - id: "01.73.12-3.6"
+          - id: "01.74.13-4.0"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "6.71.0D-3.3a"
+          - id: "06.73.12-30.4"
+          - id: "6.71.0D-3.3"
+          - id: "6.71.11-3.1b"
+          - id: "6.71.11-3.2"
+          - id: "6.71.11-3.3"
+          - id: "06.73.08-3.4"
+          - id: "06.73.12-3.3"
+          - id: "06.73.12-3.3a"
+          - id: "06.73.12-3.4"
+          - id: "06.73.12-3.6"
+          - id: "06.74.04-3.6.V1"
+          - id: "06.74.07-4.2v1"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "06.74.08-4.2v1"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "06.74.04-4.2v1"
+        firmware: "06.74.04"
+        bios: "4.2v1"
+        prereqs:
+          - id: "1.71.11-3.3"
+          - id: "01.74.09-30.4"
+          - id: "01.73.08-3.6"
+          - id: "01.73.12-3.6"
+          - id: "01.74.13-4.0"
+          - id: "6.71.0D-3.1b"
+          - id: "6.71.0D-3.3a"
+          - id: "06.73.12-30.4"
+          - id: "6.71.0D-3.3"
+          - id: "6.71.11-3.1b"
+          - id: "6.71.11-3.2"
+          - id: "6.71.11-3.3"
+          - id: "06.73.08-3.4"
+          - id: "06.73.12-3.3"
+          - id: "06.73.12-3.3a"
+          - id: "06.73.12-3.4"
+          - id: "06.73.12-3.6"
+          - id: "06.74.04-3.6.V1"
+          - id: "06.74.07-3.8v3"
+          - id: "06.74.07-4.2v1"
+          - id: "06.74.08-4.2v1"
+      - id: "06.74.07-4.2v1"
+        firmware: "06.74.07"
+        bios: "4.2v1"
+        prereqs:
+          - id: "1.71.11-3.3"
+          - id: "01.74.13-4.0"
+          - id: "01.74.09-30.4"
+          - id: "01.73.08-3.6"
+          - id: "01.73.12-3.6"
+          - id: "6.71.0D-3.3a"
+          - id: "06.73.12-30.4"
+          - id: "6.71.0D-3.3"
+          - id: "6.71.11-3.1b"
+          - id: "6.71.11-3.2"
+          - id: "6.71.11-3.3"
+          - id: "06.73.08-3.4"
+          - id: "06.73.12-3.3"
+          - id: "06.73.12-3.3a"
+          - id: "06.73.12-3.4"
+          - id: "06.73.12-3.6"
+          - id: "06.74.04-3.6.V1"
+          - id: "06.74.07-3.8v3"
+          - id: "06.74.08-4.2v1"
+      - id: "06.74.08-4.2v1"
+        firmware: "06.74.08"
+        bios: "4.2v1"
+        prereqs:
+          - id: "1.71.11-3.3"
+          - id: "01.74.13-4.0"
+          - id: "01.74.09-30.4"
+          - id: "01.73.08-3.6"
+          - id: "01.73.12-3.6"
+          - id: "6.71.0D-3.3a"
+          - id: "06.73.12-30.4"
+          - id: "6.71.0D-3.3"
+          - id: "6.71.11-3.1b"
+          - id: "6.71.11-3.2"
+          - id: "6.71.11-3.3"
+          - id: "06.73.08-3.4"
+          - id: "06.73.12-3.3"
+          - id: "06.73.12-3.3a"
+          - id: "06.73.12-3.4"
+          - id: "06.73.12-3.6"
+          - id: "06.74.04-3.6.V1"
+          - id: "06.74.07-3.8v3"
+          - id: "06.74.07-4.2v1"
+      # List older firmware for defining pre-reqs, can't back level to these levels
+      - id: "01.74.09-30.4"
+        firmware: "01.74.09"
+        bios: "30.4"
+      - id: "01.74.09-3.8b"
+        firmware: "01.74.09"
+        bios: "3.8b"
+      - id: "1.71.11-3.3"
+        firmware: "1.71.11"
+        bios: "3.3"
+      - id: "01.73.08-3.6"
+        firmware: "01.73.08"
+        bios: "3.6"
+      - id: "01.73.12-3.5"
+        firmware: "01.73.12"
+        bios: "3.3"
+      - id: "01.74.02-3.6"
+        firmware: "01.74.02"
+        bios: "3.6"
+      - id: "01.74.13-4.0"
+        firmware: "01.74.13"
+        bios: "4.0"
+      - id: "6.71.0D-3.3"
+        firmware: "6.71.0D"
+        bios: "3.3"
+      - id: "6.71.11-3.1b"
+        firmware: "6.71.11"
+        bios: "3.1b"
+      - id: "6.71.11-3.2"
+        firmware: "6.71.11"
+        bios: "3.2"
+      - id: "6.71.11-3.3"
+        firmware: "6.71.11"
+        bios: "3.3"
+      - id: "06.73.08-3.4"
+        firmware: "06.73.08"
+        bios: "3.4"
+      - id: "06.73.12-3.3"
+        firmware: "06.73.12"
+        bios: "3.3"
+      - id: "06.73.12-3.3a"
+        firmware: "06.73.12"
+        bios: "3.3a"
+      - id: "06.73.12-3.4"
+        firmware: "06.73.12"
+        bios: "3.4"
+      - id: "06.73.12-3.6"
+        firmware: "06.73.12"
+        bios: "3.6"
+      - id: "06.74.07-30.4"
+        firmware: "06.74.07"
+        bios: "30.4"
+    boot_device:
+      mgmt_network: "0000:33:00.0"
+      data_network: "0000:17:00.0"
+    bios:
+      - id: "4.2v1"
+        version: "4.2v1"
+        file: "IBMSTORAGE_BIOS_X11QPH-097F-ST00310U00_20240104_4.2v1_OEMsp.bin"
+        sha256sum: "26d35b7c2341582437ef2c3a862b3cab75266640c97eb224ca37d34a8914ee5d"
+      - id: "3.8v3"
+        version: "3.8v3"
+        file: "IBMSTORAGE_BIOS_X11QPH-097F-ST00310U00_20230411_3.8v3_OEMsp.bin"
+        sha256sum: "dbd440737e05b0b360eeec1ec7274a5a5973062d8c66ca75205b91d5109a3b2b"
+      - id: "3.6.V1"
+        version: "3.6.V1"
+        file: "IBMSTORAGE_BIOS_X11QPH-097F-ST00310U00_20220517_3.6.V1_OEMsp.bin"
+        sha256sum: "214687ff7fbc6909f7f18ee3e0dab4f76b9e741cc05d9c7022bb420843948f51"
+      - id: "30.4"
+        version: "30.4"
+        file: "IBM_X11QPH_20211018_storage.ROM"
+        sha256sum: "caff5353177590554c28419278796421d6222695bc808b8102da3daac684cc8e"
+      - id: "3.3a"
+        version: "3.3a"
+        file: "X11QPH0.709_Signed"
+        sha256sum: "3c2783c9d7c9ac4c6ab979ede5b70bd74e054efd17acb186b4a370a4dd279ccf"
+    firmware:
+      - id: "06.74.08"
+        version: "06.74.08"
+        file: "BMC_X11AST2500-4101MS-IBM_20240415_06.74.08_OEMsp.bin"
+        sha256sum: "2fb44f33f3432a7573443cbe0bf89bd3175db1f4d649a743e77f839abd18bce5"
+      - id: "06.74.07"
+        version: "06.74.07"
+        file: "BMC_IBM_X11AST2500_674_07_V_20230321.bin"
+        sha256sum: "2f091fff7cad03e957cbe221cdcf73c518c371683a6e5e91620daa49e03b7f47"
+      - id: "06.74.04"
+        version: "06.74.04"
+        file: "IBM_X11AST2500_674_04_V_20220628.bin"
+        sha256sum: "1b1ac0bd3c964fa047262697212a8423a903f5dda3b92753078dff833bd982e4"
+      - id: "06.73.12"
+        version: "06.73.12"
+        file: "Softlayer_X11QPH_PLUS_673_12_V_20210824.bin"
+        sha256sum: "397ceb0108c84f60fbdcde4fab126e3c6efbedb71e89bc780eeee72b08fbacaa"
+      - id: "6.71.0D"
+        version: "6.71.0D"
+        file: "Softlayer_X11QPH_PLUS_671_0d_V_20210211.bin"
+        sha256sum: "c2979dabdf8b76db09cad03423dbbc26b593bc02f5bb0d53f249cb78976fe91e"
+  - id: smc-bm-2socket
+    type: server
+    rack_units: 1
+    motherboard: "X11DPU+_R1.10"
+    dcim:
+      available: true
+      models:
+        - "SuperMicro SMCH10"
+        - "SuperMicro SMCH10 SYS-1029U-TN10RT 2"
+    sockets: 2
+    psu_configurations:
+      - psu_config:
+          - id: standard
+            available_slots: [0, 1]
+            required_slots: [0, 1]
+            name: server-psu
+            model:
+              - "PWS-1K02A-1R"
+    supported_deployments:
+      - id: "06.73.12-3.4"
+        firmware: "06.73.12"
+        bios: "3.4"
+        prereqs:
+          - id: "06.73.12-31.4"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "06.73.12-31.4"
+        firmware: "06.73.12"
+        bios: "31.4"
+        prereqs:
+          - id: "06.73.12-3.4"
+          - id: "06.73.12-32.4"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "06.74.04-3.6v2"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "06.73.12-32.4"
+        firmware: "06.73.12"
+        bios: "32.4"
+        prereqs:
+          - id: "06.73.12-3.4"
+          - id: "06.73.12-31.4"
+          - id: "06.74.04-3.6v2"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "06.74.04-3.6v2"
+        firmware: "06.74.04"
+        bios: "3.6v2"
+        prereqs:
+          - id: "06.73.12-3.4"
+          - id: "06.73.12-31.4"
+          - id: "06.73.12-32.4"
+          - id: "06.74.07-3.6v2"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "06.74.07-3.8v2"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "06.74.07-3.6v2"
+        firmware: "06.74.07"
+        bios: "3.6v2"
+        prereqs:
+          - id: "06.73.12-3.4"
+          - id: "06.73.12-31.4"
+          - id: "06.73.12-32.4"
+          - id: "06.74.04-3.6v2"
+          - id: "06.74.07-3.8v2"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "06.74.07-3.8v2"
+        firmware: "06.74.07"
+        bios: "3.8v2"
+        prereqs:
+          - id: "06.73.12-3.4"
+          - id: "06.73.12-31.4"
+          - id: "06.73.12-32.4"
+          - id: "06.74.04-3.6v2"
+          - id: "06.74.07-3.6v2"
+      - id: "06.74.08-4.2v1"
+        firmware: "06.74.08"
+        bios: "4.2v1"
+    boot_device:
+      mgmt_network: "0000:33:00.0"
+      data_network: "0000:17:00.0"
+    bios:
+      - id: "4.2v1"
+        version: "4.2v1"
+        file: "BIOS_X11DPU-091C-ST00310U00_20240207_4.2v1_OEMsp.bin"
+        sha256sum: "9210ca7dff7efcc9c5fb433c844b9d40d3d2b205ae535a5166456eeab350c1a1"
+      - id: "3.8v2"
+        version: "3.8v2"
+        file: "BIOS_X11DPU-091C-ST00310U00_20230404_3.8v2_OEMsp.bin"
+        sha256sum: "cd793419a4246e056b057dbf3f19bef2bc85a1691b61e7061e477663e5de8a3f"
+      - id: "3.6v2"
+        version: "3.6v2"
+        file: "BIOS_X11DPU-091C-ST00310U00_20220624_3.6v2_OEMsp.bin"
+        sha256sum: "93dc1d8bb8c9921a58b1edf28027e508cc4fe6a7fd28d478bcdfcd5451b5e525"
+      - id: "32.4"
+        version: "32.4"
+        file: "BIOS_X11DPU-091C-ST31_20220712_32.4_OEMsp.bin"
+        sha256sum: "b5e9fd524b10d43f0516dedeef05278faa326b54f3d899b3cfd92f002d072869"
+      - id: "31.4"
+        version: "31.4"
+        file: "IBM_X11DPU_20211130.ROM"
+        sha256sum: "69de39f71bd214196a151aec80c82746382315a0e82925ea9e1d4fca4bd3464b"
+      - id: "30.4"
+        version: "30.4"
+        file: "IBM_X11QPH_20211018_storage.ROM"
+        sha256sum: "caff5353177590554c28419278796421d6222695bc808b8102da3daac684cc8e"
+      - id: "3.4"
+        version: "3.4"
+        file: "SX11DPU1.602"
+        sha256sum: "5a7afe80aab4a7da3b46a970c9e90ac1e4c618ac7e5f19b4a68f7644b5ce99d6"
+    firmware:
+      - id: "06.74.08"
+        version: "06.74.08"
+        file: "BMC_X11AST2500-4101MS-IBM_20240415_06.74.08_OEMsp.bin"
+        sha256sum: "2fb44f33f3432a7573443cbe0bf89bd3175db1f4d649a743e77f839abd18bce5"
+      - id: "06.74.07"
+        version: "06.74.07"
+        file: "BMC_IBM_X11AST2500_674_07_V_20230321.bin"
+        sha256sum: "2f091fff7cad03e957cbe221cdcf73c518c371683a6e5e91620daa49e03b7f47"
+      - id: "06.74.04"
+        version: "06.74.04"
+        file: "IBM_X11AST2500_674_04_V_20220628.bin"
+        sha256sum: "1b1ac0bd3c964fa047262697212a8423a903f5dda3b92753078dff833bd982e4"
+      - id: "06.73.12"
+        version: "06.73.12"
+        file: "Softlayer_X11QPH_PLUS_673_12_V_20210824.bin"
+        sha256sum: "397ceb0108c84f60fbdcde4fab126e3c6efbedb71e89bc780eeee72b08fbacaa"
+  - id: smc-bm-4socket
+    type: server
+    rack_units: 2
+    motherboard: "X11QPH+_R1.20"
+    dcim:
+      available: true
+      models:
+        - SuperMicro SMCH12
+        - SuperMicro SMCH24
+        - SuperMicro SMCH24 SYS-2049U-TR4
+    sockets: 4
+    psu_configurations:
+      - psu_config:
+          - id: standard
+            available_slots: [0, 1]
+            required_slots: [0, 1]
+            name: server-psu
+            model:
+              - "PWS-2K03P-1R"
+    supported_deployments:
+      - id: "06.73.12-30.4"
+        firmware: "06.73.12"
+        bios: "30.4"
+        prereqs:
+          - id: "06.74.04-3.6.V1"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "06.74.04-30.4"
+        firmware: "06.74.04"
+        bios: "30.4"
+        prereqs:
+          - id: "06.73.12-30.4"
+          - id: "06.74.07-30.4"
+            order_override: ["bios", "firmware"] #it's a back level
+          - id: "06.74.04-3.6.V1"
+            order_override: ["bios", "firmware"] #it's a back level
+      - id: "06.74.07-30.4"
+        firmware: "06.74.07"
+        bios: "30.4"
+        prereqs:
+          - id: "06.73.12-30.4"
+          - id: "06.74.04-30.4"
+          - id: "06.74.07-3.6.V1"
+            order_override: ["bios", "firmware"] #it's a back level
+      - id: "06.74.04-3.6.V1"
+        firmware: "06.74.04"
+        bios: "3.6.V1"
+        prereqs:
+          - id: "06.73.12-30.4"
+          - id: "06.74.04-30.4"
+          - id: "06.74.07-3.6.V1"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "06.74.07-3.8v3"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "06.74.07-4.2v1"
+            order_override: ["bios", "firmware"] #it's a back level
+      - id: "06.74.07-3.6.V1"
+        firmware: "06.74.07"
+        bios: "3.6.V1"
+        prereqs:
+          - id: "06.73.12-30.4"
+          - id: "06.74.04-30.4"
+          - id: "06.74.07-30.4"
+          - id: "06.74.04-3.6.V1"
+          - id: "06.74.07-3.8v3"
+            order_override: ["bios", "firmware"] #it's a back level
+          - id: "06.74.07-4.2v1"
+            order_override: ["bios", "firmware"] #it's a back level
+      - id: "06.74.07-3.8v3"
+        firmware: "06.74.07"
+        bios: "3.8v3"
+        prereqs:
+          - id: "06.73.12-30.4"
+          - id: "06.74.04-30.4"
+          - id: "06.74.07-30.4"
+          - id: "06.74.04-3.6.V1"
+          - id: "06.74.07-3.6.V1"
+          - id: "06.74.07-4.2v1"
+            order_override: ["bios", "firmware"] #it's a back level
+      - id: "06.74.07-4.2v1"
+        firmware: "06.74.07"
+        bios: "4.2v1"
+        prereqs:
+          - id: "06.73.12-30.4"
+          - id: "06.74.04-30.4"
+          - id: "06.74.07-30.4"
+          - id: "06.74.04-3.6.V1"
+          - id: "06.74.07-3.6.V1"
+          - id: "06.74.07-3.8v3"
+    boot_device:
+      mgmt_network: "0000:33:00.0"
+      data_network: "0000:17:00.0"
+    bios:
+      - id: "4.2v1"
+        version: "4.2v1"
+        file: "IBMSTORAGE_BIOS_X11QPH-097F-ST00310U00_20240104_4.2v1_OEMsp.bin"
+        sha256sum: "26d35b7c2341582437ef2c3a862b3cab75266640c97eb224ca37d34a8914ee5d"
+      - id: "3.8v3"
+        version: "3.8v3"
+        file: "IBMSTORAGE_BIOS_X11QPH-097F-ST00310U00_20230411_3.8v3_OEMsp.bin"
+        sha256sum: "dbd440737e05b0b360eeec1ec7274a5a5973062d8c66ca75205b91d5109a3b2b"
+      - id: "3.6.V1"
+        version: "3.6.V1"
+        file: "IBMSTORAGE_BIOS_X11QPH-097F-ST00310U00_20220517_3.6.V1_OEMsp.bin"
+        sha256sum: "214687ff7fbc6909f7f18ee3e0dab4f76b9e741cc05d9c7022bb420843948f51"
+      - id: "30.4"
+        version: "30.4"
+        file: "IBM_X11QPH_20211018_storage.ROM"
+        sha256sum: "caff5353177590554c28419278796421d6222695bc808b8102da3daac684cc8e"
+      - id: "3.3a"
+        version: "3.3a"
+        file: "X11QPH0.709_Signed"
+        sha256sum: "3c2783c9d7c9ac4c6ab979ede5b70bd74e054efd17acb186b4a370a4dd279ccf"
+    firmware:
+      - id: "06.74.07"
+        version: "06.74.07"
+        file: "BMC_IBM_X11AST2500_674_07_V_20230321.bin"
+        sha256sum: "2f091fff7cad03e957cbe221cdcf73c518c371683a6e5e91620daa49e03b7f47"
+      - id: "06.74.04"
+        version: "06.74.04"
+        file: "IBM_X11AST2500_674_04_V_20220628.bin"
+        sha256sum: "1b1ac0bd3c964fa047262697212a8423a903f5dda3b92753078dff833bd982e4"
+      - id: "06.73.12"
+        version: "06.73.12"
+        file: "Softlayer_X11QPH_PLUS_673_12_V_20210824.bin"
+        sha256sum: "397ceb0108c84f60fbdcde4fab126e3c6efbedb71e89bc780eeee72b08fbacaa"
+      - id: "6.71.0D"
+        version: "6.71.0D"
+        file: "Softlayer_X11QPH_PLUS_671_0d_V_20210211.bin"
+        sha256sum: "c2979dabdf8b76db09cad03423dbbc26b593bc02f5bb0d53f249cb78976fe91e"
+  - id: smc-bm-4socket-backplane
+    type: server
+    rack_units: 2
+    motherboard: "X11QPH+_R1.20"
+    dcim:
+      available: true
+      models:
+        - SuperMicro SMCH12
+        - SuperMicro SMCH24
+        - SuperMicro SMCH24 SYS-2049U-TR4
+    sockets: 4
+    psu_configurations:
+      - psu_config:
+          - id: standard
+            available_slots: [0, 1]
+            required_slots: [0, 1]
+            name: server-psu
+            model:
+              - "PWS-2K03P-1R"
+    supported_deployments:
+      - id: "06.73.12-30.4"
+        firmware: "06.73.12"
+        bios: "30.4"
+        prereqs:
+          - id: "06.74.04-3.6.V1"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "06.74.04-30.4"
+        firmware: "06.74.04"
+        bios: "30.4"
+        prereqs:
+          - id: "06.73.12-30.4"
+          - id: "06.74.07-30.4"
+            order_override: ["bios", "firmware"] #it's a back level
+          - id: "06.74.04-3.6.V1"
+            order_override: ["bios", "firmware"] #it's a back level
+      - id: "06.74.07-30.4"
+        firmware: "06.74.07"
+        bios: "30.4"
+        prereqs:
+          - id: "06.73.12-30.4"
+          - id: "06.74.04-30.4"
+          - id: "06.74.07-3.6.V1"
+            order_override: ["bios", "firmware"] #it's a back level
+      - id: "06.74.04-3.6.V1"
+        firmware: "06.74.04"
+        bios: "3.6.V1"
+        prereqs:
+          - id: "06.73.12-30.4"
+          - id: "06.74.04-30.4"
+          - id: "06.74.07-3.6.V1"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "06.74.07-3.8v3"
+            order_override: ["bios", "firmware"] # it's a back level
+          - id: "06.74.07-4.2v1"
+            order_override: ["bios", "firmware"] #it's a back level
+      - id: "06.74.07-3.6.V1"
+        firmware: "06.74.07"
+        bios: "3.6.V1"
+        prereqs:
+          - id: "06.73.12-30.4"
+          - id: "06.74.04-30.4"
+          - id: "06.74.07-30.4"
+          - id: "06.74.04-3.6.V1"
+          - id: "06.74.07-3.8v3"
+            order_override: ["bios", "firmware"] #it's a back level
+          - id: "06.74.07-4.2v1"
+            order_override: ["bios", "firmware"] #it's a back level
+      - id: "06.74.07-3.8v3"
+        firmware: "06.74.07"
+        bios: "3.8v3"
+        prereqs:
+          - id: "06.73.12-30.4"
+          - id: "06.74.04-30.4"
+          - id: "06.74.07-30.4"
+          - id: "06.74.04-3.6.V1"
+          - id: "06.74.07-3.6.V1"
+          - id: "06.74.07-4.2v1"
+            order_override: ["bios", "firmware"] #it's a back level
+      - id: "06.74.08-4.2v1"
+        firmware: "06.74.08"
+        bios: "4.2v1"
+        prereqs:
+          - id: "06.73.12-30.4"
+          - id: "06.74.04-30.4"
+          - id: "06.74.04-3.6.V1"
+          - id: "06.74.07-30.4"
+          - id: "06.74.07-3.6.V1"
+          - id: "06.74.07-3.8v3"
+    boot_device:
+      mgmt_network: "0000:33:00.0" # Assumption made from other config type.
+      data_network: "0000:17:00.0"
+    bios:
+      - id: "4.2v1"
+        version: "4.2v1"
+        file: "IBMSTORAGE_BIOS_X11QPH-097F-ST00310U00_20240104_4.2v1_OEMsp.bin"
+        sha256sum: "26d35b7c2341582437ef2c3a862b3cab75266640c97eb224ca37d34a8914ee5d"
+      - id: "3.8v3"
+        version: "3.8v3"
+        file: "IBMSTORAGE_BIOS_X11QPH-097F-ST00310U00_20230411_3.8v3_OEMsp.bin"
+        sha256sum: "dbd440737e05b0b360eeec1ec7274a5a5973062d8c66ca75205b91d5109a3b2b"
+      - id: "3.6.V1"
+        version: "3.6.V1"
+        file: "IBMSTORAGE_BIOS_X11QPH-097F-ST00310U00_20220517_3.6.V1_OEMsp.bin"
+        sha256sum: "214687ff7fbc6909f7f18ee3e0dab4f76b9e741cc05d9c7022bb420843948f51"
+      - id: "30.4"
+        version: "30.4"
+        file: "IBM_X11QPH_20211018_storage.ROM"
+        sha256sum: "caff5353177590554c28419278796421d6222695bc808b8102da3daac684cc8e"
+    firmware:
+      - id: "06.74.08"
+        version: "06.74.08"
+        file: "BMC_X11AST2500-4101MS-IBM_20240415_06.74.08_OEMsp.bin"
+        sha256sum: "2fb44f33f3432a7573443cbe0bf89bd3175db1f4d649a743e77f839abd18bce5"
+      - id: "06.74.07"
+        version: "06.74.07"
+        file: "BMC_IBM_X11AST2500_674_07_V_20230321.bin"
+        sha256sum: "2f091fff7cad03e957cbe221cdcf73c518c371683a6e5e91620daa49e03b7f47"
+      - id: "06.74.04"
+        version: "06.74.04"
+        file: "IBM_X11AST2500_674_04_V_20220628.bin"
+        sha256sum: "1b1ac0bd3c964fa047262697212a8423a903f5dda3b92753078dff833bd982e4"
+      - id: "06.73.12"
+        version: "06.73.12"
+        file: "Softlayer_X11QPH_PLUS_673_12_V_20210824.bin"
+        sha256sum: "397ceb0108c84f60fbdcde4fab126e3c6efbedb71e89bc780eeee72b08fbacaa"
+  - id: smc-a100-sxm4
+    type: server
+    rack_units: 4
+    motherboard: "X12DGO-6_R1.01"
+    dcim:
+      available: true
+      models:
+        - SuperMicro SYS-420GP-TNAR+
+    sockets: 2
+    psu_configurations:
+      - psu_config:
+          - id: standard
+            available_slots: [0, 1, 2, 3]
+            required_slots: [0, 1, 2, 3]
+            name: server-psu
+            model:
+              - PWS-3K02G-2R
+    supported_deployments:
+      - id: "06.01.14-1.5"
+        firmware: "06.01.14"
+        bios: "1.5"
+        prereqs:
+          - id: "01.01.11-1.4b"
+          - id: "01.01.14-1.4b"
+          - id: "01.01.14-1.5"
+          - id: "06.01.14-1.4b"
+      - id: "06.01.14-1.4b"
+        firmware: "06.01.14"
+        bios: "1.4b"
+        prereqs:
+          - id: "01.01.11-1.4b"
+          - id: "01.01.14-1.4b"
+          - id: "01.01.14-1.5"
+          - id: "06.01.14-1.5"
+            order_override: ["bios", "firmware"] #it's a back level
+      - id: "01.01.14-1.5"
+        firmware: "01.01.14"
+        bios: "1.5"
+      - id: "01.01.11-1.4b"
+        firmware: "01.01.11"
+        bios: "1.4b"
+        # prereqs:
+      # These are the levels for the original development servers
+      - id: "01.01.14-1.4b"
+        firmware: "01.01.14"
+        bios: "1.4b"
+        prereqs:
+          - id: "01.01.11-1.4b"
+          - id: "06.01.14-1.4b"
+    boot_device:
+      mgmt_network: "0000:17:00.0"
+      data_network: "0000:31:00.0"
+    bios:
+      - id: "1.4b"
+        version: "1.4b"
+        sha256sum: "6e2e2d7b48a68bd4f84670ddf3f3e8ea04ae2d36fde7cd26a8c7fc78c9cc854c"
+        directory: "bios/supermicro/SYS-420GP-TNAR+"
+        file: "BIOS_X12DGO-6-1B94_20230109_1.4b_STDsp.bin"
+      - id: "1.5"
+        version: "1.5"
+        sha256sum: "5b18fa40201eec15f403e5efc3736d3bc6cdfa632da259264905425582c4b0e0"
+        directory: "bios/supermicro/SYS-420GP-TNAR+"
+        file: "BIOS_X12DGO-6-1B94_20230425_1.5_STDsp.bin"
+    firmware:
+      - id: "06.01.14"
+        version: "06.01.14"
+        sha256sum: "c27ba497efaaedfef706f46d019e3cadeb5458f7a5fd57cc647734662899f46d"
+        directory: "bmc/supermicro/SYS-420GP-TNAR+"
+        file: "BMC_X12AST2600-ROT-D201MS-IBM_20230614_06.01.14_OEMsp.bin"
+      - id: "01.01.14"
+        version: "01.01.14"
+        sha256sum: "07a740e62d2d7db28dd3cb0e9b4c65cf6aa933bff7f322efebb7f9b1bc110727"
+        directory: "bmc/supermicro/SYS-420GP-TNAR+"
+        file: "BMC_X12AST2600-ROT-D201MS_20230511_01.01.14_STDsp.bin"
+      - id: "01.01.11"
+        version: "01.01.11"
+        sha256sum: "TBD"
+        file: "TBD"
+  - id: smc-h100-sxm5
+    type: server
+    rack_units: 8
+    motherboard: "X13DEG-OAD"
+    dcim:
+      available: true
+      models:
+        - SuperMicro SYS-821GE-TNHR
+    sockets: 2
+    psu_configurations:
+      - psu_config:
+          - id: standard
+            available_slots: [0, 1, 2, 3, 4, 5, 6, 7]
+            required_slots: [0, 1, 2, 3, 4, 5, 6, 7]
+            name: server-psu
+            model:
+              - PWS-3K06G-2R
+    supported_deployments:
+      - id: "10.00.06-2.1"
+        firmware: "10.00.06"
+        bios: "2.1"
+        prereqs:
+          - id: "01.01.06-2.1"
+          - id: "10.00.02-2.1"
+          - id: "10.00.04-2.1"
+      - id: "10.00.04-2.1"
+        firmware: "10.00.04"
+        bios: "2.1"
+        prereqs:
+          - id: "01.01.06-2.1"
+          - id: "10.00.02-2.1"
+          - id: "10.00.06-2.1" # back-level, but same BIOS
+      - id: "10.00.02-2.1"
+        firmware: "10.00.02"
+        bios: "2.1"
+        prereqs:
+          - id: "01.01.06-2.1"
+          - id: "10.00.04-2.1"
+      - id: "01.01.06-2.1"
+        firmware: "01.01.06"
+        bios: "2.1"
+    boot_device:
+      mgmt_network: "0000:17:00.0" # These are TBD
+      data_network: "0000:31:00.0"
+    bios:
+      - id: "2.1"
+        version: "2.1"
+        sha256sum: "a92397c27c92e7c3bba9e61d3656a30e813527d51376116366cfa94283180803"
+        directory: "bios/supermicro"
+        file: "BIOS_X13DEG-OAD-1D14_20231129_2.1_STDsp.bin"
+    firmware:
+      - id: "01.01.06"
+        version: "01.01.06"
+        sha256sum: "TBD"
+        directory: "bmc/supermicro"
+        file: "TBD"
+      - id: "10.00.02"
+        version: "10.00.02"
+        sha256sum: "1603361ecd493e418aea28de808096d729936e6685d3182efe6795ae7c018622"
+        directory: "bmc/supermicro"
+        file: "BMC_X13AST2600-ROT-5501MS_20240510_10.00.02_OEMsp.bin"
+      - id: "10.00.04"
+        version: "10.00.04"
+        sha256sum: "1e6390d3d2aa6c864939fe04a1e55ae01da49ac348affb7b1010c5ff428113e9"
+        directory: "bmc/supermicro"
+        file: "BMC_X13AST2600-ROT-5501MS_20240723_10.00.04_OEMsp.bin"
+      - id: "10.00.06"
+        version: "10.00.06"
+        sha256sum: "8b531374c1e5b96c0eb95ed1c9cb56de84ad2bcb7d375eb8e821a23432b3108d"
+        directory: "bmc/supermicro"
+        file: "BMC_X13AST2600-ROT-5501MS_20241119_10.00.06_OEMsp.bin"
+
+  - id: smc-aoc-sxm5-io
+    type: pcie_switch
+    dcim:
+      available: false
+    pci:
+      tree: True
+      description: "TBD?"
+    firmware:
+      - id: "04.14.00.00"
+        version: "04.14.00.00"
+        sha256sum: "f89aa7e1f84fd7c4a6c71f9a3267dfa577f3719aa7cfc8789f4e66b423a9c59e"
+        directory: "plx/supermicro"
+        file: "AOM-SXM5-IO_20231222.fw"
+      - id: "04.15.00.00"
+        version: "04.15.00.00"
+        sha256sum: "TBD"
+        directory: "plx/supermicro"
+        file: "TBD"
+  - id: smc-aoc-sxm5-retimer
+    type: pcie_retimer
+    dcim:
+      available: false
+    pci:
+      tree: False
+      description: "TBD?"
+    firmware:
+      - id: "2.7.21"
+        version: "2.7.21"
+        sha256sum: "0016a12f34aa83548a4b33b0ee52f5a373ea1ac866d109eb8f824657462215fe"
+        directory: "retimer/supermicro"
+        file: "retimer_fw_v2.7.21.fwpkg"
+  - id: smc-aoc-sxm5-retimer5
+    type: pcie_retimer
+    dcim:
+      available: false
+    pci:
+      tree: False
+      description: "TBD?"
+    firmware:
+      - id: "2.7.69"
+        version: "2.7.69"
+        sha256sum: "6178ade845c977fe0bd513256c8919a727688ec92dc2b36355ee9d5dc0813e5a"
+        directory: "retimer/supermicro"
+        file: "retimer_fw_v2.7.69.fwpkg"
+      - id: "2.7.22"
+        version: "2.7.22"
+        sha256sum: "d99edbc91f50396802e174db15c34a40feb89049533c4a35480b09e7402b4083"
+        directory: "retimer/supermicro"
+        file: "retimer_fw_v2.7.22.fwpkg"
+  - id: smc-aoc-sxm5-switchboard
+    type: pcie_switchboard
+    dcim:
+      available: false
+    pci:
+      tree: False
+      description: "TBD?"
+    firmware:
+      - id: "15"
+        version: "15"
+        sha256sum: "e35d498f57a3251225309cb8b6ac787ea8a541320cb29e1479ef939cf0f2e88f"
+        directory: "cpld/supermicro"
+        file: "CPLD_AOM-SXM5-IO-27000060_20240620_00.15.XX_STDsp.jed"
+      - id: "F4"
+        version: "F4"
+        sha256sum: "b7118c275e5c6404a570ed74f8be1380871ccfcd984e25b861f50ac405d108c3"
+        directory: "cpld/supermicro"
+        file: "CPLD_AOM-SXM5-IO-27000060_20240613_00.F4.XX_STDsp.jed"
+      - id: "12"
+        version: "12"
+        sha256sum: "TBD"
+        directory: "cpld/supermicro"
+        file: "TBD"
+  - id: smc-aoc-slg2-2tm2
+    type: raid_carrier
+    dcim:
+      available: true
+      models:
+        - "AOC-SLG2-2TM2"
+    pci:
+      tree: True
+      description: "TBD?"
+    slots: 2
+    firmware:
+      - id: "2.3.21.2010"
+        version: "2.3.21.2010"
+        sha256sum: "2fca18f06e1876cfe5f6dd9fd479daadb1701ee258994a96858c2a3982f6cccf"
+        directory: "raidcarrier/supermicro/aoc-slg2-2tm2"
+        file: "2_3_21_2010.bin"
+  - id: "AOC-AG-i4M" # SMC A100 HGX servers have these
+    type: nic
+    dcim:
+      available: true
+      models:
+        - AOC-AG-i4M
+    pci:
+      # Is it on the PCIe tree
+      tree:
+        True
+        # If on tree, what's the description that enumerates
+      description: "Ethernet controller: Intel Corporation I350 Gigabit Network Connection (rev 01)"
+    smartnic: False
+    independent: False # Verifying with Felipe/Ethan
+    ports:
+      - id: 1
+        speed: 1000
+        type: inband
+      - id: 2
+        speed: 1000
+        type: inband
+      - id: 3
+        speed: 1000
+        type: inband
+      - id: 4
+        speed: 1000
+        type: inband
+  - id: "AOC-STGS-I2T" # SMC H100 HGX servers have these
+    type: nic
+    dcim:
+      available: true
+      models:
+        - AOC-STGS-I2T
+    pci:
+      # Is it on the PCIe tree
+      tree:
+        True
+        # If on tree, what's the description that enumerates
+      description: "Ethernet controller: Intel Corporation Ethernet Controller 10G X550T"
+    smartnic: False
+    independent: False # Verifying with Felipe/Ethan
+    ports:
+      - id: 1
+        speed: 10000
+        type: inband
+      - id: 2
+        speed: 10000
+        type: inband
+  - id: smc-aoc-slg4-2h8m2
+    type: raid_carrier
+    dcim:
+      available: true
+      models:
+        - "AOC-SLG4-2H8M2"
+    pci:
+      tree: True
+      description: "TBD?"
+    slots: 2
+    firmware:
+      - id: "5.220.01-3691"
+        version: "5.220.01-3691"
+        sha256sum: "c1323697ba96fe63c2816ba26fc49bf75a7c80dae6de49fb1b2edbb463d9b790"
+        directory: "raidcarrier/supermicro/aoc-slg4-2h8m2"
+        file: "5_220_01-3691.rom"
+  - id: smc-gen3
+    type: server
+    rack_units: 2
+    motherboard: X13DEM
+    dcim:
+      available: true
+      models:
+        - SuperMicro SYS-221H-TNR-S-IB002
+        - SuperMicro SYS-221H-TNR
+        - SuperMicro SMCH16 2U
+        - SuperMicro SMCH16 2U \ 16D
+    psu_configurations:
+      - psu_config:
+          - id: standard
+            available_slots: [0, 1]
+            required_slots: [0, 1]
+            name: server-psu
+            model: "PWS-2K07A-1R"
+    sockets: 2
+    supported_deployments:
+      - id: "11.02.02-1.4" # 'gold' candidate
+        firmware: "11.02.02"
+        bios: "1.4"
+        prereqs:
+          - id: "99.73.09-1.4"
+          - id: "01.01.11-1.3"
+          - id: "01.00.29-1.1"
+      - id: "99.73.09-1.4" # beta version
+        firmware: "99.73.09"
+        bios: "1.4"
+        prereqs:
+          - id: "01.01.11-1.3"
+          - id: "11.02.02-1.4" # downlevel. order override not needed as bios unchanged
+      # List older firmware for defining pre-reqs, can't back level to these levels
+      - id: "01.01.11-1.3" # beta version
+        firmware: "01.01.11"
+        bios: "1.3"
+      - id: "01.00.29-1.1" # initial version
+        firmware: "01.00.29"
+        bios: "1.1"
+    boot_device:
+      mgmt_network: "0000:16:00.0" # Intel I350 port 0
+      data_network: "0000:38:00.0" # 0000:98:00.0 CX6
+    bios:
+      - id: "1.4"
+        version: "1.4"
+        file: "BIOS_X13DEM-1C30-IB0002WU00_20231118_1.4_OEMsp.bin"
+        sha256sum: "cb79ee300c6e72521259ae864c865bf5c19de72aa58543809d9438be7031acb5"
+      - id: "1.3"
+        version: "1.3"
+        file: "BIOS_X13DEM-1C30_20230512_1.3_STDsp.bin"
+        sha256sum: "8a2220a81061adbfb29336817b7b56b7c9c3e248558b85fd4a541fc580bd4d5a"
+    firmware:
+      - id: "11.02.02"
+        version: "11.02.02"
+        file: "BMC_IBM_01_X13DEM-D301MS_20231219_11.02.02_OEMsp_.bin"
+        sha256sum: "a610050228479c5e117894ffe1bc944831683e77845ed744c86826111b0b3526"
+      - id: "99.73.09"
+        version: "99.73.09"
+        file: "BMC_X13AST2600-ROT20-D301MS_Redfish_int_only_20231130_99.73.09_STDsp_.bin"
+        sha256sum: "74e3419bb449d607cae0ecd1e7de70dca87dd382b60c84afdcaf6cc757ae4e21"
+      - id: "01.01.11"
+        version: "01.01.11"
+        file: "BMC_X13AST2600-ROT20-D301MS_20230818_01.01.11_STDsp.bin"
+        sha256sum: "a7e89e9423808895491e50f24901b364f7be0cc62b772775b092bd739f7ec49d"
+
+  - id: smc-superstorage
+    type: server
+    rack_units: 4
+    motherboard: "X11DSC"
+    dcim:
+      available: true
+      models:
+        - SuperMicro SSG 6049SP-E1CR90
+    sockets: 2
+    psu_configurations:
+      - psu_config:
+          - id: standard
+            available_slots: [0, 1]
+            required_slots: [0, 1]
+            name: server-psu
+            model: "PWS-2K63A-1R"
+    supported_deployments:
+      - id: "03.10.37-4.3"
+        firmware: "03.10.37"
+        bios: "4.3"
+      - id: "03.10.30-3.6"
+        firmware: "03.10.30"
+        bios: "3.6"
+    boot_device:
+      mgmt_network: "0000:33:00.0"
+      data_network: "0000:17:00.0"
+    bios:
+      - id: "4.3"
+        version: "4.3"
+        file: "TBD"
+        sha256sum: "TBD"
+      - id: "3.6"
+        version: "3.6"
+        file: "BIOS_X11DSC-1B77_20220119_3.6_STDsp.bin"
+        sha256sum: "9e92d38a858f15458e0277998d28722f659efa4f94cc53cfad9b2b08ecc0df62"
+    firmware:
+      - id: "03.10.37"
+        version: "03.10.37"
+        file: "TBD"
+        sha256sum: "TBD"
+      - id: "03.10.30"
+        version: "03.10.30"
+        file: "BMC_X11DSC_20220126_03.10.30_STDsp.bin"
+        sha256sum: "4158e6687ef114539f0f14355f22e55b14aa00fb90169d9d4b804cb0df3abd44"
+
+  - id:
+      smc-bm-2socket-6019u # This is a server pulled from classic and retro fit.
+      # Matching the smc-bm for fw, but for some reason a different model?
+    type: server
+    rack_units: 1
+    motherboard: "X11DPU+_R1.10"
+    dcim:
+      available: true
+      models:
+        - "SuperMicro SMCH04 1u \ 4D rev 2 2"
+    sockets: 2
+    psu_configurations:
+      - psu_config:
+          - id: standard
+            available_slots: [0, 1]
+            required_slots: [0, 1]
+            name: server-psu
+            model:
+              - "PWS-751P-1R"
+              - "PWS-1K02A-1R"
+    supported_deployments:
+      - id: "06.73.12-3.4"
+        firmware: "06.73.12"
+        bios: "3.4"
+      - id: "06.74.07-3.6v2"
+        firmware: "06.74.07"
+        bios: "3.6v2"
+      - id: "06.74.07-3.8v2"
+        firmware: "06.74.07"
+        bios: "3.8v2"
+      - id: "06.74.08-4.2v1"
+        firmware: "06.74.08"
+        bios: "4.2v1"
+    boot_device:
+      mgmt_network: "0000:33:00.0"
+      data_network: "TBD"
+    bios:
+      - id: "4.2v1"
+        version: "4.2v1"
+        file: "BIOS_X11DPU-091C-ST00310U00_20240207_4.2v1_OEMsp.bin"
+        sha256sum: "9210ca7dff7efcc9c5fb433c844b9d40d3d2b205ae535a5166456eeab350c1a1"
+      - id: "3.8v2"
+        version: "3.8v2"
+        file: "BIOS_X11DPU-091C-ST00310U00_20230404_3.8v2_OEMsp.bin"
+        sha256sum: "cd793419a4246e056b057dbf3f19bef2bc85a1691b61e7061e477663e5de8a3f"
+      - id: "3.6v2"
+        version: "3.6v2"
+        file: "BIOS_X11DPU-091C-ST00310U00_20220624_3.6v2_OEMsp.bin"
+        sha256sum: "93dc1d8bb8c9921a58b1edf28027e508cc4fe6a7fd28d478bcdfcd5451b5e525"
+      - id: "32.4"
+        version: "32.4"
+        file: "BIOS_X11DPU-091C-ST31_20220712_32.4_OEMsp.bin"
+        sha256sum: "b5e9fd524b10d43f0516dedeef05278faa326b54f3d899b3cfd92f002d072869"
+      - id: "31.4"
+        version: "31.4"
+        file: "IBM_X11DPU_20211130.ROM"
+        sha256sum: "69de39f71bd214196a151aec80c82746382315a0e82925ea9e1d4fca4bd3464b"
+      - id: "30.4"
+        version: "30.4"
+        file: "IBM_X11QPH_20211018_storage.ROM"
+        sha256sum: "caff5353177590554c28419278796421d6222695bc808b8102da3daac684cc8e"
+      - id: "3.4"
+        version: "3.4"
+        file: "SX11DPU1.602"
+        sha256sum: "5a7afe80aab4a7da3b46a970c9e90ac1e4c618ac7e5f19b4a68f7644b5ce99d6"
+    firmware:
+      - id: "06.74.08"
+        version: "06.74.08"
+        file: "BMC_X11AST2500-4101MS-IBM_20240415_06.74.08_OEMsp.bin"
+        sha256sum: "2fb44f33f3432a7573443cbe0bf89bd3175db1f4d649a743e77f839abd18bce5"
+      - id: "06.74.07"
+        version: "06.74.07"
+        file: "BMC_IBM_X11AST2500_674_07_V_20230321.bin"
+        sha256sum: "2f091fff7cad03e957cbe221cdcf73c518c371683a6e5e91620daa49e03b7f47"
+      - id: "06.74.04"
+        version: "06.74.04"
+        file: "IBM_X11AST2500_674_04_V_20220628.bin"
+        sha256sum: "1b1ac0bd3c964fa047262697212a8423a903f5dda3b92753078dff833bd982e4"
+      - id: "06.73.12"
+        version: "06.73.12"
+        file: "Softlayer_X11QPH_PLUS_673_12_V_20210824.bin"
+        sha256sum: "397ceb0108c84f60fbdcde4fab126e3c6efbedb71e89bc780eeee72b08fbacaa"

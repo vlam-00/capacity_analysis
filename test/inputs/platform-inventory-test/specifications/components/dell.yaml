@@ -1,0 +1,496 @@
+vendor: dell
+components:
+  - id: xe9680-dell
+    type: server
+    rack_units: 6
+    motherboard: "XE9680"
+    dcim:
+      available: true
+      models:
+        - Dell PowerEdge XE9680
+        - DELL PowerEdge XE9680
+    sockets: 2
+    psu_configurations:
+      - psu_config:
+          - id: standard
+            available_slots: [1, 2, 3, 4, 5, 6]
+            required_slots: [1, 2, 3, 4, 5, 6]
+            name: server-psu
+            model:
+              - None # Not in IMS?
+    supported_deployments:
+      - id: "7.20.60.101.build1-61.10.6"
+        firmware: "7.20.60.101.build1"
+        bios: "61.10.6"
+      - id: "7.20.30.55.build1-62.4.4"
+        firmware: "7.20.30.55.build1"
+        bios: "62.4.4"
+        # No pre-reqs
+      - id: "7.20.05.10.build15-61.10.6"
+        firmware: "7.20.05.10.build15"
+        bios: "61.10.6"
+        # No pre-reqs
+      - id: "7.20.05.10.build14-61.10.6"
+        firmware: "7.20.05.10.build14"
+        bios: "61.10.6"
+        # No pre-reqs
+      - id: "7.20.05.10.build9-61.10.6"
+        firmware: "7.20.05.10.build9"
+        bios: "61.10.6"
+        # No pre-reqs
+      - id: "7.20.05.10.build4-61.10.6"
+        firmware: "7.20.05.10.build4"
+        bios: "61.10.6"
+        # No pre-reqs
+      - id: "7.10.75.05.build1-61.10.6"
+        firmware: "7.10.75.05.build1"
+        bios: "61.10.6"
+        # No pre-reqs
+      - id: "7.10.90.05.build1-62.4.4"
+        firmware: "7.10.90.05.build1"
+        bios: "62.4.4"
+        # AMD MI300X version
+        # No pre-reqs
+    boot_device:
+      mgmt_network: "0000:01:00.0"
+      data_network: "0000:1f:00.0"
+    bios:
+      - id: "61.10.6"
+        version: "61.10.6"
+        directory: "bios/dell"
+        file: "XE9680_BIOS_N2JNP_WN64_61.10.6_A00.EXE"
+        sha256sum: "3d004edd605420c9e05bfdcddd0cc98523ce720581eeca811bc456b83cb7dd3f"
+      - id: "62.4.4"
+        version: "62.4.4"
+        directory: "bios/dell"
+        file: "XE9680_BIOS_62K2J_WN64_62.4.4_A00.EXE"
+        sha256sum: "fab5c58f0b480b2f6ca53e0ebc07c5206c7b0589b2ee53fa399651b8dfe8e8d1"
+    firmware:
+      - id: "7.10.75.05.build1"
+        version: "7.10.75.05.build1"
+        file: "TODO"
+        sha256sum: "TODO"
+      - id: "7.10.90.05.build1"
+        version: "7.10.90.05.build1"
+        file: "iDRAC-with-Lifecycle-Controller_Firmware_WW8YF_WN64_7.10.90.05_A00.EXE"
+        sha256sum: "979501a846b1941e0d5f02f14f7b4979c35db82d410c67c5a6013cc6ba613d8d"
+      - id: "7.20.05.10.build4"
+        version: "7.20.05.10.build4"
+        directory: "bmc/dell"
+        file: "iDRAC-with-Lifecycle-Controller_Firmware_GTPRM_WN64_7.20.05.10_A00.EXE"
+        sha256sum: "dd7b41bd3b6055b1a51fececd2c2d1ea111e1373e68f3b7dc6be9d25cabe464e"
+      - id: "7.20.05.10.build9"
+        version: "7.20.05.10.build9"
+        directory: "bmc/dell"
+        file: "iDRAC-with-Lifecycle-Controller_Firmware_V4TMN_WN64_7.20.05.10_A00.EXE"
+        sha256sum: "145fab93d89d1390d09d7800dd84a7bf444d183464cac14eca6bfc95db1db4c8"
+      - id: "7.20.05.10.build14"
+        version: "7.20.05.10.build14"
+        directory: "bmc/dell"
+        file: "iDRAC-with-Lifecycle-Controller_Firmware_4CCGG_WN64_7.20.05.10_A00.EXE"
+        sha256sum: "c430a02630c4d5f9934ec3410f96c37d29eca0c0c3ecfebb97197a40b0104637"
+      - id: "7.20.05.10.build15"
+        version: "7.20.05.10.build15"
+        directory: "bmc/dell"
+        file: "iDRAC-with-Lifecycle-Controller_Firmware_59M2H_WN64_7.20.05.10_X00.EXE"
+        sha256sum: "e43765eea35512d5c2ac2659c8cd27d0cfaefa49681fd5f1379f453f2428f20f"
+      - id: "7.20.30.55.build1"
+        version: "7.20.30.55.build1"
+        directory: "bmc/dell"
+        file: "iDRAC-with-Lifecycle-Controller_Firmware_FGR4H_WN64_7.20.30.55_A00.EXE"
+        sha256sum: "fcb57bd00121218dd3a9a386c23da1e8463a3494a7ebd72df6bad4af8db3606b"
+      - id: "7.20.60.101.build1"
+        version: "7.20.60.101.build1"
+        directory: "bmc/dell"
+        file: "iDRAC-with-Lifecycle-Controller_Firmware_HTR2H_WN64_7.20.60.101_A00.EXE"
+        sha256sum: "d08a4cc4640f8d6f91ac6fb4a6d89d52dfeb4b9643872ae6376d29f19ddf3c83"
+  - id: R730xd
+    type: server
+    rack_units: 2
+    motherboard: "72T6D"
+    dcim:
+      available: true
+      models:
+        - Dell PowerEdge R730xd
+    sockets: 1
+    psu_configurations:
+      - psu_config:
+          - id: standard
+            available_slots: [0, 1]
+            required_slots: [0, 1]
+            name: server-psu
+            model:
+              - None # Not in IMS?
+    supported_deployments:
+      - id: "2.75.75.75-2.11.50"
+        firmware: "2.75.75.75"
+        bios: "2.11.50"
+        # No pre-reqs
+    boot_device:
+      mgmt_network: "0000:01:00.0"
+      data_network: "0000:04:00.0"
+    bios:
+      - id: "2.11.50"
+        version: "2.11.50"
+        file: "BIOS_V4CF7_WN64_2.11.50.EXE"
+        sha256sum: "5c78418e21bdea6db1e2a34303cb541318a9b0b70c4f7665b12c2504a268c080"
+    firmware:
+      - id: "2.75.75.75"
+        version: "2.75.75.75"
+        file: "firmimg_2_75_75_75.d7"
+        sha256sum: "5c85b3d51a483431205e835c17df34b622c3ee176319ebce1dab689a77fbc944"
+  - id: "R630"
+    type: server
+    rack_units: 1
+    motherboard: "72T6D"
+    dcim:
+      available: true
+      models:
+        - Dell PowerEdge R630
+    sockets: 2
+    psu_configurations:
+      - psu_config:
+          - id: standard
+            available_slots: [0, 1]
+            required_slots: [0, 1]
+            name: server-psu
+            model:
+              - None # Not in IMS?
+    supported_deployments:
+      # note all levels beyond 2.70.70.70 require 2.70.70.70 as the minimum
+      - id: "2.70.70.70-2.10.5"
+        firmware: "2.70.70.70"
+        bios: "2.10.5"
+      - id: "2.83.83.83-2.16.0"
+        firmware: "2.83.83.83"
+        bios: "2.16.0"
+        prereqs:
+          - id: "2.70.70.70-2.10.5"
+          - id: "2.84.84.84-2.17.0"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "2.84.84.84-2.17.0"
+        firmware: "2.84.84.84"
+        bios: "2.17.0"
+        prereqs:
+          - id: "2.70.70.70-2.10.5"
+          - id: "2.83.83.83-2.16.0"
+          - id: "2.85.85.85-2.18.1"
+            order_override: ["bios", "firmware"] # it's a back level
+      - id: "2.85.85.85-2.18.1"
+        firmware: "2.85.85.85"
+        bios: "2.18.1"
+        prereqs:
+          - id: "2.70.70.70-2.10.5"
+          - id: "2.83.83.83-2.16.0"
+          - id: "2.84.84.84-2.17.0"
+    boot_device:
+      mgmt_network: "0000:01:00.0"
+      data_network: "0000:04:00.0"
+    bios:
+      - id: "2.18.1"
+        version: "2.18.1"
+        file: "BIOS_T4WVF_WN64_2.18.1.EXE"
+        sha256sum: "945a34e3c84a36cde353a1dcb9870fab9a893abeeb634d5471a303eec778a87c"
+      - id: "2.17.0"
+        version: "2.17.0"
+        file: "BIOS_MC31G_WN64_2.17.0.EXE"
+        sha256sum: "ed947e58f3bb05ad920e7cbad612b7a88afaef1198d938b9ee3018ec672e1299"
+      - id: "2.16.0"
+        version: "2.16.0"
+        file: "BIOS_7557V_WN64_2.16.0_02.EXE"
+        sha256sum: "850219285a8fd3cb7475e3565d9f1c7041deca27563e50a2b9f283b60c6763d6"
+      - id: "2.10.5"
+        version: "2.10.5"
+        file: "BIOS_1RKPD_WN64_2.10.5.EXE"
+        sha256sum: "e97becbba17d1fe0bec75350a563e284d755da75c8dfd09dc029816e83433f3a"
+    firmware:
+      - id: "2.85.85.85"
+        version: "2.85.85.85"
+        file: "firmimg_PowerEdgeR630_2_85_85_85.d7"
+        sha256sum: "90c65570e0d816ce9b73bf3f83a07dddd682f721c9751ab40e1bd94e5790746a"
+      - id: "2.84.84.84"
+        version: "2.84.84.84"
+        file: "firmimg_PowerEdgeR630_2_84_84_84.d7"
+        sha256sum: "a4d0465a3fab13bec033d1f815f8ec006548844919680e8e4db3a5883cdb5f0d"
+      - id: "2.83.83.83"
+        version: "2.83.83.83"
+        file: "firmimg_PowerEdgeR630_2_83_83_83.d7"
+        sha256sum: "94eb6ed3a0a2361a237f8288de759cf66043be13b069ceddce1d3cc3bc4cf99c"
+      - id: "2.70.70.70"
+        version: "2.70.70.70"
+        file: "firmimg_PowerEdgeR630_2_70_70_70.d7"
+        sha256sum: "4cae64012f5b4a95467791fe0ce7a05453b1ea36762a423cf466c1db8b0509f5"
+  - id: "R770"
+    type: server
+    rack_units: 1
+    motherboard: "R770"
+    dcim:
+      available: true
+      models:
+        - DELL PowerEdge R770 (Pre-Production)
+    sockets: 2
+    psu_configurations:
+      - psu_config:
+          - id: standard
+            available_slots: [0, 1]
+            required_slots: [0, 1]
+            name: server-psu
+            model:
+              - None # Not in IMS?
+    supported_deployments:
+      - id: "TODO"
+        firmware: "TODO"
+        bios: "TODO"
+    boot_device:
+      mgmt_network: "0000:01:00.0"
+      data_network: "0000:04:00.0"
+    bios:
+      - id: "TODO"
+        version: "TODO"
+        file: "TODO"
+        sha256sum: "TODO"
+    firmware:
+      - id: "TODO"
+        version: "TODO"
+        file: "TODO"
+        sha256sum: "TODO"
+  - id: "9650"
+    type: server
+    rack_units: 1
+    motherboard: "9650"
+    dcim:
+      available: true
+      models:
+        - Dell Compute Sled DCS9650
+    sockets: 2
+    psu_configurations:
+      - psu_config:
+          - id: standard
+            available_slots: [0, 1]
+            required_slots: [0, 1]
+            name: server-psu
+            model:
+              - None # Not in IMS?
+    supported_deployments:
+      - id: "4.40.00.00-2.9.4"
+        firmware: "4.40.00.00"
+        bios: "2.9.4"
+        # No pre-reqs
+    boot_device:
+      mgmt_network: "0000:04:00.0"
+      data_network: "0000:5e:00.0"
+    bios:
+      - id: "2.9.4"
+        version: "2.9.4"
+        file: "BIOS_164HH_WN64_2.9.4.EXE"
+        sha256sum: "cc4e370dfc3c72c5750801584d5b0515c57276881f91d837574552048e7fd041"
+    firmware:
+      - id: "4.40.00.00"
+        version: "4.40.00.00"
+        file: "iDRAC-with-Lifecycle-Controller_Firmware_62GW1_WN64_4.40.00.00_A00.EXE"
+        sha256sum: "b793eae5a09fcd38e0f7b0529132b153c98ac0c40d6a97d64ff6e3d1d8dbdb5c"
+  - id: "9550"
+    type: server
+    rack_units: 1
+    motherboard: "9550"
+    dcim:
+      available: true
+      models:
+        - Dell Compute Sled DCS9550
+    sockets: 2
+    psu_configurations:
+      - psu_config:
+          - id: standard
+            available_slots: [0, 1]
+            required_slots: [0, 1]
+            name: server-psu
+            model:
+              - None # Not in IMS?
+    supported_deployments:
+      - id: "2.75.75.75-2.11.50"
+        firmware: "2.75.75.75"
+        bios: "2.11.50"
+        # No pre-reqs
+    boot_device:
+      mgmt_network: "0000:81:00.0"
+      data_network: "0000:07:00.0"
+    bios:
+      - id: "2.11.50"
+        version: "2.11.50"
+        file: "BIOS_V4CF7_WN64_2.11.50.EXE"
+        sha256sum: "5c78418e21bdea6db1e2a34303cb541318a9b0b70c4f7665b12c2504a268c080"
+    firmware:
+      - id: "2.75.75.75"
+        version: "2.75.75.75"
+        file: "firmimg_2_75_75_75.d7"
+        sha256sum: "5c85b3d51a483431205e835c17df34b622c3ee176319ebce1dab689a77fbc944"
+  - id: "9550-gpu"
+    type: server
+    rack_units: 1
+    motherboard: "9550"
+    dcim:
+      available: true
+      models:
+        - Dell Compute Sled DCS9690
+        - Dell Compute Sled DCS9650
+    sockets: 2
+    psu_configurations:
+      - psu_config:
+          - id: standard
+            available_slots: [0, 1]
+            required_slots: [0, 1]
+            name: server-psu
+            model:
+              - None # Not in IMS?
+    supported_deployments:
+      - id: "4.40.00.00-2.9.4"
+        firmware: "4.40.00.00"
+        bios: "2.9.4"
+        # No pre-reqs
+    boot_device:
+      mgmt_network: "0000:04:00.0"
+      data_network: "0000:5e:00.0"
+    bios:
+      - id: "2.9.4"
+        version: "2.9.4"
+        file: "BIOS_164HH_WN64_2.9.4.EXE"
+        sha256sum: "cc4e370dfc3c72c5750801584d5b0515c57276881f91d837574552048e7fd041"
+    firmware:
+      - id: "4.40.00.00"
+        version: "4.40.00.00"
+        file: "iDRAC-with-Lifecycle-Controller_Firmware_62GW1_WN64_4.40.00.00_A00.EXE"
+        sha256sum: "b793eae5a09fcd38e0f7b0529132b153c98ac0c40d6a97d64ff6e3d1d8dbdb5c"
+  - id: "9560-storage"
+    type: server
+    rack_units: 1
+    motherboard: "9550"
+    dcim:
+      available: true
+      models:
+        - Dell Storage Sled DCS9560R
+    sockets: 2
+    psu_configurations:
+      - psu_config:
+          - id: standard
+            available_slots: [0, 1]
+            required_slots: [0, 1]
+            name: server-psu
+            model:
+              - None # Not in IMS?
+    supported_deployments:
+      - id: "2.75.75.75-2.11.50"
+        firmware: "2.75.75.75"
+        bios: "2.11.50"
+        # No pre-reqs
+    boot_device:
+      mgmt_network: "0000:81:00.0"
+      data_network: "0000:07:00.0"
+    bios:
+      - id: "2.11.50"
+        version: "2.11.50"
+        file: "BIOS_V4CF7_WN64_2.11.50.EXE"
+        sha256sum: "5c78418e21bdea6db1e2a34303cb541318a9b0b70c4f7665b12c2504a268c080"
+    firmware:
+      - id: "2.75.75.75"
+        version: "2.75.75.75"
+        file: "firmimg_2_75_75_75.d7"
+        sha256sum: "5c85b3d51a483431205e835c17df34b622c3ee176319ebce1dab689a77fbc944"
+
+  - id: dell-xe9680-motherboard
+    type: motherboard
+    dcim:
+      available: false
+    pci:
+      tree: False
+      description: "TBD?"
+    firmware:
+      - id: "1.4.9"
+        version: "1.4.9"
+        sha256sum: "dc5795d7202609d2a8edef74ab56c13ee171ba00172b921d8853d85932bc647f"
+        directory: "cpld/dell"
+        file: "XE9680_CPLD_Firmware_YY6RR_WN64_1.4.9_X02.EXE"
+      - id: "1.5.1"
+        version: "1.5.1"
+        sha256sum: "98239c7b0a5606ed9b441a0c8dbf10f9acd70c31da6dedfbfcdda5bf9046fc4e"
+        directory: "cpld/dell"
+        file: "CPLD_Firmware_YY6RR_WN64_1.5.1_A00.EXE"
+  - id: dell-xe9680-identity-module
+    type: identity_module
+    dcim:
+      available: false
+    pci:
+      tree: False
+      description: "TBD?"
+    firmware:
+      - id: "1.00.8Y78D"  # Baseline
+        version: "1.00.8Y78D"
+        sha256sum: "NA"
+        file: "NA"
+      - id: "1.00.CW30R"
+        version: "1.00.CW30R"
+        sha256sum: "1b371aaa443f9a8adc0cbce6254b93f2d178ce3dd4767d6dc0c95b688331abfa"
+        directory: "bmc/dell"
+        file: "Mas026.pm"
+  - id: dell-xe9680-pcie-switch
+    type: pcie_switch
+    dcim:
+      available: false
+    pci:
+      tree: True
+      description: "TBD?"
+    firmware:
+      - id: "4.160.5.0"
+        version: "4.160.5.0"
+        sha256sum: "87ac9ac3f40d74d2462abae7fa17c65f99ea9fde6608a94750d5bfd2165186ff"
+        directory: "plx/dell"
+        file: "XE9680_Firmware_786N8_LN64_4.160.5.0_A00.BIN"
+      - id: "4.160.5.1"
+        version: "4.160.5.1"
+        sha256sum: "38afa542f9d6a1bfd907e9ec68988cfa573332d467f04bef1f412b092b244bda"
+        directory: "plx/dell"
+        file: "XE9680_Firmware_786N8_LN64_4.160.5.1_A00.BIN"
+  - id: dell-gaudi3-ubb-primary
+    type: ubb_primary
+    dcim:
+      available: false
+    pci:
+      tree: False
+      description: "TBD?"
+    firmware:
+      - id: "0.19"
+        version: "0.19"
+        sha256sum: "7b7e2be4459ca26b4ce0eb82ad4940f020899e7fa3542f4b048f9fa20f055045"
+        directory: "cpld/dell"
+        file: "XE9680_Accelerators_Firmware_VMJ50_WN64_00.19_IBM-00.EXE"
+  - id: dell-gaudi3-ubb-secondary
+    type: ubb_secondary
+    dcim:
+      available: false
+    pci:
+      tree: False
+      description: "TBD?"
+    firmware:
+      - id: "0.2"
+        version: "0.2"
+        sha256sum: "35c2be73b1d3866d8c041860c5fb03ad6f1bd0c49384ba8ba27a17e100676925"
+        directory: "cpld/dell"
+        file: "XE9680_Accelerators_Firmware_6RTDM_WN64_00.02_A00.EXE"
+  - id: dell-gaudi3-ubb-retimer
+    type: ubb_retimer
+    update_timeout_sec: 28800
+    dcim:
+      available: false
+    pci:
+      tree: False
+      description: "TBD?"
+    firmware:
+      - id: "2.12.15"
+        version: "2.12.15"
+        sha256sum: "110f55254b904e387801b41611692ee9e1e9645f0a90e32efee4c4168d1a11f0"
+        directory: "retimer/dell"
+        file: "XE9680_Accelerators_Firmware_720YH_WN64_2.12.15_IBM-00.EXE"
+      - id: "2.12.17"
+        version: "2.12.17"
+        sha256sum: "50f016aee6fd06c00e80e9272825c3c4f83f9dbfe7e0c43558c9922bcd76afda"
+        directory: "retimer/dell"
+        file: "XE9680_Accelerators_Firmware_720YH_WN64_2.12.17_X01.EXE"
